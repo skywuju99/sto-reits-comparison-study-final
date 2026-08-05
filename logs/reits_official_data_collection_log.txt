@@ -1,0 +1,138 @@
+==============================================================================
+REITs 공식 지수 자료 수집 로그
+==============================================================================
+작성일: 2026-08-05 (최종 업데이트)
+==============================================================================
+
+1. 본분석 대상 지수 (확정)
+==============================================================================
+
+[본분석 공식 지수]
+- 지수명: FTSE EPRA Nareit Global Real Estate Index Series
+- 지역범위: Global
+- 통화: USD
+- 수익률 유형: Total Return (배당 포함)
+- 분석기간: 2022년 ~ 2025년 (완결연도)
+
+[공식 원본자료]
+- 문서명: Nareit Global Returns PDF
+- URL: https://www.reit.com/sites/default/files/returns/GlobalReturns.pdf
+- 해당 열: Global · USD · Annual · Total Return
+
+[확정 수익률]
+- 2022년: -23.58%
+- 2023년: +9.78%
+- 2024년: +1.57%
+- 2025년: +11.04%
+
+
+2. 본분석 최종 파일
+==============================================================================
+
+ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv
+- FTSE EPRA Nareit Global Real Estate Index Series
+- Global scope, USD, Total Return
+- 2022~2025년 완결연도 연간 수익률
+- Nareit 공식 GlobalReturns.pdf를 원본자료로 사용
+
+
+3. 참고자료 (본분석에서 제외)
+==============================================================================
+
+[참고용 - Developed Extended Index]
+- 파일명: ftse_epra_nareit_developed_extended_2022_2026_final.csv
+- 지수: FTSE EPRA Nareit Developed Extended Index (ENFNXEM)
+- 용도: 참고자료, 본분석 대체 불가
+- 사유: 논문에서 사용한 Global Index와 다른 지수
+
+[참고용 - 다양한 지수 혼재]
+- 파일명: ftse_epra_nareit_global_annual_returns_official.csv
+- 내용: 여러 지수 수익률 혼재 (시계열 분석 부적합)
+- 용도: 참고자료
+
+[2022년 수치 검증]
+- 파일명: reits_2022_return_reconciliation.csv
+- 내용: 논문 수치(-24.3%)와 공식 자료(-23.58%) 비교
+- 결론: 본분석 지수는 Global USD Total Return (-23.58%)으로 확정
+
+[US Residential REITs]
+- 파일명: ftse_nareit_us_residential_annual_returns_official.csv
+- 상태: 공식 연간 수익률 미확보 (UNCONFIRMED)
+- 용도: 별도 분석용
+
+
+4. 강건성 분석자료 (본분석 대체 불가)
+==============================================================================
+
+[ETF 대용자료]
+- 파일명: reits_etf_adjusted_price_proxies.csv
+- 내용: VNQ, VNQI, IYR, REZ, RWR ETF 일일 조정가격 (7,010건)
+- 필드:
+  * data_type: ETF_PROXY
+  * official_index_data: FALSE
+  * intended_use: ROBUSTNESS_OR_SUPPLEMENTARY
+- 용도: 강건성 검증(Robustness Check), 보조 분석
+- 주의: 공식 지수와 추적오차 존재, 본분석 대체 불가
+
+[기존 ETF 파일]
+- 파일명: reits_daily_total_return_index.csv
+- 상태: reits_etf_adjusted_price_proxies.csv로 대체됨
+
+
+5. 원본자료 보관
+==============================================================================
+
+[Nareit 공식 PDF]
+- source_documents/reits_official/ 폴더에 보관 권장
+- GlobalReturns.pdf: https://www.reit.com/sites/default/files/returns/GlobalReturns.pdf
+- 해당 PDF 수동 다운로드 후 보관 필요
+
+[PDF 확인 경로]
+- Nareit REIT Indexes 페이지: https://www.reit.com/data-research/reit-indexes
+- Daily Returns (U.S. & Global) 페이지: https://www.reit.com/data-research/reit-indexes/daily-returns-us-global
+- FTSE EPRA Nareit Global Real Estate Index Series Daily Returns 링크 클릭
+
+
+6. 지수 구분 정리
+==============================================================================
+
+| 지수명 | 코드 | 지역범위 | 본분석 사용 |
+|--------|------|----------|-------------|
+| FTSE EPRA Nareit Global | - | Global | ✅ 본분석 |
+| FTSE EPRA Nareit Developed Extended | ENFNXEM | Developed | ❌ 참고자료 |
+| FTSE EPRA Nareit Developed | ENGL | Developed | ❌ 참고자료 |
+| FTSE Nareit All Equity REITs | FNER | US only | ❌ 미국 지수 |
+| FTSE Nareit US Residential | FN17C | US only | ❌ 미국 지수 |
+
+[주의사항]
+- Global, Developed Extended, Developed, US REITs는 모두 다른 지수
+- 시계열 분석 시 단일 지수만 사용할 것
+- 본분석은 FTSE EPRA Nareit Global (USD, Total Return)으로 통일
+
+
+7. 파일 목록 최종 정리
+==============================================================================
+
+[본분석용]
+1. ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv ← 본분석 사용
+
+[참고자료]
+2. ftse_epra_nareit_developed_extended_2022_2026_final.csv
+3. ftse_epra_nareit_global_annual_returns_official.csv
+4. reits_2022_return_reconciliation.csv
+5. ftse_nareit_us_residential_annual_returns_official.csv
+
+[강건성 분석용]
+6. reits_etf_adjusted_price_proxies.csv
+
+[로그]
+7. reits_official_data_collection_log.txt
+
+[원본 보관]
+8. source_documents/reits_official/
+   - GlobalReturns.pdf (수동 다운로드 필요)
+
+
+==============================================================================
+수집 완료: 2026-08-05
+==============================================================================
