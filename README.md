@@ -1,135 +1,332 @@
 # 부동산 STO와 REITs 비교 연구
 
-## 연구 개요
+## 1. 연구 개요
 
-이 저장소는 석사학위논문 **「부동산 STO와 리츠(REITs)의 구조적 차이와 투자자 보호체계 비교 및 수익률·위험 특성 분석」**의 데이터, 분석코드 및 재현자료를 정리하기 위한 저장소이다.
+이 저장소는 석사학위논문  
+**「부동산 STO와 리츠(REITs)의 구조적 차이와 투자자 보호체계 비교 및 수익률·위험 특성 분석」**  
+의 데이터, 분석코드, 검증자료 및 부록을 정리한 재현 저장소이다.
 
-본 연구는 RealT 기반 부동산 토큰을 부동산 STO의 분석대상으로 사용하고, 상장 REITs와의 구조적 차이, 수익률 구성, 유동성 및 투자자 보호체계를 비교한다.
+본 연구는 RealT 기반 부동산 토큰을 부동산 STO의 분석대상으로 사용하고, 실제 2차시장인 YAM과 Swapcat의 체결자료를 통합하여 자본수익률과 유동성을 분석한다. REITs 비교에는 FTSE EPRA Nareit Global Real Estate Index Series의 USD 기준 총수익률을 사용한다.
 
-## 본분석 기간
+---
 
-* 분석기간: 2022년부터 2025년까지
-* 2026년 자료: 완결연도가 아니므로 본분석에서 제외
-* 통화 기준: 미국 달러(USD)
-* REITs 수익률: 배당을 포함한 총수익률
+## 2. 본분석 범위
 
-## 주요 데이터
+- 본분석 기간: **2022~2025년 완결연도**
+- STO 분석대상: 미국 소재 주거용 임대부동산 RealToken
+- 2차시장: YAM 및 Swapcat
+- REITs 기준: Global, USD, Total Return
+- 2026년: 완결연도가 아니므로 연간 총수익률 본분석에서 제외
 
-### 1. RealT 자산자료
+YAM과 Swapcat은 별개의 STO 상품이 아니라 동일한 RealToken이 거래되는 두 개의 2차시장으로 처리한다. 두 시장의 거래자료는 RealToken 컨트랙트 주소를 기준으로 통합한다.
 
-RealT 자산별 자료를 이용하여 다음 정보를 정리한다.
+---
 
-* 토큰 컨트랙트 주소
-* 자산명 및 소재지
-* 연도별 임대수익률
-* 플랫폼 제시 토큰가격
-* 자산 상태 및 표본분류 정보
+## 3. 주요 데이터
 
-### 2. YAM·Swapcat 2차시장 거래자료
+### 3.1 RealT 자산자료
 
-YAM과 Swapcat은 별개의 STO 상품이 아니라 동일한 RealToken이 거래되는 두 개의 2차시장으로 처리한다.
+`data/realt/realt_asset_year_source.xlsx`
 
-두 시장의 거래는 RealToken 컨트랙트 주소를 기준으로 통합하며, 실제 체결자료를 이용하여 다음 항목을 산출한다.
+주요 항목:
 
-* 연도별 거래건수
-* 거래수량 및 거래금액
-* 자산별 거래가격
-* 연말 90일 거래량가중평균가격(VWAP)
-* 연속연도 공통자산의 자본수익률
-* 거래금액 기준 및 이상치 제외 강건성 결과
+- RealToken 컨트랙트 주소
+- 자산명과 토큰 심볼
+- 연도별 총투자금액
+- 연 순임대료
+- 연 임대수익률
+- RealT 플랫폼 제시 tokenPrice
+- 상품유형과 업데이트 시점
 
-### 3. 토큰 발행·소각자료
+RealT 임대수익률은 플랫폼 제공 연간 수익률이며, 개별 투자자의 실제 현금흐름을 재구성한 값은 아니다.
 
-RealToken 컨트랙트의 온체인 Transfer 이벤트를 이용하여 발행 및 소각 기록을 정리한다.
+### 3.2 YAM·Swapcat 통합 2차시장 자료
 
-* 영주소에서 일반 주소로 이전된 수량: 발행
-* 일반 주소에서 영주소로 이전된 수량: 소각
-* 최초 발행과 추가 발행 구분
-* 일부 소각 및 전량 소각 여부 확인
-* 토큰별 수집범위 및 누락 여부 기록
+`data/secondary_market/`
 
-### 4. REITs 비교자료
+주요 결과:
 
-본분석의 REITs 비교지수는 다음과 같다.
+- 시장·연도별 거래건수와 거래금액
+- 자산·연도별 거래가격
+- 연말 30일·60일·90일 VWAP
+- 인접연도 공통자산 자본수익률
+- 동일가중·중앙값·거래대금가중 수익률
+- 최소 거래금액 및 이상치 제외 강건성 분석
+- 연도별 표본 진단과 제외 결과
 
-* 지수: FTSE EPRA Nareit Global Real Estate Index Series
-* 지역범위: Global
-* 통화: USD
-* 수익률 유형: Total Return
-* 분석기간: 2022년부터 2025년까지
+대용량 거래단위 원자료와 전체 정규화 거래자료는 GitHub Release에서 별도로 제공한다.
 
-공식 연간 총수익률은 다음과 같다.
+### 3.3 발행·소각 자료
 
-|   연도 | 연간 총수익률 |
-| ---: | ------: |
+`data/mint_burn/`
+
+발행과 소각은 ERC-20 Transfer 이벤트의 영주소 이동을 기준으로 판별한다.
+
+- 영주소 → 일반 주소: 발행
+- 일반 주소 → 영주소: 소각
+
+최종 통합자료는 791개 주소를 수집대상으로 하며, 부동산 RealToken 분석에 필요한 주소의 발행·소각 이벤트를 포함한다.
+
+주의할 점은 소각 이벤트만으로 자산 매각, 상환, 청산, 마이그레이션 또는 기술적 재구성의 원인을 확정할 수 없다는 것이다.
+
+### 3.4 REITs 비교자료
+
+`data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv`
+
+본분석 지수:
+
+- FTSE EPRA Nareit Global Real Estate Index Series
+- Geographic scope: Global
+- Currency: USD
+- Return type: Total Return
+
+| 연도 | 연간 총수익률 |
+|---:|---:|
 | 2022 | -23.58% |
-| 2023 |   9.78% |
-| 2024 |   1.57% |
-| 2025 |  11.04% |
+| 2023 | 9.78% |
+| 2024 | 1.57% |
+| 2025 | 11.04% |
 
-ETF 조정가격 자료는 공식 지수를 대체하지 않으며, 필요한 경우 보조분석 또는 강건성 검증에만 사용한다.
+공식 출처는 Nareit Global Returns 문서이며, ETF 자료는 공식 지수를 대체하지 않는다.
 
-## 수익률 산정 개요
+---
 
-부동산 STO의 자본수익률은 YAM과 Swapcat의 실제 체결가격을 통합한 뒤, 자산별 연말 90일 VWAP를 이용하여 계산한다.
+## 4. 표본 선정
 
-자본수익률은 전년도 연말가격 대비 당해 연말가격의 변화율로 산정한다.
+본분석은 다음 조건을 충족하는 RealToken을 대상으로 한다.
 
-부동산 STO의 조정 총수익률은 자산별 임대수익률과 실제 2차시장 체결가격을 반영한 자본수익률을 결합하여 검토한다.
+1. RealT 자산과 토큰주소를 연결할 수 있을 것
+2. 미국 소재 자산일 것
+3. 주거용 임대부동산일 것
+4. 유효한 YAM 또는 Swapcat 체결자료가 존재할 것
+5. 해당 연도의 연말 90일 VWAP를 산정할 수 있을 것
+6. 인접연도에 동일한 토큰주소가 관측될 것
 
-다만 RealT 임대수익률은 개별 투자자의 실제 현금흐름 자료가 아니므로, 본 연구에서는 이를 엄밀한 보유기간수익률이 아닌 **2차시장 가격을 반영한 조정 총수익률**로 해석한다.
+다음 항목은 본표본에서 제외한다.
 
-## 표본 범위
+- 결제토큰과 스테이블코인
+- 거버넌스·생태계 토큰
+- 대출형 상품
+- 매출채권 및 수익참가형 상품
+- 미국 외 자산
+- 비주거용 자산
+- 잘못된 decimals 또는 비경제적 거래
+- 연말가격을 산정할 수 없는 자산
 
-본분석은 미국 소재 주거용 임대부동산 RealToken을 중심으로 한다.
+상세 기준은 `docs/Appendix_B_Sample_Construction.md`에 제시한다.
 
-다음 자산과 토큰은 원칙적으로 제외한다.
+---
 
-* 대출형 상품
-* 매출채권 및 수익참가형 상품
-* 비부동산 토큰
-* 결제용 토큰
-* 거버넌스 토큰
-* 미국 외 소재 자산
-* 비주거용 자산
-* 분석기간 내 거래가격을 산정할 수 없는 자산
+## 5. 수익률 산정
 
-## 저장소 구성
+### 5.1 연말 시장가격
+
+각 자산의 연말 시장가격은 해당 연도 마지막 90일 동안 체결된 유효 거래의 VWAP로 산정한다.
+
+\[
+VWAP_{i,t}
+=
+\frac{\sum_j P_{i,t,j}Q_{i,t,j}}
+{\sum_j Q_{i,t,j}}
+\]
+
+### 5.2 자본수익률
+
+\[
+CR_{i,t}
+=
+\frac{VWAP_{i,t}-VWAP_{i,t-1}}
+{VWAP_{i,t-1}}
+\]
+
+인접연도 모두 연말 90일 VWAP가 존재하는 공통자산만 포함한다.
+
+### 5.3 2차시장 가격 반영 조정 총수익률
+
+\[
+ATR_{i,t}=RY_{i,t}+CR_{i,t}
+\]
+
+- \(RY\): RealT 연간 임대수익률
+- \(CR\): 실제 2차시장 체결가격 기준 자본수익률
+
+이 값은 실제 투자자의 배당 수령 시점과 보유기간 전체 현금흐름을 재구성한 엄밀한 보유기간수익률이 아니므로, 본 연구에서는 **2차시장 가격 반영 조정 총수익률**로 해석한다.
+
+---
+
+## 6. 저장소 구조
 
 ```text
 sto-reits-comparison-study-final/
 ├── README.md
 ├── code/
+│   └── recalculate_yam_swapcat.py
 ├── data/
-│   ├── realt/
-│   ├── secondary_market/
+│   ├── metadata/
+│   │   ├── asset_master_clean.csv
+│   │   ├── asset_master_match.csv
+│   │   ├── data_dictionary.csv
+│   │   ├── exclusion_report.csv
+│   │   ├── payment_token_decimals.csv
+│   │   ├── raw_validation_report.csv
+│   │   ├── source_list.csv
+│   │   └── yam_token_metadata.csv
 │   ├── mint_burn/
+│   │   ├── mint_burn_token_coverage.csv
+│   │   └── realtoken_mint_burn_history_complete.csv
+│   ├── realt/
+│   │   └── realt_asset_year_source.xlsx
 │   ├── reits/
-│   └── metadata/
-├── results/
+│   │   └── ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv
+│   └── secondary_market/
+│       ├── annual_sample_diagnostics_all_variants.csv
+│       ├── annual_sample_diagnostics_us_residential.csv
+│       ├── asset_year_price_summary_us_residential.csv
+│       ├── common_asset_return_detail_us_residential.csv
+│       ├── common_asset_returns_robustness.csv
+│       ├── common_asset_returns_us_residential.csv
+│       └── platform_year_summary_us_residential.csv
+├── docs/
+│   ├── Appendix_A_Data_Sources.md
+│   ├── Appendix_B_Sample_Construction.md
+│   ├── Appendix_C_YAM_Swapcat_Integration.md
+│   ├── Appendix_D_Return_Calculation.md
+│   ├── Appendix_E_Mint_Burn_Analysis.md
+│   ├── Appendix_F_REITs_Benchmark.md
+│   └── Appendix_G_Data_Limitations.md
 ├── logs/
-└── docs/
+│   ├── mint_burn_missing_token_log.txt
+│   └── reits_official_data_collection_log.txt
+└── results/
+    └── yam_swapcat_recalculation_summary.xlsx
 ```
 
-각 폴더의 세부 파일과 사용방법은 자료 업로드 완료 후 본 README에 추가한다.
+---
 
-## 자료의 한계
+## 7. 분석 재현 방법
 
-현재 자료에는 다음과 같은 한계가 있다.
+### 7.1 준비
 
-* 공식적인 구주소·신주소 토큰 마이그레이션 연결표 미확보
-* 개별 자산의 매각·상환 사유와 토큰당 상환금액 미확보
-* 거래가 없는 토큰의 실제 시장가격 산정 불가
-* 온체인 소각기록만으로 매각·청산·기술적 이전 사유를 완전히 구분하기 어려움
-* RealT 임대수익률은 투자자별 실제 배당 현금흐름과 차이가 있을 수 있음
-* LSEG Datastream의 전체 날짜별 기계판독 원시파일 미확보
-* 2026년 자료는 STO와 REITs의 시간기준이 일치하지 않아 본분석에서 제외
+Python 3.10 이상을 권장한다.
 
-## 대용량 원자료
+대용량 원자료는 저장소의 **Releases** 페이지에서 내려받은 뒤 다음 경로에 배치한다.
 
-대용량 YAM·Swapcat 원본 거래자료와 전체 가공자료는 저장소 파일 업로드가 완료된 후 GitHub Release를 통해 별도로 제공할 예정이다.
+```text
+data/raw/secondary_market/yam_offeraccepted_raw.csv
+data/raw/secondary_market/swapcat_realtoken_trades.csv
+```
 
-## 이용 목적
+분석에 필요한 메타데이터는 일반 저장소의 다음 파일을 사용한다.
 
-본 저장소의 자료는 학술연구의 검증 및 재현을 목적으로 제공한다. 외부 자료의 저작권과 이용조건은 각 원자료 제공기관의 정책을 따른다.
+```text
+data/metadata/yam_token_metadata.csv
+data/metadata/asset_master_match.csv
+```
+
+### 7.2 실행
+
+저장소 루트에서 다음 명령을 실행한다.
+
+```bash
+python code/recalculate_yam_swapcat.py
+```
+
+기본 출력경로:
+
+```text
+results/recalculated/
+results/yam_swapcat_recalculated_results.zip
+```
+
+입력 또는 출력경로를 변경하려면 다음 명령으로 옵션을 확인한다.
+
+```bash
+python code/recalculate_yam_swapcat.py --help
+```
+
+### 7.3 코드 실행 범위
+
+`recalculate_yam_swapcat.py`는 다음 작업을 수행한다.
+
+1. YAM과 Swapcat 원자료 로드
+2. 토큰주소 및 decimals 표준화
+3. USD 유사 결제토큰 판별
+4. 거래가격·수량·거래금액 계산
+5. 미국 주거용 RealToken 표본 분류
+6. 연도별 가격과 연말 90일 VWAP 산정
+7. 인접연도 공통자산 자본수익률 계산
+8. 거래금액 기준과 이상치 제외 강건성 분석
+9. 표본 진단 및 결과파일 생성
+
+---
+
+## 8. 결과파일 안내
+
+### 핵심 분석결과
+
+- `common_asset_returns_us_residential.csv`  
+  연도별 공통자산 대표 자본수익률
+
+- `common_asset_return_detail_us_residential.csv`  
+  자산별 가격과 자본수익률 상세자료
+
+- `common_asset_returns_robustness.csv`  
+  대체 거래금액 기준과 이상치 제외 결과
+
+- `asset_year_price_summary_us_residential.csv`  
+  자산·연도별 가격, 거래량, 연말 90일 VWAP
+
+- `platform_year_summary_us_residential.csv`  
+  YAM·Swapcat 시장별 거래활동
+
+- `yam_swapcat_recalculation_summary.xlsx`  
+  주요 결과를 정리한 확인용 Excel 파일
+
+### 자료 설명
+
+- `data/metadata/data_dictionary.csv`  
+  변수명, 자료형, 단위, 계산방법 및 분석용도
+
+- `data/metadata/source_list.csv`  
+  자료별 제공기관, 수집범위, URL 및 저장위치
+
+---
+
+## 9. GitHub Release
+
+대용량 자료는 일반 저장소에 직접 포함하지 않고 Releases 페이지에서 제공한다.
+
+예정 자료:
+
+- YAM 원본 OfferAccepted 이벤트
+- Swapcat 원본 RealToken 거래자료
+- 통합 정규화 거래자료
+- 전체 재계산 결과 압축파일
+
+Releases:
+
+`https://github.com/skywuju99/sto-reits-comparison-study-final/releases`
+
+---
+
+## 10. 자료의 한계
+
+- 공식적인 구주소·신주소 토큰 마이그레이션 연결표를 확보하지 못했다.
+- 개별 자산의 매각·상환 사유와 토큰당 상환금액을 완전하게 확보하지 못했다.
+- 거래가 없는 토큰은 실제 시장가격을 산정할 수 없다.
+- 소각 이벤트만으로 소각의 경제적 사유를 확정할 수 없다.
+- RealT 임대수익률은 투자자별 실제 현금흐름과 다를 수 있다.
+- 연말가격은 유동성이 낮은 자산에서 일부 거래의 영향을 받을 수 있다.
+- LSEG Datastream의 전체 날짜별 기계판독 원시파일은 확보하지 못했다.
+- 2026년은 자료별 기준일이 일치하지 않아 연간 총수익률 본분석에서 제외했다.
+
+세부 내용은 `docs/Appendix_G_Data_Limitations.md`를 참조한다.
+
+---
+
+## 11. 이용 및 인용
+
+본 저장소는 학술연구의 검증과 재현을 목적으로 제공한다.
+
+RealT, Nareit, FTSE Russell 및 블록체인 원자료의 저작권과 이용조건은 각 제공기관의 정책을 따른다. 저장소의 가공자료와 분석코드를 사용할 경우 연구명과 저장소 주소를 함께 표시하는 것을 권장한다.
 
