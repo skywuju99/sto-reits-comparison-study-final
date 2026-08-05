@@ -1,0 +1,5 @@
+year,index_name,geographic_scope,currency,return_type,annual_total_return,source_document,source_url,source_date,access_date,data_status
+2022,FTSE EPRA Nareit Global Real Estate Index Series,Global,USD,Total Return,-23.58%,Nareit Global Returns PDF,https://www.reit.com/sites/default/files/returns/GlobalReturns.pdf,2022-12-31,2026-08-05,CONFIRMED
+2023,FTSE EPRA Nareit Global Real Estate Index Series,Global,USD,Total Return,+9.78%,Nareit Global Returns PDF,https://www.reit.com/sites/default/files/returns/GlobalReturns.pdf,2023-12-31,2026-08-05,CONFIRMED
+2024,FTSE EPRA Nareit Global Real Estate Index Series,Global,USD,Total Return,+1.57%,Nareit Global Returns PDF,https://www.reit.com/sites/default/files/returns/GlobalReturns.pdf,2024-12-31,2026-08-05,CONFIRMED
+2025,FTSE EPRA Nareit Global Real Estate Index Series,Global,USD,Total Return,+11.04%,Nareit Global Returns PDF,https://www.reit.com/sites/default/files/returns/GlobalReturns.pdf,2025-12-31,2026-08-05,CONFIRMED
