@@ -1,0 +1,31 @@
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*~
+~$*
+
+# Large raw secondary-market files
+data/raw/secondary_market/*.csv
+data/raw/secondary_market/*.xlsx
+data/raw/secondary_market/*.zip
+
+# Locally regenerated outputs
+results/recalculated/
+results/yam_swapcat_recalculated_results.zip
+
+# Keep directory documentation if added later
+!data/raw/secondary_market/README.md
