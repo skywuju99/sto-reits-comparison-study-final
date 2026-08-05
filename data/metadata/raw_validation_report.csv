@@ -1,0 +1,18 @@
+﻿item,value
+YAM rows,227872
+YAM source max datetime UTC,2026-08-03T20:09:20
+Swapcat source max datetime UTC,2026-07-06T20:28:20
+Common 2026 cutoff UTC,2026-07-06T20:28:20
+YAM rows after common cutoff excluded,1502
+YAM RealToken-USD-like broad eligible,221533
+YAM RealToken-direct USD eligible,208369
+YAM reverse-direction trades included,4300
+YAM other pairs excluded,4837
+Swapcat rows,15488
+Swapcat direct USD eligible,15464
+Swapcat other payment excluded,22
+Asset master original rows,1175
+Asset master unique addresses,783
+US residential unique addresses,408
+YAM price_raw column nonzero rows,0
+YAM mapping used,offer_token_amount_raw=event price word; buyer_token_amount_raw=event offer amount word
