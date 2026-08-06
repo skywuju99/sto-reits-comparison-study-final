@@ -1,0 +1,6 @@
+﻿treatment,n,mean_capital_return_pct,reference_period
+equal_weight_full_sample,386,-16.98,2024_to_2025
+exclude_absolute_return_over_50pct,386,-16.98,2024_to_2025
+winsorize_top_bottom_1pct,386,-16.98,2024_to_2025
+trade_value_weighted,386,-15.13,2024_to_2025
+minimum_trade_value_5_usd,385,-16.94,2024_to_2025

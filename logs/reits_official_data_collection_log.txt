@@ -1,0 +1,130 @@
+REIT OFFICIAL DATA COLLECTION AND VERIFICATION LOG
+==================================================
+
+Repository:
+sto-reits-comparison-study-final
+
+Final repository alignment date:
+2026-08-06
+
+Analysis period:
+2022-2025 complete calendar years
+
+
+1. PRIMARY REIT BENCHMARK
+-------------------------
+
+Index series:
+FTSE Nareit U.S. Real Estate Index Series
+
+Property sector:
+Residential
+
+Currency:
+U.S. Dollars
+
+Return type:
+Annual Total Return
+
+Repository role:
+Primary comparison benchmark
+
+Official page:
+https://www.reit.com/data-research/reit-market-data/report/annual-index-values-returns
+
+Official workbook listed on the page:
+https://www.reit.com/sites/default/files/returns/AnnualSectorReturns.xlsx
+
+Repository file:
+data/reits/ftse_nareit_us_residential_total_return_2022_2025_final.csv
+
+Annual observations used in the final thesis:
+2022  -31.34%
+2023   +7.66%
+2024  +12.83%
+2025   -7.43%
+
+Interpretation:
+The U.S. Residential sector is used as the primary benchmark because
+the RealT sample consists of U.S. residential rental properties.
+
+The official REIT values are total returns including price changes and
+distributions. STO observed capital returns exclude rental distributions.
+The two measures are not interpreted as directly comparable performance
+measures.
+
+
+2. SUPPLEMENTARY GLOBAL REIT BENCHMARK
+--------------------------------------
+
+Index series:
+FTSE EPRA Nareit Global Real Estate Index Series
+
+Geographic scope:
+Global
+
+Currency:
+USD
+
+Return type:
+Total Return
+
+Repository role:
+Supplementary global-market benchmark
+
+Official document:
+https://www.reit.com/sites/default/files/returns/GlobalReturns.pdf
+
+Repository file:
+data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv
+
+Annual observations:
+2022  -23.58%
+2023   +9.78%
+2024   +1.57%
+2025  +11.04%
+
+
+3. SUPERSEDED UNCONFIRMED FILE
+------------------------------
+
+The earlier local file named:
+ftse_nareit_us_residential_annual_returns_official.csv
+
+contained UNCONFIRMED placeholders and must not be uploaded as the final
+benchmark file.
+
+The final repository uses:
+ftse_nareit_us_residential_total_return_2022_2025_final.csv
+
+
+4. ETF PROXY DATA
+-----------------
+
+ETF adjusted-price data for VNQ, VNQI, IYR, REZ, and RWR are not
+official FTSE Nareit index observations.
+
+They are not used as the primary REIT benchmark in the thesis.
+
+
+5. REPOSITORY ALIGNMENT
+-----------------------
+
+The final thesis uses:
+
+Primary benchmark:
+U.S. Residential REIT annual total return
+
+Supplementary benchmark:
+Global USD Total Return
+
+The repository README, Appendix F, REIT data folder, and thesis-table
+outputs are aligned with this benchmark definition.
+
+
+6. LIMITATIONS
+--------------
+
+The repository provides the annual observations used in the final thesis,
+source information, and verification records. Redistribution and use of
+official source materials remain subject to the original provider's terms.

@@ -1,0 +1,5 @@
+﻿year,index_series,property_sector,currency,return_type,annual_total_return_pct,benchmark_role,source_document,source_url,data_status
+2022,FTSE Nareit U.S. Real Estate Index Series,Residential,USD,Total Return,-31.34,primary,Annual Returns by Property Sector and Subsector: 1994-2025,https://www.reit.com/sites/default/files/returns/AnnualSectorReturns.xlsx,FINAL_THESIS_VALUE
+2023,FTSE Nareit U.S. Real Estate Index Series,Residential,USD,Total Return,7.66,primary,Annual Returns by Property Sector and Subsector: 1994-2025,https://www.reit.com/sites/default/files/returns/AnnualSectorReturns.xlsx,FINAL_THESIS_VALUE
+2024,FTSE Nareit U.S. Real Estate Index Series,Residential,USD,Total Return,12.83,primary,Annual Returns by Property Sector and Subsector: 1994-2025,https://www.reit.com/sites/default/files/returns/AnnualSectorReturns.xlsx,FINAL_THESIS_VALUE
+2025,FTSE Nareit U.S. Real Estate Index Series,Residential,USD,Total Return,-7.43,primary,Annual Returns by Property Sector and Subsector: 1994-2025,https://www.reit.com/sites/default/files/returns/AnnualSectorReturns.xlsx,FINAL_THESIS_VALUE
