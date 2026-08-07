@@ -2,110 +2,58 @@
 
 ## G.1 Single-platform case study
 
-The analysis focuses on RealT. The findings cannot be generalized directly to the entire real estate STO market.
+The analysis focuses on RealT and cannot be generalized directly to the entire real estate STO market.
 
-## G.2 Geographic and property concentration
+## G.2 Missing investor-level cash flows
 
-The main sample consists of U.S. residential rental properties and is concentrated in particular local markets.
+Complete investor-level cumulative distributions, distribution dates, transaction costs, and taxes were not available.
 
-## G.3 Missing investor-level cash flows
+## G.3 Total-investment-value limitation
 
-The available platform data do not provide complete investor-level cumulative distributions, distribution dates, transaction costs, or tax information.
+Changes in total investment value may reflect token-price changes, token-quantity changes, issuance or redemption, and platform-data updates.
 
-Annual net rent is therefore used to construct a rental-yield proxy.
+## G.4 Low-liquidity observations
 
-## G.4 Total-investment-value limitation
+Observed transaction prices are based only on executed trades and do not imply that the entire outstanding token supply can be sold at the observed price.
 
-Changes in total investment value may reflect:
+## G.5 Common-asset selection
 
-- Changes in token price
-- Changes in token quantity
-- New issuance or redemption
-- Platform-data updates
+Capital returns are calculated only for assets traded in both adjacent periods, creating potential selection bias.
 
-The platform-data-based capital-return measure is therefore treated as an exploratory proxy.
+## G.6 Year-end 90-day VWAP
 
-## G.5 Low-liquidity price observations
+The final 90-day VWAP may be affected by a small number of transactions, concentrated volume, stale trading activity, and differences in traded-asset composition.
 
-The observed secondary-market price is based only on executed trades.
+## G.7 Monthly aggregate VWAP
 
-It does not imply that:
+Monthly aggregate VWAP is affected by changes in traded-asset composition and is interpreted as a descriptive price-level indicator rather than a continuous market-return index.
 
-- All outstanding tokens can be sold at the observed price
-- A large sell order can be executed without price impact
-- Assets without trades have unchanged market value
+## G.8 Non-contemporaneous platform-price comparison
 
-## G.6 Common-asset selection
+RealT tokenPrice was collected on May 24, 2026. Historical year-end 90-day VWAPs and the recent 90-day period ending July 6, 2026 do not share the same measurement date.
 
-Capital returns are calculated only for assets traded in both adjacent periods.
+Year-specific asset samples are not identical. Relative differences across years must not be interpreted as a continuous same-asset pricing-gap series.
 
-Assets without valid trades in either period are excluded, creating potential selection bias.
+## G.9 Snapshot time limitation
 
-## G.7 Year-end 90-day VWAP
+The RealT collection date is known. If the exact collection time and timezone were not recorded, they must be reported as not recorded rather than inferred.
 
-The final 90-day VWAP reduces reliance on a single last trade but may still be affected by:
-
-- A small number of transactions
-- Concentrated transaction volume
-- Low-value trades
-- Stale trading activity
-- Differences in the composition of traded assets
-
-## G.8 Monthly aggregate VWAP
-
-Monthly aggregate VWAP is affected by the composition of assets traded in each month.
-
-It is therefore interpreted as a descriptive price-level indicator rather than a continuous market-return index.
-
-## G.9 Non-contemporaneous platform-price comparison
-
-The RealT tokenPrice was collected on May 24, 2026.
-
-The observed secondary-market prices were calculated using:
-
-- Historical year-end 90-day periods
-- The recent 90-day period ending July 6, 2026
-
-The platform and transaction-price observations do not share the same measurement date.
-
-The reported -72.6% value must not be interpreted as:
-
-- A same-date historical pricing gap
-- A definitive platform-price overvaluation estimate
-- A liquidation-price discount applicable to the entire outstanding supply
+Blockchain transactions are processed using block timestamps; the exact cutoff timestamp and block should be reported where available.
 
 ## G.10 Partial-year 2026 analysis
 
 The 2026 analysis ends on July 6, 2026 and is not a completed annual observation.
 
-It is not compared directly with a completed annual REIT return.
+## G.11 Mint, burn, sale, redemption, and migration
 
-## G.11 Mint and burn events
+Mint and burn events are identified through ERC-20 Transfer events involving the zero address. A burn event alone does not reveal whether the economic cause was a property sale, redemption, liquidation, token migration, or technical restructuring.
 
-Mint and burn events are identified through ERC-20 Transfer events involving the zero address.
+Complete token-supply histories, economic reasons for mint and burn events, sale or redemption reasons, token-level redemption amounts, and an official migration mapping were not available.
 
-A burn event alone does not reveal whether the economic cause was:
+## G.12 REIT comparison
 
-- Property sale
-- Redemption
-- Liquidation
-- Token migration
-- Technical restructuring
+STO observed capital returns exclude rental distributions, whereas official REIT total returns include distributions.
 
-## G.12 Token migration
+## G.13 Official index raw files
 
-An official and complete mapping between old and new RealToken contract addresses was not available.
-
-No manual migration link was imposed where a verified mapping could not be established.
-
-## G.13 REIT comparison
-
-The STO observed capital-return measure excludes rental distributions, whereas the official REIT total-return measure includes distributions.
-
-The two measures are presented together only as a descriptive comparison of price-adjustment patterns.
-
-## G.14 Official index source files
-
-Nareit provides annual investment-sector and property-sector/subsector return workbooks on its official annual returns page.
-
-The repository provides the annual observations used in the final thesis together with source links and a collection log. Use and redistribution of the official source materials remain subject to the provider's terms.
+The full machine-readable LSEG Datastream historical dataset was not available. The study uses documented official annual return observations.

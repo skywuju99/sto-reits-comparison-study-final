@@ -1,7 +1,7 @@
-﻿year,n,observed_vwap_usd,current_platform_price_usd,relative_difference_pct,platform_price_snapshot,observed_price_period
-2021,130,53.8,51.97,3.7,2026-05-24,year_end_90_days
-2022,105,52.68,52.97,-0.3,2026-05-24,year_end_90_days
-2023,351,64.71,62.12,3.7,2026-05-24,year_end_90_days
-2024,388,58.51,52.61,11.3,2026-05-24,year_end_90_days
-2025,390,49.04,52.89,-7.2,2026-05-24,year_end_90_days
-2026_YTD_07_06,287,14.72,53.63,-72.6,2026-05-24,recent_90_days_to_2026_07_06
+﻿year,n,observed_vwap_usd,current_platform_price_usd,relative_difference_pct,platform_price_snapshot,observed_price_period,interpretation_limit
+2021,130,53.8,51.97,3.7,2026-05-24,year_end_90_days,non_contemporaneous; year-specific samples differ
+2022,105,52.68,52.97,-0.3,2026-05-24,year_end_90_days,non_contemporaneous; year-specific samples differ
+2023,351,64.71,62.12,3.7,2026-05-24,year_end_90_days,non_contemporaneous; year-specific samples differ
+2024,388,58.51,52.61,11.3,2026-05-24,year_end_90_days,non_contemporaneous; year-specific samples differ
+2025,390,49.04,52.89,-7.2,2026-05-24,year_end_90_days,non_contemporaneous; year-specific samples differ
+2026_YTD_07_06,287,14.72,53.63,-72.6,2026-05-24,recent_90_days_to_2026_07_06,non_contemporaneous; partial year

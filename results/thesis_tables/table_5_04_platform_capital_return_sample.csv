@@ -1,0 +1,5 @@
+﻿comparison_period,matched_assets_n,begin_total_investment_musd,end_total_investment_musd,value_weighted_cr_proxy_pct,equal_weight_cr_proxy_pct,calculation_note
+2021_to_2022,88,10.257,11.3,10.17,8.49,returns_calculated_from_unrounded_values
+2022_to_2023,161,40.842,40.98,0.34,0.79,returns_calculated_from_unrounded_values
+2023_to_2024,320,77.545,77.422,-0.16,0.11,returns_calculated_from_unrounded_values
+2024_to_2025,415,84.95,85.975,1.21,1.24,returns_calculated_from_unrounded_values

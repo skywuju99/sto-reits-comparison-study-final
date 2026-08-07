@@ -1,0 +1,4 @@
+﻿source_name,source_url,collected_date,collected_time,timezone,cutoff_date,cutoff_block,contract_address,timestamp_basis,script_name,python_version,notes
+RealT asset and platform data,https://realt.co,2026-05-24,not_recorded,not_recorded,,,,platform collection date,,,Exact collection time and timezone were not recorded.
+Swapcat on-chain transactions,,,,,2026-07-06,not_recorded,0xB18713Ac02Fc2090c0447e539524a5c76f327a3b,block_timestamp,recalculate_yam_swapcat.py,3.10+,Record exact cutoff block if available.
+YAM on-chain transactions,,,,,2026-07-06,not_recorded,0xc759aa7f9dd9720a1502c104dae4f9852bb17c14,block_timestamp,recalculate_yam_swapcat.py,3.10+,Record exact cutoff block if available.
