@@ -1,5 +1,0 @@
-﻿metric,platform_composite_return_proxy,us_residential_reit_total_return,interpretation
-mean_pct,12.99,-4.57,2022-2025 arithmetic mean
-sample_std_pct,5.2,19.81,four annual observations; not a stable long-run volatility estimate
-sharpe_type,2.5,-0.23,exploratory auxiliary indicator
-sortino_ratio,undefined,not_reported,STO downside deviation equals zero at MAR=0
