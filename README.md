@@ -1,266 +1,180 @@
-# 부동산 STO와 리츠(REITs)의 수익률·위험 특성 비교와 투자자 보호체계 연구
+# Real Estate STO and REITs Comparison Study
 
-## 1. 연구 개요
+Replication materials for the master's thesis:
 
-이 저장소는 석사학위논문  
-「부동산 STO와 리츠(REITs)의 수익률·위험 특성 비교와 투자자 보호체계 연구」의 데이터, 분석코드, 검증자료 및 재현성 부록을 정리한 저장소이다.
+**“A Comparative Study of Real Estate STOs and REITs: Structural Differences, Return and Risk Characteristics, and Investor Protection Frameworks”**
 
-본 연구는 미국 소재 주거용 RealToken을 부동산 STO의 사례로 활용하고, Swapcat과 YAM에서 관찰된 2차시장 체결자료를 통합하여 수익률, 유동성 및 가격형성 구조를 분석한다.
+This repository provides data documentation, processed research outputs, analysis code, validation materials, and reproducibility notes used in the thesis.
 
-REIT의 주 비교지표로는 FTSE Nareit U.S. Real Estate Index Series의 Residential 부문 연간 총수익률을 사용한다. FTSE EPRA Nareit Global Real Estate Index Series의 Global·USD·Total Return은 글로벌 상장 부동산 시장의 흐름을 확인하기 위한 보조지표로 구분한다.
-
----
-
-## 2. 분석 범위
-
-- 본분석 기간: 2022~2025년 완결연도
-- STO 분석대상: 미국 소재 주거용 임대부동산 RealToken
-- 2차시장: Swapcat 및 YAM
-- REIT 주 비교지표: FTSE Nareit U.S. Real Estate Index Series Residential 부문 연간 총수익률
-- REIT 보조지표: FTSE EPRA Nareit Global Real Estate Index Series의 Global·USD·Total Return
-- 2026년 기준일: 2026년 7월 6일
-- 2026년 자료: 2차시장 가격 및 유동성의 부분연도 보조분석에만 활용
-- 2026년 자료는 완결연도 REIT 수익률과 직접 비교하지 않음
-
-Swapcat과 YAM은 별개의 STO 상품이 아니라 동일한 RealToken이 거래되는 두 개의 2차시장으로 처리한다. 두 시장의 거래자료는 RealToken 컨트랙트 주소를 기준으로 통합한다.
+The empirical analysis focuses on U.S. residential RealTokens issued through the RealT platform and integrates transaction data from two secondary markets, YAM and Swapcat.
 
 ---
 
-## 3. 주요 데이터
+## 1. Study Scope
 
-### 3.1 RealT 자산자료
+- Main analysis period: 2022–2025 complete calendar years
+- STO sample: U.S. residential rental RealTokens
+- Secondary markets: YAM and Swapcat
+- Primary REIT benchmark: FTSE Nareit U.S. Real Estate Index Series, Residential sector
+- Supplementary REIT benchmark: FTSE EPRA Nareit Global Real Estate Index Series, Global USD Total Return
+- 2026 data: used only for partial-year supplementary analysis and not directly compared with complete-year REIT returns
 
-경로:
+YAM and Swapcat are treated as two secondary markets for the same RealToken assets rather than as separate STO products. Transactions are integrated using RealToken contract addresses.
+
+---
+
+## 2. Main Data Sources
+
+### 2.1 RealT Asset Data
+
+Path:
+
+`data/realt/realt_asset_year_source.xlsx`
+
+Main variables include:
+
+- RealToken contract address
+- Asset name and token symbol
+- Annual total investment value
+- Annual net rent
+- Annual rental-yield proxy
+- RealT platform-displayed tokenPrice
+- Asset type and observation information
+
+RealT rental yields are platform-provided annual indicators and do not reconstruct the actual cash distributions received by individual investors.
+
+### 2.2 YAM and Swapcat Secondary-Market Data
+
+Path:
+
+`data/secondary_market/`
+
+Main outputs include:
+
+- Annual transaction counts and trading values
+- Asset-year transaction prices
+- 30-day, 60-day, and 90-day year-end VWAPs
+- Common-asset capital-return estimates
+- Equal-weighted, median, and trade-value-weighted results
+- Minimum-trade-value and outlier robustness checks
+- Sample diagnostics and exclusion results
+
+Large raw and processed transaction-level datasets are provided separately through GitHub Release v2.0.0.
+
+### 2.3 Mint and Burn Data
+
+Path:
+
+`data/mint_burn/`
+
+Mint and burn events are identified using ERC-20 Transfer events involving the zero address.
+
+- Zero address → regular address: mint
+- Regular address → zero address: burn
+
+Burn events alone do not identify the economic reason for token disappearance, including asset sale, redemption, liquidation, migration, or technical restructuring.
+
+### 2.4 REIT Benchmark Documentation
+
+Path:
+
+`data/reits/README.md`
+
+#### Primary Benchmark
+
+- Index series: FTSE Nareit U.S. Real Estate Index Series
+- Property sector: Residential
+- Currency: U.S. Dollars
+- Return type: Annual Total Return
+- Period used: 2022–2025
+- Role: Primary benchmark
+- Source document: Annual Returns by Property Sector and Subsector
+
+#### Supplementary Benchmark
+
+- Index series: FTSE EPRA Nareit Global Real Estate Index Series
+- Geographic scope: Global
+- Currency: USD
+- Return type: Total Return
+- Period used: 2022–2025
+- Role: Supplementary benchmark
+
+The underlying FTSE/Nareit index data and machine-readable reproductions are not redistributed in this repository due to licensing and redistribution restrictions.
+
+Researchers should obtain the underlying index data directly from the official Nareit/FTSE source.
+
+---
+
+## 3. Sample Construction
+
+The main secondary-market sample includes RealTokens satisfying the following conditions:
+
+1. A valid link between the RealT asset and token contract address is available.
+2. The underlying property is located in the United States.
+3. The asset is a residential rental property.
+4. A valid YAM or Swapcat transaction is observed.
+5. A year-end 90-day VWAP can be calculated.
+6. The same token contract is observed in adjacent comparison periods.
+
+The following are excluded from the main sample:
+
+- Payment tokens and stablecoins
+- Governance or ecosystem tokens
+- Lending products
+- Receivable or revenue-participation products
+- Non-U.S. assets
+- Non-residential assets
+- Invalid-decimal or non-economic transactions
+- Assets without sufficient year-end price observations
+
+Detailed sample criteria are documented in:
+
+`docs/Appendix_B_Sample_Construction.md`
+
+---
+
+## 4. Return Measures
+
+### 4.1 Year-End Market Price
+
+The primary year-end market price is the transaction-quantity-weighted average price over the final 90 days of each year.
+
+### 4.2 Secondary-Market Capital Return
+
+Capital returns are calculated only for assets with valid year-end VWAP observations in two adjacent periods.
+
+Results are reported using:
+
+- Equal weighting
+- Median return
+- Trade-value weighting
+
+### 4.3 Market-Price-Reflected Composite-Return Proxy
+
+For assets for which both rental information and secondary-market prices are available, the study combines the rental-yield proxy with the observed secondary-market capital return.
+
+This measure is referred to as a **market-price-reflected composite-return proxy**.
+
+It is not an exact holding-period total return because actual investor-level distribution timing and complete cash-flow histories are not reconstructed.
+
+---
+
+## 5. Repository Structure
 
 ```text
-data/realt/realt_asset_year_source.xlsx
-```
-
-주요 변수:
-
-- RealToken 컨트랙트 주소
-- 자산명 및 토큰 심볼
-- 연도별 총투자금
-- 연 순임대료
-- 임대수익률
-- 플랫폼 표시가격(tokenPrice)
-- 상품유형
-- 자료 업데이트 시점
-
-RealT의 연 순임대료와 임대수익률은 개별 투자자의 실제 누계 분배금과 완전히 동일한 자료가 아니므로 임대수익률 근사치로 해석한다.
-
-### 3.2 Swapcat·YAM 통합 2차시장 자료
-
-경로:
-
-```text
-data/secondary_market/
-```
-
-주요 분석항목:
-
-- 시장·연도별 거래건수
-- 거래자산 수
-- 거래금액
-- 자산·연도별 체결가격
-- 연말 30일·60일·90일 VWAP
-- 인접연도 공통자산 자본수익률
-- 동일가중 평균
-- 중위값
-- 거래대금가중 수익률
-- 최소 거래금액 및 이상치 제외 강건성
-- 연도별 표본진단과 제외결과
-
-대용량 거래단위 원자료와 전체 정규화 거래자료는 GitHub Release에서 제공한다.
-
-### 3.3 발행·소각 자료
-
-경로:
-
-```text
-data/mint_burn/
-```
-
-발행·소각은 ERC-20 Transfer 이벤트의 영주소 이동을 기준으로 판별한다.
-
-- 영주소 → 일반주소: 발행
-- 일반주소 → 영주소: 소각
-
-다만 소각 이벤트만으로 자산 매각, 상환, 청산, 마이그레이션 또는 기술적 재구성의 경제적 원인을 확정할 수 없다.
-
-### 3.4 REIT 비교자료
-
-#### 주 비교지표
-
-```text
-data/reits/ftse_nareit_us_residential_total_return_2022_2025_final.csv
-```
-
-| 연도 | 미국 주거용 REIT 총수익률 |
-|---:|---:|
-| 2022 | -31.34% |
-| 2023 | +7.66% |
-| 2024 | +12.83% |
-| 2025 | -7.43% |
-
-#### 보조지표
-
-```text
-data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv
-```
-
-| 연도 | Global·USD·Total Return |
-|---:|---:|
-| 2022 | -23.58% |
-| 2023 | +9.78% |
-| 2024 | +1.57% |
-| 2025 | +11.04% |
-
-두 공식 자료는 모두 Total Return으로 표시되며, gross/net 구분은 해당 원자료 표에서 별도로 식별되지 않는다. ETF 조정주가 자료는 공식 지수 관측치가 아니므로 본분석에 사용하지 않는다.
-
-### 3.5 논문 표 재현자료
-
-경로:
-
-```text
-results/thesis_tables/
-```
-
-최종 논문 표에 제시한 수치와 직접 연결되는 CSV를 제공한다. 표 5-7의 선행연구 요약은 원문의 정확한 변수명과 단위를 재확인한 뒤 별도로 정리해야 하므로 본 패치에는 포함하지 않았다.
-
----
-
-## 4. 표본 선정
-
-본분석은 다음 조건을 충족하는 RealToken을 대상으로 한다.
-
-1. RealT 자산과 토큰 컨트랙트 주소를 연결할 수 있을 것
-2. 미국 소재 자산일 것
-3. 주거용 임대부동산일 것
-4. 유효한 Swapcat 또는 YAM 체결자료가 존재할 것
-5. USD 연동 결제토큰을 이용한 거래일 것
-6. 거래금액이 1달러 이상일 것
-7. 해당 연도의 연말 90일 관찰 VWAP를 산정할 수 있을 것
-8. 자본수익률 분석에서는 인접연도에 동일한 주소가 관측될 것
-
-상세 기준은 `docs/Appendix_B_Sample_Construction.md`에 제시한다.
-
----
-
-## 5. 수익률과 가격지표
-
-### 5.1 연말 90일 관찰 VWAP
-
-각 자산의 연말 관찰가격은 해당 연도 마지막 90일 동안 발생한 유효 체결의 거래량가중평균가격(VWAP)으로 산정한다.
-
-\[
-VWAP_{i,t}
-=
-\frac{\sum_j P_{i,t,j}Q_{i,t,j}}
-{\sum_j Q_{i,t,j}}
-\]
-
-연말 90일 VWAP는 관찰된 체결가격의 평균수준이며, 해당 가격에서 모든 보유물량을 즉시 매도할 수 있음을 의미하지 않는다.
-
-### 5.2 Swapcat·YAM 관찰 자본수익률
-
-인접한 두 연도에 모두 연말 90일 VWAP가 확인되는 공통자산을 대상으로 산출한다.
-
-\[
-CR_{i,t}
-=
-\frac{VWAP_{i,t}-VWAP_{i,t-1}}
-{VWAP_{i,t-1}}
-\]
-
-대표지표는 동일가중 평균, 중위값, 거래대금가중 평균으로 구분한다. 이 지표는 거래가 관찰된 공통자산의 가격변화를 의미하며 전체 RealToken 시장의 확정적인 시장수익률을 의미하지 않는다.
-
-### 5.3 플랫폼 자료 기반 탐색적 복합수익률 근사치
-
-동일한 공통자산 표본과 동일한 기초시점 총투자금 기준으로 임대수익률 근사치와 총투자금 변동률 기반 자본수익률 근사치를 결합한다.
-
-이 값은 실제 분배금과 개별 토큰 가격을 결합한 엄밀한 보유기간 총수익률이 아니다.
-
-### 5.4 시장가격 반영 복합수익률 근사치
-
-관찰가격, RealT 임대료 및 총투자금 자료가 모두 확인되는 동일한 공통자산 표본에서 임대수익률 근사치와 Swapcat·YAM 관찰 자본수익률을 결합한다.
-
-\[
-MCR_t = RY_t + CR_t
-\]
-
-이 값은 투자자별 실제 누계 분배금, 분배시점, 거래비용 및 세금을 모두 반영한 엄밀한 보유기간 총수익률이 아니다.
-
-### 5.5 REIT와의 비교
-
-STO 관찰 자본수익률은 분배수익을 포함하지 않지만 공식 REIT 총수익률은 가격변화와 분배수익을 모두 포함한다. 따라서 병렬 제시는 가격반영 양상의 차이를 확인하기 위한 기술적 비교이며 직접적인 성과 우열을 의미하지 않는다.
-
-### 5.6 현행 플랫폼 표시가격과의 보조 비교
-
-플랫폼 가격 비교에서는 2026년 5월 24일 수집한 RealT tokenPrice를 공통 기준으로 사용한다.
-
-\[
-Relative\ Difference
-=
-\left(
-\frac{Observed\ VWAP}
-{Current\ tokenPrice}
--1
-\right)
-\times 100
-\]
-
-과거 각 연도의 정확한 동시점 플랫폼 표시가격 스냅샷을 확보하지 못했으므로 이 값은 역사적 동시점 가격괴리가 아니다. 또한 연도별 비교표본의 자산구성이 다르므로 상대차이의 연도 간 증감은 동일 자산의 연속적인 가격괴리 변화로 해석하지 않는다.
-
-### 5.7 월별 가격추이
-
-월별 VWAP는 USD 연동 결제 체결가격을 체결수량으로 가중하여 산출한다. 월별 거래자산 구성이 달라질 수 있으므로 월별 전체 VWAP는 동일자산의 연속적인 시장수익률이 아니라 가격형성 추세를 보여주는 기술통계로 해석한다.
-
----
-
-## 6. 재현 범위
-
-`code/recalculate_yam_swapcat.py`는 온체인 2차시장 자료의 정규화, 표본선정, 연말 VWAP, 공통자산 자본수익률 및 강건성 분석을 재현한다.
-
-플랫폼 자료 기반 수익률, IPI 및 최종 그림 생성 절차가 별도 실행코드로 정리되어 있지 않다면 자동화된 것으로 표현하지 않는다. 이 경우 계산문서와 최종 산출 CSV를 재현성 자료로 제공하고, 코드 자동화 범위를 온체인 분석으로 한정하여 명시한다.
-
----
-
-## 7. GitHub Release
-
-대용량 자료는 일반 저장소에 직접 포함하지 않고 Releases 페이지에서 제공한다.
-
-제공 자료:
-
-- YAM OfferAccepted 원자료
-- Swapcat RealToken 거래원자료
-- 통합 정규화 거래자료
-- 전체 재계산 결과 압축파일
-
----
-
-## 8. 자료의 한계
-
-- RealT 단일 플랫폼 사례이므로 전체 부동산 STO 시장으로 일반화하기 어렵다.
-- 거래가 없는 토큰은 관찰 시장가격을 산정할 수 없다.
-- 연말 90일 VWAP는 일부 거래의 영향을 받을 수 있다.
-- 관찰 체결가격은 해당 가격에서 모든 보유물량을 즉시 처분할 수 있음을 의미하지 않는다.
-- 양 기간 모두 거래된 공통자산만 포함하므로 선택편향이 존재할 수 있다.
-- 개별 투자자의 실제 누계 분배금과 완전한 현금흐름을 확보하지 못하였다.
-- 총투자금 변동에는 토큰 수량변화가 포함될 수 있다.
-- 과거 각 연도의 정확한 플랫폼 표시가격 스냅샷을 확보하지 못하였다.
-- 연도별 표시가격 비교표본의 자산구성이 동일하지 않다.
-- 2026년 플랫폼 표시가격과 체결가격의 기준시점이 일치하지 않는다.
-- 정확한 RealT 수집시각과 시간대가 기록되지 않았다면 해당 한계를 공개해야 한다.
-- 토큰 소각만으로 매각·상환·청산·마이그레이션 사유를 확정할 수 없다.
-- 공식적인 구주소·신주소 마이그레이션 연결표를 확보하지 못하였다.
-- LSEG 전체 날짜별 기계판독 원시파일은 확보하지 못하였다.
-- 2026년은 부분연도 자료이므로 확정적인 연간 성과로 해석하지 않는다.
-
-상세 내용은 `docs/Appendix_G_Data_Limitations.md`를 참조한다.
-
----
-
-## 9. 이용 및 인용
-
-본 저장소는 학술연구의 검증과 재현을 목적으로 제공한다. 원자료의 권리와 이용조건은 각 제공기관의 정책을 따른다.
+sto-reits-comparison-study-final/
+├── README.md
+├── code/
+│   └── recalculate_yam_swapcat.py
+├── data/
+│   ├── metadata/
+│   ├── mint_burn/
+│   ├── realt/
+│   ├── reits/
+│   │   └── README.md
+│   └── secondary_market/
+├── docs/
+├── logs/
+├── results/
+├── requirements.txt
+└── .gitignore
