@@ -1,19 +1,19 @@
 # REIT Benchmark Data
 
-## Primary benchmark
+This directory documents the official REIT benchmarks used in the thesis.
+
+## Primary Benchmark
 
 - Index series: FTSE Nareit U.S. Real Estate Index Series
 - Property sector: Residential
 - Currency: U.S. Dollars
 - Return type: Annual Total Return
 - Analysis period: 2022–2025
-- Role: Primary comparison benchmark
+- Role: Primary benchmark
+- Source document: Annual Returns by Property Sector and Subsector
+- Source provider: Nareit / FTSE Russell
 
-File:
-
-`ftse_nareit_us_residential_total_return_2022_2025_final.csv`
-
-## Supplementary benchmark
+## Supplementary Benchmark
 
 - Index series: FTSE EPRA Nareit Global Real Estate Index Series
 - Geographic scope: Global
@@ -21,11 +21,26 @@ File:
 - Return type: Total Return
 - Analysis period: 2022–2025
 - Role: Supplementary benchmark
+- Source provider: Nareit / FTSE Russell
 
-File:
+## Data Availability and Redistribution
 
-`ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv`
+The underlying FTSE/Nareit index data and machine-readable reproductions
+are not redistributed in this repository due to licensing and redistribution restrictions.
 
-Both official source tables are labeled Total Return. Gross/net classification is not separately identified in the source tables.
+This repository therefore provides documentation of the exact benchmark,
+data scope, currency, return type, analysis period, source document,
+and source location used in the thesis.
 
-The STO observed capital-return measure excludes rental distributions, whereas the official REIT total-return measure includes price changes and distributions. Their comparison is descriptive.
+Researchers seeking to reproduce the REIT benchmark analysis should obtain
+the underlying data directly from the official Nareit/FTSE source.
+
+## Use in the Thesis
+
+The FTSE Nareit U.S. Real Estate Index Series Residential sector is used
+as the primary REIT benchmark because the RealT sample analyzed in the thesis
+consists primarily of U.S. residential real estate assets.
+
+The FTSE EPRA Nareit Global Real Estate Index Series Global USD Total Return
+is used only as a supplementary benchmark for broader listed real estate
+market conditions.
