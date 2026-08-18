@@ -9,7 +9,7 @@ data/realt/realt_asset_year_source.xlsx,전체데이터,shortName,string,text,Re
 data/realt/realt_asset_year_source.xlsx,전체데이터,symbol,string,ERC-20 symbol,RealToken 심볼,,토큰 식별
 data/realt/realt_asset_year_source.xlsx,전체데이터,tokenPrice,number,USD/token,RealT 플랫폼 제시 토큰가격,실제 2차시장 체결가격과 구분,플랫폼가격 비교
 data/realt/realt_asset_year_source.xlsx,전체데이터,productType,string,category,RealT 상품유형,예: real_estate_rental,표본 분류
-data/realt/realt_asset_year_source.xlsx,전체데이터,lastUpdate,datetime,YYYY-MM-DD HH:MM:SS,원자료에 기록된 최종 업데이트 시각,,자료 시점 확인
+data/realt/realt_asset_year_source.xlsx,전체데이터,lastUpdate,datetime,YYYY-MM-DD HH:MM:SS,RealT 원자료에 기록된 개별 데이터 업데이트 시각,연구 스냅샷 수집시각과 구분,자료 시점 확인
 data/realt/realt_asset_year_source.xlsx,연도별요약,연도,integer,YYYY,요약 대상 연도,,연도별 요약
 data/realt/realt_asset_year_source.xlsx,연도별요약,데이터수,integer,observations,해당 연도의 자산-연도 관측치 수,,표본 수
 data/realt/realt_asset_year_source.xlsx,연도별요약,평균_토큰가,number,USD/token,해당 연도 tokenPrice의 산술평균,,플랫폼가격 요약
@@ -22,7 +22,7 @@ data/realt/realt_asset_year_source.xlsx,토큰목록,shortName,string,text,RealT
 data/realt/realt_asset_year_source.xlsx,토큰목록,symbol,string,ERC-20 symbol,RealToken 심볼,,토큰 식별
 data/realt/realt_asset_year_source.xlsx,토큰목록,tokenPrice,number,USD/token,RealT 플랫폼 제시 토큰가격,,플랫폼가격 비교
 data/realt/realt_asset_year_source.xlsx,토큰목록,productType,string,category,RealT 상품유형,,표본 분류
-data/realt/realt_asset_year_source.xlsx,토큰목록,lastUpdate,datetime,YYYY-MM-DD HH:MM:SS,토큰정보 최종 업데이트 시각,,자료 시점 확인
+data/realt/realt_asset_year_source.xlsx,토큰목록,lastUpdate,datetime,YYYY-MM-DD HH:MM:SS,RealT 원자료에 기록된 토큰정보 업데이트 시각,연구 스냅샷 수집시각과 구분,자료 시점 확인
 data/secondary_market/asset_year_price_summary_us_residential.csv,asset_year_price_summary,realtoken_address,string,address,RealToken 컨트랙트 주소,소문자,자산 식별
 data/secondary_market/asset_year_price_summary_us_residential.csv,asset_year_price_summary,realtoken_name,string,text,RealToken 자산명,,표시·검증
 data/secondary_market/asset_year_price_summary_us_residential.csv,asset_year_price_summary,year,integer,YYYY,거래연도,,연도별 집계
@@ -40,7 +40,7 @@ data/secondary_market/asset_year_price_summary_us_residential.csv,asset_year_pri
 data/secondary_market/asset_year_price_summary_us_residential.csv,asset_year_price_summary,std_price,number,USD/token,개별 체결가격의 표본표준편차,거래가 1건이면 0,가격 분산
 data/secondary_market/asset_year_price_summary_us_residential.csv,asset_year_price_summary,trade_count,integer,trades,해당 자산·연도의 유효 거래건수,,유동성
 data/secondary_market/asset_year_price_summary_us_residential.csv,asset_year_price_summary,trade_amount,number,RealTokens,해당 자산·연도의 총 RealToken 거래수량,,유동성
-data/secondary_market/asset_year_price_summary_us_residential.csv,asset_year_price_summary,trade_value_usd,number,USD,해당 자산·연도의 총 거래금액,USD 유사 결제토큰 기준,유동성
+data/secondary_market/asset_year_price_summary_us_residential.csv,asset_year_price_summary,trade_value_usd,number,USD,해당 자산·연도의 총 거래금액,본분석은 직접 식별 가능한 USD 연동 결제토큰 기준; broader USD-like는 강건성 분석,유동성
 data/secondary_market/asset_year_price_summary_us_residential.csv,asset_year_price_summary,trade_count_last_90d,integer,trades,종료일 전 90일 유효 거래건수,,연말가격 신뢰도
 data/secondary_market/asset_year_price_summary_us_residential.csv,asset_year_price_summary,trade_amount_last_90d,number,RealTokens,종료일 전 90일 총 거래수량,,연말가격 신뢰도
 data/secondary_market/asset_year_price_summary_us_residential.csv,asset_year_price_summary,trade_value_last_90d,number,USD,종료일 전 90일 총 거래금액,,가중치·신뢰도
@@ -69,7 +69,7 @@ data/secondary_market/common_asset_returns_us_residential.csv,main_return_summar
 data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,std_return,number,decimal return,자산별 수익률의 표본표준편차,,위험 특성
 data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,min_return,number,decimal return,자산별 최소 수익률,,분포 범위
 data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,max_return,number,decimal return,자산별 최대 수익률,,분포 범위
-data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,volume_weighted_return,number,decimal return,종료연도 마지막 90일 거래금액으로 가중한 수익률,,강건성
+data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,volume_weighted_return,number,decimal return,종료연도 마지막 90일 거래금액으로 가중한 자산별 자본수익률,trade_value_y2_90d를 가중치로 사용,대표 수익률
 data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,assets_up,integer,assets,양(+)의 수익률 자산 수,수익률 > 1e-12,방향 분포
 data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,assets_down,integer,assets,음(-)의 수익률 자산 수,수익률 < -1e-12,방향 분포
 data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,assets_unchanged,integer,assets,변화가 없는 것으로 분류된 자산 수,절댓값 ≤ 1e-12,방향 분포
@@ -160,17 +160,6 @@ data/mint_burn/mint_burn_token_coverage.csv,mint_burn_coverage,mint_count,intege
 data/mint_burn/mint_burn_token_coverage.csv,mint_burn_coverage,burn_count,integer,events,확인된 소각 이벤트 수,,커버리지
 data/mint_burn/mint_burn_token_coverage.csv,mint_burn_coverage,total_events,integer,events,발행·소각 이벤트 합계,mint_count + burn_count,커버리지
 data/mint_burn/mint_burn_token_coverage.csv,mint_burn_coverage,collection_success,string,Y/N,RPC 이벤트 수집 성공 여부,Y 또는 N,품질 점검
-data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv,reits_annual_returns,year,integer,YYYY,연간 수익률 연도,2022~2025,기간 식별
-data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv,reits_annual_returns,index_name,string,text,공식 지수 시리즈 명칭,,벤치마크 정의
-data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv,reits_annual_returns,geographic_scope,string,category,지수 지역범위,Global,벤치마크 정의
-data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv,reits_annual_returns,currency,string,ISO currency,지수 통화 기준,USD,통화 통일
-data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv,reits_annual_returns,return_type,string,category,수익률 유형,Total Return,배당 포함 여부
-data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv,reits_annual_returns,annual_total_return,string,percentage text,공식 연간 총수익률,예: -23.58%; 계산 시 % 제거 후 100으로 나눔,REITs 본분석
-data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv,reits_annual_returns,source_document,string,text,공식 출처 문서명,,출처
-data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv,reits_annual_returns,source_url,string,URL,공식 원본자료 URL,,출처
-data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv,reits_annual_returns,source_date,date,YYYY-MM-DD,해당 수익률의 연도 종료 기준일,,시간 기준
-data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv,reits_annual_returns,access_date,date,YYYY-MM-DD,공식 자료 확인일,,재현성
-data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv,reits_annual_returns,data_status,string,category,자료 확인상태,CONFIRMED,품질 점검
 data/metadata/asset_master_match.csv,asset_master_match,token_address,string,address,거래자료에서 확인된 RealToken 주소,,자료 결합
 data/metadata/asset_master_match.csv,asset_master_match,trade_name,string,text,온체인 또는 거래자료의 토큰명,,자산 식별
 data/metadata/asset_master_match.csv,asset_master_match,is_us_residential,boolean,TRUE/FALSE,미국 주거용 표본 분류값,,표본 선정
