@@ -158,6 +158,15 @@ us_res_addrs = {
     if v['is_us_residential']
 }
 
+# Reproducibility guard for the archived asset-matching source used in this study.
+EXPECTED_US_RESIDENTIAL_ADDRESSES = 404
+if len(us_res_addrs) != EXPECTED_US_RESIDENTIAL_ADDRESSES:
+    raise ValueError(
+        f"Unexpected U.S. residential classification count: {len(us_res_addrs)} "
+        f"(expected {EXPECTED_US_RESIDENTIAL_ADDRESSES}). "
+        "Check asset_master_match.csv and the classification rules."
+    )
+
 # Metadata map.
 meta={}
 with open(YAM_META,encoding='utf-8-sig',newline='') as f:
@@ -203,9 +212,15 @@ def append_trade(rec, payment_addr):
 # YAM: event raw_data encodes [offerToken, buyerToken, price, amount].
 # In the uploaded CSV, offer_token_amount_raw is the event price word and
 # buyer_token_amount_raw is the event amount word; price_raw is always zero.
+# Duplicate event rows, if any, are removed by transaction hash + log index.
+yam_seen_events=set()
 with open(YAM,encoding='utf-8-sig',newline='') as f:
     for r in csv.DictReader(f):
         raw_stats['yam_rows']+=1
+        yam_event_key=(r['transaction_hash'].lower(), int(r['log_index']))
+        if yam_event_key in yam_seen_events:
+            continue
+        yam_seen_events.add(yam_event_key)
         dt=datetime.fromisoformat(r['datetime_utc'])
         if dt.year==2026 and dt>COMMON_CUTOFF:
             raw_stats['yam_after_common_cutoff']+=1
@@ -257,9 +272,18 @@ with open(YAM,encoding='utf-8-sig',newline='') as f:
         if direction=='realtoken_bought': raw_stats['yam_reverse_direction']+=1
 
 # Swapcat: raw RealToken and payment amounts are directly supplied.
+# Exact duplicate trade rows, if any, are removed using a transaction-level composite key.
+swapcat_seen_trades=set()
 with open(SWAP,encoding='utf-8-sig',newline='') as f:
     for r in csv.DictReader(f):
         raw_stats['swapcat_rows']+=1
+        swapcat_trade_key=(
+            r['tx_hash'].lower(), r['block'], r['realtoken_addr'].lower(),
+            r['payment_addr'].lower(), r['realtoken_amount'], r['payment_amount']
+        )
+        if swapcat_trade_key in swapcat_seen_trades:
+            continue
+        swapcat_seen_trades.add(swapcat_trade_key)
         asset=r['realtoken_addr'].lower(); payment=r['payment_addr'].lower()
         if asset not in asset_addrs:
             raw_stats['swapcat_asset_not_in_master']+=1
@@ -523,7 +547,10 @@ Generated from the uploaded raw files.
 
 Primary sample
 - Platforms: Swapcat and YAM combined.
-- Asset universe: addresses classified as US residential in asset_master_match.csv.
+- Asset universe: final U.S. residential address-level classification derived from asset_master_match.csv.
+  Inclusion requires source_true=TRUE, a U.S. state/DC code match in the available asset names,
+  and no exclusion keyword; source-false addresses are not broadened.
+- Final U.S. residential classification universe: {len(us_res_addrs)} unique token addresses.
 - Payment tokens: direct USDC, WXDAI, old USDC and USDT addresses listed in the script.
 - Main threshold: trade value >= USD 1.
 - Robustness: trade value >= USD 5 and a broader USD-like set including RMM receipt tokens/REUSD.
