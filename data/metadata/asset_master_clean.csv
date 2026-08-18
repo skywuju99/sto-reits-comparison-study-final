@@ -1,0 +1,784 @@
+﻿token_address,realtoken_name,is_us_residential,classification_reason
+0x0078633359ee8253c252b92e522d6a1c0637c8ac,"801 Cagle Ln, Harker Heights, TX 76548",False,source_flag_false
+0x009bab289f104699ae87e576294d18ed505faa61,RealToken S 3323 Waverly St Detroit MI,True,us_state_in_name
+0x0111bf0588b65d87d28417389fcb72021ef94e54,"LOAN 18511 Joy Rd, Detroit, MI 48228",False,source_flag_false
+0x0152cec08976e3d1e50b98a502f07550f8e00db3,RealToken S 12747-12749 Nashville St Detroit MI,True,us_state_in_name
+0x016e0081fcaad345691027908d5044534bca1946,RealToken S 1 Holdings Belvidere St Detroit MI,True,us_state_in_name
+0x01b4ea64e4204b51cbc8463ffc8e6046c9d70371,"12091 Montrose St, Detroit, MI 48227",False,source_flag_false
+0x021bb23a45e9fc824260435e670fc383b7b8cbbb,RealToken S 16200 Fullerton Ave Detroit MI,True,us_state_in_name
+0x02b5d51e29fa35c9228cfa3ff968da6aaf1048dd,RealToken S 14606 Kentucky St Detroit MI,True,us_state_in_name
+0x032f0e16b729210551642f3249f6e0b1b52a63be,RealToken S 15040 Harper Ave Detroit MI,True,us_state_in_name
+0x034ecb6dc0608b73765f2965771a003d940ee8b2,RealToken S 22233 Lyndon St Detroit MI,True,us_state_in_name
+0x038eb5001b6a7050fed40816321138e69f8f885b,RealToken S 11441-11443 Flanders St Detroit MI,True,us_state_in_name
+0x03cbe3dda83908ad48643d6a1b5b13d11acaf845,RealToken S 324 Piper Blvd Detroit MI,True,us_state_in_name
+0x03d23c82f20c96c421742b243b7ea33a3e217c1f,RealToken S 12163 Santa Rosa Dr Detroit MI,True,us_state_in_name
+0x03d2c18c627b6e1db2a29057765bc4dfc4911f3d,"16940 Carlisle St, Detroit, MI 48205",False,source_flag_false
+0x041cc71b3bce05d06179f05ef7a9a20bd0815515,"6515-6517 Boxwood St, Detroit, MI 48210",False,source_flag_false
+0x052ad78e3aa0b0f2d3912fd3b50a9a289cf2f7aa,RealToken S 13245 Monica St Detroit MI,True,us_state_in_name
+0x053b0bd329dc21bd4fa278f62310f668c5f1a6ed,RealToken S 3947 Fairview St Detroit MI,True,us_state_in_name
+0x06246100ba403608b98adfb006d82a7484f5d9ff,RealToken S 22512 W McNichols Rd Detroit MI,True,us_state_in_name
+0x062c208073c9b439d1973262cfe0ddd88f38afa8,RealToken S 19268 Eureka St Detroit MI,True,us_state_in_name
+0x062f0732a7daca652c3bd7d8ad51c3a920b25962,RealToken S 5846 Crane St Detroit MI,True,us_state_in_name
+0x0643ffb30add44ef5c74996ad57a03a2244b6f28,"12802 Ferris Ave, Cleveland, OH 44105",False,source_flag_false
+0x0675e8f4a52ea6c845cb6427af03616a2af42170,"RealToken RWA Holdings SA, Neuchatel, NE, Suisse ",False,excluded_instrument_or_foreign
+0x068d7d2078c62e9956cdf8cb45600faa270e6510,"Factoring, Profit Share, Type B, Series 13",False,source_flag_false
+0x06cc12368fa6a3d4dc0872c60331156a21cdcc9c,RealToken S 12318 Imperial Ave Cleveland OH,True,us_state_in_name
+0x06d0e5aee443093ac5635b709c8a01342e59df19,RealToken S 10617 Hathaway Ave Cleveland OH,True,us_state_in_name
+0x076c82295af54a4507fa80c73a928c5703b845ee,"18429 Fielding St, Detroit, MI 48219",False,source_flag_false
+0x07da3cdae2396aa826387a48deba5868d7deb7bc,RealToken S 10411-10421 Cadieux Rd Detroit MI,True,us_state_in_name
+0x07f750905718ac53eeab18a45465dec0a4384e50,"11391 Whitehill St, Detroit, MI 48224",False,source_flag_false
+0x07f893290c1ac037f5cd6fe6b3963803d9faa598,"8626 Minock St, Detroit, MI 48228",False,source_flag_false
+0x0804f5800f3c09f8eed61494c39d875f28825087,"16170 Birwood St, Detroit, MI 48221",False,source_flag_false
+0x084018b714948dfbeaba305fbc8dc4d2c0330172,"2169 S Beatrice St, Detroit, MI 48217",False,source_flag_false
+0x08906954c6b7e68eb5a969d201371ddcac28968c,RealToken S 18011 Hoover St Detroit MI,True,us_state_in_name
+0x08ad1f3a48be1d23c723a6cc8486b247f5de935a,RealToken S 13116 Kilbourne Ave Detroit MI,True,us_state_in_name
+0x08af4647c35404831b413aa2b836bfdf17316098,"Factoring, Profit Share, Type B, Series 03",False,source_flag_false
+0x09106ba56f708b353fe252dd0749c913a3e8a5e1,"1 Holdings McCracken Rd, Garfield Heights, OH 44125",False,source_flag_false
+0x0954682ff1b512d3927d06c591942f50917e16a0,RealToken S 10021 Grayton St Detroit MI,True,us_state_in_name
+0x09565ce0acb2e35d1020cb4b0cbb5df3e328e3a6,"4008 Lillibridge St, Detroit, MI 48214",False,source_flag_false
+0x0964bde8cd3744f99a1ffc70becbe1f33366f5bb,"4430 Lillibridge St, Detroit, MI 48214",False,source_flag_false
+0x09db928e590bde9bb9559362a401340909ca7bed,"19980 Alcoy Ave, Detroit, MI 48205",False,source_flag_false
+0x0a7d5a774585c2fc7ccf46c220e9a4e4f91e93c3,"14599 Wisconsin St, Detroit, MI 48238",False,source_flag_false
+0x0c12f2b2c3ad5150d344b6d3abb901b4795d72d9,RealToken S 14215 Hampshire St Detroit MI,True,us_state_in_name
+0x0c27daa424d413a02186b90d839124868d433197,"3462 E 76th St, Cleveland, OH 48127",False,source_flag_false
+0x0c4e05941b40f6a081ec616bdd1adfe67ae7bb4d,"10510 Roxbury St, Detroit, MI 48224",False,source_flag_false
+0x0c84153fdcafd65a4536c2d8d4856e6a6457fb21,RealToken S 10059 Britain St Detroit MI,True,us_state_in_name
+0x0d5d0b74c690170a82bf52e5d16388fc4fa29082,RealToken S 10435-10445 Cadieux Rd Detroit MI,True,us_state_in_name
+0x0da81e9b313e73cf295363c14e2ce31ec84ab3d0,"6269 Turney Rd, Garfield Heights, OH 44125",False,source_flag_false
+0x0dca7cd3f63b69bbe55364b42fb6c3b21202d06f,"11924 Payton St, Detroit, MI 48224",False,source_flag_false
+0x0de879bd4cc168bca743cc47efb6821b2eb241e7,"9493 Beaconsfield St, Detroit, MI 48224",False,source_flag_false
+0x0e6a3fa67194ae6594edbe96153e28eefd2982f0,RealToken S 16051 E State Fair St Detroit MI,True,us_state_in_name
+0x0f388d7e65a969dbcbfab21bc3ab6629af78f4cf,"23750 W 7 Mile Rd, Detroit, MI 48219",False,source_flag_false
+0x0fd357ea71ad533c6b8a62520321ed286ed9a0c2,RealToken S 17204 Bradford Ave Detroit MI,True,us_state_in_name
+0x10479fb486b4a77b87320ba017c5e64f4f352773,"18410 Wexford St, Detroit, MI 48234",False,source_flag_false
+0x1051e1d8cc6bc96c78fea6ae1144b91a1b1a32a2,"17318 Dresden St, Detroit, MI 48205",False,source_flag_false
+0x106d6a8e73b851f0905eb592df5d5f9b29469a5e,"237 Louisa Ave, St. Louis, MO 63135",False,source_flag_false
+0x108f15a6cac5bddf919af07928faa0b7168feff8,"RealToken LOAN 18 Bristol Villa Buenaventura, El Chiru, Cocle, Panama",False,excluded_instrument_or_foreign
+0x10c2c7a5342988818eb6726fae369299d8fb6328,RealToken S 14839 Wisconsin St Detroit MI,True,us_state_in_name
+0x10cde9d1e1a2d3b703f037a6788e04bc139cdf6f,RealToken S 19530 Hickory St Detroit MI,True,us_state_in_name
+0x10dfe9495810a7c8ff577647dab523503477402f,"3966 Lancaster Rd, South Euclid, OH 44121",False,source_flag_false
+0x1106d8755ffafb1f1820b3668e354336d9085a12,RealToken S 9201 Longacre St Detroit MI,True,us_state_in_name
+0x1117ee7306c82190109869a1721021b96d6a249d,"857 E 222nd St, Euclid, OH 44123",False,source_flag_false
+0x11c80389e39bedabf2172524be687ffdec06979a,"20161 Gallagher St, Detroit, MI 48234",False,source_flag_false
+0x11d2b6613cbebb4172ef9507286e47c99e3a4b37,"15019 Steel Ave, Detroit, MI 48227",False,source_flag_false
+0x1201cdab78a8bcc527d1cdfe5a2740cf1e824adc,"13946 Patton St, Detroit, MI 48223",False,source_flag_false
+0x12413a603d16893d8f406925289f206b3b974cf0,RealToken S 3280 W Boston Blvd Detroit MI,True,us_state_in_name
+0x13ae383d948ad3d6e2534463e54a9cca9eaa4145,"10422 Crocuslawn St, Detroit, MI 48204",False,source_flag_false
+0x13b6d41563e8ae2dfe0064add8a4698efe5c7627,RealToken S 2626-2638 Wreford St Detroit MI,True,us_state_in_name
+0x14082eef0e5ccc9d2d36cf627c45f07f3b0a54dd,"17335 Bradford St, Detroit, MI 48205",False,source_flag_false
+0x140c3d8bf3ff575ee63a12fe019b1d97caf6adcb,"9603 Balfour Rd, Detroit, MI 48224",False,source_flag_false
+0x140d6cfde793f1a2eed5274454aa6f463ec8c075,RealToken S 10993 Worden St Detroit MI,True,us_state_in_name
+0x146ab8465ed65e9295b7caf7ce55a42149fe76e3,"17360 Albion St, Detroit, MI 48234",False,source_flag_false
+0x14b0d23238c5277f8243d2739c005480d8022fe0,RealToken S 4526 Lillibridge St Detroit MI,True,us_state_in_name
+0x14be8b4b4bf1ea9d18bd04c4063a0987c702e204,"LOAN La Maison Fendi Apt 28D, Panama City, Panama",False,source_flag_false
+0x157a0a3d1fd859fc940ceb923e68d17afe03d2a4,"3458 E 76th St, Cleveland, OH 48127",False,source_flag_false
+0x15f3197d43600720531bc92d6a55827b82da56bb,"1220 E 173rd St, Cleveland, OH 44119",False,source_flag_false
+0x168e759cd51e4296ae353ae98b675c0ad8996b4e,"19637 Hasse St, Detroit, MI 48234",False,source_flag_false
+0x16b18b9836fd01f1413b1bca28935ac00a1f43ce,RealToken S 16012 Maddelein St Detroit MI,True,us_state_in_name
+0x16bea6810b951b647427983ed14710fd1c6a36e1,"10807 Wadsworth Ave, Garfield Heights, OH 44125",False,source_flag_false
+0x16edfdf297d91d7d904f62ca97a7bfc1778daffc,"17402 Evergreen Rd, Detroit, MI 48219",False,source_flag_false
+0x1707a9bad232d728afded75faced38ec90eaa41e,RealToken S 1354 W 64th St Chicago IL,True,us_state_in_name
+0x175cbd54d38f58b530785e01471a2ec0d4596eb5,RealToken S 15770 Prest St Detroit MI,True,us_state_in_name
+0x17e87ed83c1a444b9255b14ba45204dfb4fec186,"14257 Fielding St, Detroit, MI 48223",False,source_flag_false
+0x185e39d860cf86fbecf4a7c341bd1545ea3a41b9,RealToken S 20552 Waltham St Detroit MI,True,us_state_in_name
+0x18c523f27b0310a7468f081ae8e84179d0a04ad1,"1 Holdings AFLE St, Toledo, OH 43608",False,source_flag_false
+0x18cc3ce7ed17e47c669982b6c94a0fe2a0b9606e,RealToken S 14916 Hubbell St Detroit MI,True,us_state_in_name
+0x18e55343ecfc135e21916fcdb9788accb5b53caf,RealToken S 9171 Whittier Ave Detroit MI,True,us_state_in_name
+0x190cd5e1703a05bfcf920a3e2e386f14e6031c37,"Factoring, Profit Share, Type C, Series 08",False,source_flag_false
+0x19a6a39b746c4647a01a3bf80751155969ddb15a,RealToken S 616 E 131st St Cleveland OH,True,us_state_in_name
+0x19d01c13e6e5a1a990db9821358a591583f63234,RealToken S 10110 Cadieux Rd Detroit MI,True,us_state_in_name
+0x19d1df2574542259bc2ec23e69c1b700d752c45e,"19524 Westphalia St, Detroit, MI 48205",False,source_flag_false
+0x19f824662ba9df78e368022f085b708fccc201c8,"1769 Cheryl Ave, Griffin, GA 30224",False,source_flag_false
+0x1a1ec5ef70a643cd35376214e8a8f2ea0d92931d,"5344-5346 Belvidere St, Detroit, MI 48213",False,source_flag_false
+0x1a3cd87d4d5c6629abc5e1fde1bef51c3b8d2be7,"20553 Pelkey St, Detroit, MI 48205",False,source_flag_false
+0x1bac3cd502cafe965a26f30fd1512a0800fdb9b7,"Lucero Club 1R4, Boquete, Chiriqui, Panama",False,source_flag_false
+0x1c1d58031fb0692577b4fb8fc71e333755ca6927,"13952 Fielding St, Detroit, MI 48223",False,source_flag_false
+0x1c6a4181c0a352a855d15ae0d1bdce5f6aa23352,"4642 Berkshire St, Detroit, MI 48224",False,source_flag_false
+0x1c7b78f54485a0ea4d67a2b4856af4cd39f11d99,"963 Paxton Rd, Cleveland, OH 44108",False,source_flag_false
+0x1cc42015d1e4c97d8739d8fe663c47f0a49e9a38,RealToken S 16049-16081 E Seven Mile Detroit MI,True,us_state_in_name
+0x1cdeee885457c5c3a048aa26363472a6b5fd28d7,"11535 Christy St, Detroit, MI 48205",False,source_flag_false
+0x1d1ce71366866d0785fa40dd30ea92ca5e7078cc,"14184 Stout St, Detroit, MI 48223",False,source_flag_false
+0x1d315b60ede11012ff8c980acd7cad65ac7ebdee,"20521 Hull St, Detroit, MI 48203",False,source_flag_false
+0x1d5da20522b1b94e3b7d983c954075da429bbae1,RealToken S 19154 Sherwood St Detroit MI,True,us_state_in_name
+0x1d872098bab315ddf6630b3db2f8330221d498c0,RealToken S 8050 Sirron St Detroit MI,True,us_state_in_name
+0x1d9fd5c3fbfd4758f22438a336068b813872cefc,RealToken S 12050 Bryden St Detroit MI,True,us_state_in_name
+0x1da9ddc8407781d712a77def51c40c26a1f72600,RealToken S 3883 E 177th St Cleveland OH,True,us_state_in_name
+0x1e001730a23c7ebaff35bc8bc90da5a9b20804a4,RealToken S 9481 Wayburn St Detroit MI,True,us_state_in_name
+0x1eb16ec378f0ce8f81449120629f52ba28961d47,RealToken S 1000 Florida Ave Akron OH,True,us_state_in_name
+0x1eb856a1359495cda8f18cac8785342b23dd84bf,"11949 Del Reo Ct, St. Louis, MO 63138",False,source_flag_false
+0x1f49c2def89cd9b84048a2d30c53a29091082d62,"14300 Patton St, Detroit, MI 48223",False,source_flag_false
+0x1fdb4015fd5e031c5641752c1e03b973ad5ea168,RealToken S 17500 Evergreen Rd Detroit MI,True,us_state_in_name
+0x2010c480b73fd0865b6d2f164660da852d178d5d,RealToken S 3728 Atkinson St Detroit MI,True,us_state_in_name
+0x20170890ef210e402578f97d6b179784c45f3a1b,RealToken S 7337 S Yale Ave Chicago IL,True,us_state_in_name
+0x2068630e08453f61684a3ef436a47268f29ef146,"4422 Lillibridge St, Detroit, MI 48214",False,source_flag_false
+0x2089b1b815a2fd0187a48a1c66c511da828a8128,RealToken S 3310-3312 Sturtevant St Detroit MI,True,us_state_in_name
+0x209574b3459e40f0ac44ca5d77937e597bd12d48,"Factoring, Profit Share, Type C, Series 12",False,source_flag_false
+0x2097ecff6ef76b8df351268e935532fab0b753aa,"11766 College St, Detroit, MI 48205",False,source_flag_false
+0x20c1216e14cb307a0987eaeae4b7c7f3888ad538,RealToken S 18613 Oakfield Ave Detroit MI,True,us_state_in_name
+0x21000fb507af0766f931dda8e8d060fa3ea8585a,"19364 Stotter St, Detroit, MI 48234",False,source_flag_false
+0x211618fa0934910666f2c2731101f5a3ac013fd8,"19200 Strasburg St, Detroit, MI 48205",False,source_flag_false
+0x21301f292cf755b3dd1ec678e52b7d50805e63a2,"2 Cartagena Beaches, Cartagena, Bolivar, Colombia",False,source_flag_false
+0x219c820c2d25d8937601d8713235b556c4a37f62,RealToken S 9585 Abington Ave Detroit MI,True,us_state_in_name
+0x21f1af3e751317a2f7de7df31d5d092e6a907bde,"18276 Appoline St, Detroit, MI 48235",False,source_flag_false
+0x22c9f21f3be50863997e4e2e4f8f2686be79ec93,RealToken S 3946 Fairview St Detroit MI,True,us_state_in_name
+0x22e8aa7094d5ebfe952c795f689d153328cf8413,"6821 Berdelle Ave, Cleveland, OH 44105",False,source_flag_false
+0x22fb1288d3914bf149d0e0d9f23bd7f742517052,"18651 Lamont St, Detroit, MI 48234",False,source_flag_false
+0x2331fe160c3018b2ea69296eac349af5aa0b8cd1,"21143 Waze Lewis Dr, New Caney, TX 77357",False,source_flag_false
+0x2360fca74ed948ff4f962e369080a64a40a1300d,RealToken S 8366 Schaefer Hwy Detroit MI,True,us_state_in_name
+0x23684569c0636c9aea246551879d457d0a0e6f58,RealToken S 9336 Patton St Detroit MI,True,us_state_in_name
+0x23bb1314b73aaaa888800b177ad5d9719a51195b,RealToken S 14432 Wilshire Dr Detroit MI,True,us_state_in_name
+0x24293ab20159cfc0f3d7c8727cd827fba63d4f64,RealToken S 19333 Moenart St Detroit MI,True,us_state_in_name
+0x24442006539fbf90f394cf162fcc2bc98c91d9a2,"15715 Talford Ave, Cleveland, OH 44128",False,source_flag_false
+0x24a2558d0b0b2247a64eab7cf09d7244cb4c9597,RealToken S 17616 Beland St Detroit MI,True,us_state_in_name
+0x24e1aaae80a826b5872ae405099622d792258471,RealToken S 18975 Albion St Detroit MI,True,us_state_in_name
+0x25042768d3cb2bfb5f8757dd151bb91fad727d46,"295 E 238th St, Euclid, OH 44123",False,source_flag_false
+0x251abd48443cd84b87b92d26dc09d671773959eb,"3987 E 153rd St, Cleveland, OH 44128",False,source_flag_false
+0x25b80dd341330508301c9a1339af7c271250e906,"3150 E 66th St, Cleveland, OH 44127",False,source_flag_false
+0x26ccc79ceeec918e01bbd5c04a64767919f9ec1a,RealToken S 7109-7111 Pilgrim St Detroit MI,True,us_state_in_name
+0x2727e5fa2dba5d488116172fd1144b05d1c3bbe9,"3352 E 66th St, Cleveland, OH 44127",False,source_flag_false
+0x27c30545dc2ba4b3bfdcb9f807a0214f4b06f034,RealToken S 8003 S Ingleside Ave Chicago IL,True,us_state_in_name
+0x27dcc5de7ee468c2da8bf2fd21e60348747223cc,RealToken S 212 N Park Ave Jackson MI,True,us_state_in_name
+0x280e9ed3b20c580a2f4219657bb9332d80bc01f1,RealToken S 19020 Rosemont Ave Detroit MI,True,us_state_in_name
+0x291ea62c551d2c889b1195a22f6783567f79d033,"18439 Conley St, Detroit, MI 48234",False,source_flag_false
+0x2a0aceaab29365a79a14a0fbd9fa9ca8977686c7,"Mayab F303, Tulum, Quintana Roo, Mexico",False,source_flag_false
+0x2a53d565f89d4a5f6d1510fdce36a889f5a7568e,"14857 Pierson St, Detroit, MI 48223",False,source_flag_false
+0x2a7c9f7719367006e9bd20d0555025efb86d7d5d,RealToken S 8809 Beckman Ave Cleveland OH,True,us_state_in_name
+0x2adc1cfa726a45264a328d9d2e2c692ceac97458,RealToken S 14494 Chelsea Ave Detroit MI,True,us_state_in_name
+0x2b318bad73d4e44827cce2044666b595a14be8b1,"Playa Caracol Cottage 10, Punta Chame, Panama Oeste, Panama",False,source_flag_false
+0x2b683f8cc61de593f089bdddc01431c0d7ca2ee2,RealToken S 601 Milton St Toledo OH,True,us_state_in_name
+0x2b86741b2fbb1ddb8e7387965cf22ec656a38dc1,RealToken S 3955 Lillibridge St Detroit MI,True,us_state_in_name
+0x2c12648dfa8d69c441b6b308c7d76661c1e6d1e7,RealToken S 3880 Fairview St Detroit MI,True,us_state_in_name
+0x2cf1ec5b40c4510bfadeff8e1aefd9159b75502a,"18047-18059 Hoover St, Detroit, MI 48205",False,source_flag_false
+0x2e1a7d86e4591ebe5662ce6b5e3601f19a626c22,RealToken S 3344 E 140th St Cleveland OH,True,us_state_in_name
+0x2e1db155a7b812f3fcb0dbc8ed3164b4705213b4,RealToken S 10610 Balfour Rd Detroit MI,True,us_state_in_name
+0x2e5ab2292632cbcb434e494b72444335004b84bf,"Playa Caracol 303300 E, Punta Chame, Panama Oeste, Panama",False,source_flag_false
+0x2f3640655d076b45d1fa10da0f6d880329c9d553,RealToken S 15240 Edmore Dr Detroit MI,True,us_state_in_name
+0x2f4974a3be7355cf8915ab34099f35ed44293128,RealToken S 15611 E Seven Mile Rd Detroit MI,True,us_state_in_name
+0x2f4d0bb24bec3c57b65c1589b1d696bc6c1822d1,"1174 Chalmers St, Detroit, MI 48123",False,source_flag_false
+0x2f5bb131614d6c2be8520e355752576ad55416b4,RealToken S 625 Virginia St Toledo OH,True,us_state_in_name
+0x2fb7eeeece8498af2bf5b00ea29ca03005c35956,RealToken S 1389 Bird Ave Birmingham MI,True,us_state_in_name
+0x30107f6f95b946c4ea0eaeb9f7ae436078f971b1,RealToken S 433 Kitchener St Detroit MI,True,us_state_in_name
+0x3046d024b040b279af25150ce98caedda21b9752,"12629 Laing St, Detroit, MI 48224",False,source_flag_false
+0x304bee450c2d116696d8b442981e7a300dfdf1cb,RealToken S 11965 Lakepointe St Detroit MI,True,us_state_in_name
+0x306044777e68ec5c323889468baacba6d2705994,RealToken S 15440-15444 St Clair Ave Cleveland OH,True,us_state_in_name
+0x30668ab855dee56a62479b0f22e83c54bd068446,RealToken S 3244 Pasadena St Detroit MI,True,us_state_in_name
+0x30d0e37cd8c87153d56e85bb4a45a0afdb1df4e5,"9117 Manor St, Detroit, MI 48204",False,source_flag_false
+0x30fb3582e5c5737759062723bb7e2a308c3d5109,"MOVA100 15D, Panama City, Panama",False,source_flag_false
+0x3113bb5e8bf9dc44ecdb111e5c4ab0818015a2e1,RealToken S 16520 Ilene St Detroit MI,True,us_state_in_name
+0x311fc485f1fea0c8cc9b5c783e79f4313ddfa720,RealToken S 19996 Joann Ave Detroit MI,True,us_state_in_name
+0x3150f0ebc0efee280b5348b9c8c271ad44eb8b13,RealToken S 19596 Goulburn St Detroit MI,True,us_state_in_name
+0x315699f1ba88383cff2f2f30fcad187adb2e4d72,RealToken S 14078 Carlisle St Detroit MI,True,us_state_in_name
+0x31820af2d43c08bd82bd94b08974062482bd98d3,"11653 Nottingham Rd, Detroit, MI 48224",False,source_flag_false
+0x31aa5fa895fd186fde12347a6fcaf540875b6434,RealToken S 17809 Charest St Detroit MI,True,us_state_in_name
+0x328249efca026ae8596e9afe913c5f8775ef60ae,"14884 Ward Ave, Detroit, MI 48227",False,source_flag_false
+0x32985d23da2d34c41113a734b20d87ce40ef734d,"LOAN 15375 Freeland St, Detroit, MI 48227",False,source_flag_false
+0x33722ea778df197f1b7b1cf0b124d7a962181d65,RealToken S 19136 Tracey St Detroit MI,True,us_state_in_name
+0x33ac7d47e7a9a219f9a0d3784bc21f6ff25e6efd,"1531 E 173rd St, Cleveland, OH 44110",False,source_flag_false
+0x340e5fd88575ee1466a7430e11b2e78150d2f476,"18624 Hamburg St, Detroit, MI 48205",False,source_flag_false
+0x347892d4cd347d546ec6ba9f70e77a7c03257e66,"5250 Philip Ave, Maple Heights, OH 44137",False,source_flag_false
+0x34a1a58de8ff7ea0a690888d9b8ae646a8480fa4,RealToken S 4421 Lillibridge St Detroit MI,True,us_state_in_name
+0x34ed9e71449529e034d0326cfbb3b5ccdca00cbc,RealToken S 19317 Gable St Detroit MI,True,us_state_in_name
+0x34fbce62584d5bf710d8d8a422cc2a4e66ee6dd8,"2673 Tyler St, Detroit, MI 48238",False,source_flag_false
+0x35063b6bee680cd7edb9184c974c94b39607c450,"12111 Kentucky St, Detroit, MI 48204",False,source_flag_false
+0x354cf3625e9cd81dca0c33bb48d0a3620e9889e1,"4832 University Pl, Detroit, MI 48224",False,source_flag_false
+0x35513af7ce88228e0aabe6df58648f38e3d4e94e,"15479 Collingham Dr, Detroit, MI 48205",False,source_flag_false
+0x3572036300a466afcc48a22e855e6cce3ee4fc93,RealToken S 1 Holdings French Rd Detroit MI,True,us_state_in_name
+0x35a40743b37302de7563e1367597a18c0576eecf,"16519 Bringard St, Detroit, MI 48205",False,source_flag_false
+0x35f39e1a3c2918428df1074e7f46e2e871d4bd6f,"14231 Fielding St, Detroit, MI 48223",False,source_flag_false
+0x36305be44107b93e723b43ead34610259d2af60a,"Factoring, Profit Share, Type B, Series 18",False,source_flag_false
+0x3652b4a16c473c0575ca474aab8f11e2e0e143fc,"3463 E 76th St, Cleveland, OH 44127",False,source_flag_false
+0x37615845672006267d9c6ac070edc5623b9a9695,"528 Thurston Ave, St. Louis, MO 63134",False,source_flag_false
+0x3778fa5048b698de27149a6adddca9c935f14e34,"PH Pinoalto A002, Boquete, Chiriqui, Panama",False,source_flag_false
+0x377d14927bbc274771daa9ffab0722935dafaffa,RealToken S 13523 Glenside Rd Cleveland OH,True,us_state_in_name
+0x3785c1ed79548580fd49a000bf9e5884e8d1207b,"14126 Stout St, Detroit, MI 48223",False,source_flag_false
+0x3839ab8550a64940964e0ecb02ed301005a96ffc,RealToken S 18980 Fenton St Detroit MI,True,us_state_in_name
+0x38de2858be53d603b1104f16aa67cf180002465d,RealToken S 738-742 E 87th Pl Chicago IL,True,us_state_in_name
+0x394d59797495848934acf61e680c1739a2cd8cfd,RealToken S 5772-5774 Chalmers St Detroit MI,True,us_state_in_name
+0x3956fd7ce6d6c272c30200088a023630ae8ac2ad,"9191 Oldtown St, Detroit, MI 48224",False,source_flag_false
+0x3963534328e575c90515ad6a082ebd1d88bbe0be,"4448 Lillibridge St, Detroit, MI 48214",False,source_flag_false
+0x39ca5a9ddc195bab41a07c2ab5ddbaaceabae61a,"26 Applegrove St, Ecorse, MI 48229",False,source_flag_false
+0x3ac16e7177a55d5fd8f8ab58263d1c764d462fde,RealToken S 4239 Alter Rd Detroit MI,True,us_state_in_name
+0x3b22445411b429f665d12f7a55dd16dfac22c6ae,RealToken S 19535 Fairport St Detroit MI,True,us_state_in_name
+0x3b734947a4ec3f42b354d5c352490e00828872f0,"10052 Gold Finch Run, Magnolia, TX 77354",False,source_flag_false
+0x3b865aeb780458af48d4ca29cbffea4408cab6d3,"LOAN PH Empire Residences, Panama City, Panama",False,source_flag_false
+0x3b8b38475f011f4180374efe21a1b3b01c7f3f49,"8205 Ryan Ridge Loop, Montgomery, AL 36117",False,source_flag_false
+0x3b9a6160b85611167eedd7b1f0c859709ef838b2,"19626 Hasse St, Detroit, MI 48234",False,source_flag_false
+0x3c20f694df207edd49408cf722898bc9002287b9,RealToken S 4444 Lillibridge St Detroit MI,True,us_state_in_name
+0x3c5654362fa005393ad9c793fe0fa74f0cd95bbb,RealToken S 8744 Homer St Detroit MI,True,us_state_in_name
+0x3c56d5e887d8fa7ae1ba65bf7eccc25ec09eaf18,RealToken S 9165 Kensington Ave Detroit MI,True,us_state_in_name
+0x3d2129d9ceed93992cea3ee7d8e44754faedc922,RealToken S 12730 Wade St Detroit MI,True,us_state_in_name
+0x3db7a17a55d345236a59b685ebe65c11a1ce8f65,"12354 S Normal Ave, Chicago, IL 60628",False,source_flag_false
+0x3dbf5b600fc43a35fe94cba54995d6682d1ee080,"8295 Burt Rd, Detroit, MI 48228",False,source_flag_false
+0x3e98281a3dc794799159732d5a488e6cea645c37,RealToken S 1 Holdings Tennessee St Detroit MI,True,us_state_in_name
+0x3ecf927de060f57e0ed3f565ad081ec8d025f925,"10130 Cedarlawn St, Detroit, MI 48204",False,source_flag_false
+0x3f87605a70522a6c1c9287b4a5f96ec369cc9273,"16165 Griggs St, Detroit, MI 48221",False,source_flag_false
+0x3f8ecb2d158cde11587270ab3f9744e0f3108354,RealToken S 3888 Fairview St Detroit MI,True,us_state_in_name
+0x3fe8dda02a469043c36a45ca74d624d9362ec2fc,RealToken S 14260 Roselawn St Detroit MI,True,us_state_in_name
+0x40074c412154562fb16441106c95900467e9c173,RealToken S 14481 Hazelridge St Detroit MI,True,us_state_in_name
+0x400b5716b0c23b6f1f0f2a5fdb038949962b803e,RealToken S 3432 Harding St Detroit MI,True,us_state_in_name
+0x4079007a46c78cab74b9bdd70ae644d889e15ec2,RealToken S 19216 Hickory St Detroit MI,True,us_state_in_name
+0x40bd4b65da163dd5a45bd683d593fc66efc309ce,"5912 Francis Ave, Cleveland, OH 44127",False,source_flag_false
+0x41117a12a97268906623e241590a1bbe6608275e,"4252 E 163rd St, Cleveland, OH 44128",False,source_flag_false
+0x4154f2c6fab11d62b02d5c7fc7c77981a47a8478,"2909 W Buena Vista Ave, Detroit, MI 48238",False,source_flag_false
+0x41599149f1b52035392402f9e311b1edb0c9f699,RealToken S 14319 Rosemary St Detroit MI,True,us_state_in_name
+0x416cb9befbe169b2194e734e35b38980b2497b4a,"19236 Revere St, Detroit, MI 48234",False,source_flag_false
+0x41abbf76e93f9a66127322bc720d4287d4cc2ee7,"18478 Stout St, Detroit, MI 48219",False,source_flag_false
+0x41c16c27ef654ba98f6c68e927c2efcef1c170e0,"3937 Lillibridge St, Detroit, MI 48214",False,source_flag_false
+0x423cc18b75c8a2331b2abb14d8bad8db84635870,"15800 Tacoma St, Detroit, MI 48205",False,source_flag_false
+0x4313842762a73e5076fe2b769e3d3f77f1524a93,"18919 Beland St, Detroit, MI 48234",False,source_flag_false
+0x4326972a016d707c5c6bc854398aabb6780c62e9,RealToken S 4025 Fairview St Detroit MI,True,us_state_in_name
+0x43ab521302ff36039be6b425ddaea5ec30a0f8b5,RealToken S 5760 Lakepointe St Detroit MI,True,us_state_in_name
+0x43fed9f9bf7deedcb314b432a8e38219dd62ce9e,RealToken S 14825 Wilfried St Detroit MI,True,us_state_in_name
+0x4471962eeffec57a33fa4e0793efeec07684dffb,RealToken S 10003 Pinehurst St Detroit MI,True,us_state_in_name
+0x4505f5bff6bada5a20b1a008c6db3cd9545027a4,RealToken S 338 Willard St Toledo OH,True,us_state_in_name
+0x45536981800e3317260d01e6cbf1b627691e718f,"2931 Dickerson Ave, Detroit, MI 48215",False,source_flag_false
+0x458b169d6d9d5d021d61013e3a01bf7dee29dd90,RealToken S 18438 Morang Ave Detroit MI,True,us_state_in_name
+0x4637aa1a13aa4050c6e4bcd6dde9c39e80e9dd54,RealToken S 10410 Cadieux Rd Detroit MI,True,us_state_in_name
+0x46b00b4bf04c2c94ae67576004a3a247b9400ade,RealToken S 116 Monterey St Highland Park MI,True,us_state_in_name
+0x46f8a600337dec5cab03aa9b8f67f1d5b788ce28,RealToken S 18433 Faust Ave Detroit MI,True,us_state_in_name
+0x472bacd7e3f038d1f8b6a4c2c53aebd95052e5e5,"10901 Peerless St, Detroit, MI 48224",False,source_flag_false
+0x474a4f90f93b110cd8df3ce5fb070915be797ba1,"13436 Corbett Ave, Detroit, MI 48213",False,source_flag_false
+0x4767be61cf49c80de2ba4d9c5402f95441c3b200,"22601 Ivan Ave, Euclid, OH 44123",False,source_flag_false
+0x478a4a6b4b864b0e633d15c73573877b0154e286,"19335 Rutherford St, Detroit, MI 48235",False,source_flag_false
+0x47a544a460ed29d6622a6f6e68de7f873cc30e67,RealToken S 4101 McClellan Ave Detroit MI,True,us_state_in_name
+0x47f1d436183db9e2a4f6a84e1a0303fe3465cbff,"18941 Goulburn Ave, Detroit, MI 48205",False,source_flag_false
+0x4812d818d7aa516b208940c2afdbc54177162e4f,"11060 Nashville St, Detroit, MI 48205",False,source_flag_false
+0x4838c8a9dc34faac0b898dd9ce6d40e5d2661e48,RealToken S 4852-4854 W Cortez St Chicago IL,True,us_state_in_name
+0x485ea135c470cc122222cde2431addc5b367d4eb,RealToken S 8898 Marlowe St Detroit MI,True,us_state_in_name
+0x499a6c19f5537dd6005e2b5c6e1263103f558ba4,RealToken S 17813 Bradford St Detroit MI,True,us_state_in_name
+0x49d1315df2651056bd0315da319475541a8b2010,"Playa Caracol Seashore 46, Punta Chame, Panama Oeste, Panama",False,source_flag_false
+0x49e72d9e4af1544958d8376bfe296f9050357b0f,"13615 Meyers Rd, Detroit, MI 48227",False,source_flag_false
+0x4a6cd874c3da159f88be3c7351bde37cee6b4863,"Vervana T1, Playa Venao, Los Santos, Panama",False,source_flag_false
+0x4a979228f86d7d9722c29eb7615afe4a3966358a,RealToken S 4515 E 139th St Garfield Heights OH,True,us_state_in_name
+0x4a99cc509f7facf58d7b67e99236db5e0921ef81,RealToken S 10639 Stratman St Detroit MI,True,us_state_in_name
+0x4ae9d3343bbc6a894b7ee7f843c224c953f1661b,"9518 Franklin Dr, Mont Belvieu, TX 77523",False,source_flag_false
+0x4b293baa4703c5e7d480498bf3ccd8dc3d1297cd,RealToken S 10147 Somerset Ave Detroit MI,True,us_state_in_name
+0x4b9c173c81ea2b6804b99ac91846c62bdb74fe72,RealToken S 10163 Duprey St Detroit MI,True,us_state_in_name
+0x4c0c0fe9ca9ad4bc748eb8f596ddcfd8707a5cd4,RealToken S 13445 Tacoma St Detroit MI,True,us_state_in_name
+0x4cc53ee5ef306a95d407321d4b4acc30814c04ee,RealToken S 19163 Mitchell St Detroit MI,True,us_state_in_name
+0x4d0da4e75d40bd7d9c4f7a292bf883bcdf38c45d,RealToken S 15373 Parkside St Detroit MI,True,us_state_in_name
+0x4d3101aa9bea5842fc41b769c00787fbd33660fc,"20300 Joann St, Detroit, MI 48205",False,source_flag_false
+0x4d6876bd8d2f44d64b13a83a58cef81860329ef4,"15015 Ward Ave, Detroit, MI 48227",False,source_flag_false
+0x4dc776355dd15ce7534fb73c5681178eee8d67af,"3258 E 48th St, Cleveland, OH 44127",False,source_flag_false
+0x4de69c31f81b34a88f91dfb0a15db0245a1e52ce,"2 Holdings Patton St, Detroit, MI 48223",False,source_flag_false
+0x4df8c0990e1f02810d6a27c452cd70b39f2e0a2c,RealToken S 15824 Cheyenne St Detroit MI,True,us_state_in_name
+0x4e4bbaf1b65b230581d0b987e665799594420643,"14654 Hubbell St, Detroit, MI 48227",False,source_flag_false
+0x4e98493920b16dd6642e9d48497c8d0a49150f6f,RealToken S 13991 Warwick St Detroit MI,True,us_state_in_name
+0x4ef3495f708da5220d41aee590ccb15f22eb6e2c,RealToken S 11758 Christy St Detroit MI,True,us_state_in_name
+0x50346bae2ba03d85a945ddd01ca4c1531d614071,"9455 Manistique St, Detroit, MI 48224",False,source_flag_false
+0x5095931519f2410b6384e4dd21b10b8e6d124a0e,"MOVA200 18D, Panama City, Panama",False,source_flag_false
+0x50b4d76ae0f88cf2f3accdfd2a76cbe35172bc8e,"PH Pinoalto A003, Boquete, Chiriqui, Panama",False,source_flag_false
+0x511d6e3c618410b843ce92dd028a0aeb5561cac4,"16894 Edmore Dr, Detroit, MI 48205",False,source_flag_false
+0x5128828a7a92583ec46cefecb8b4e127ef5f9e2c,"20240 Rogge St, Detroit, MI 48234",False,source_flag_false
+0x5162d60b699a44b9f09b5fbfd8e6343cde9d7b22,RealToken S 128 E Weber St Toledo OH,True,us_state_in_name
+0x51b3486b85c9607f9d059b5cad3d731e4f8458f3,"10008 Elizabeth Ave, Cleveland, OH 44105",False,source_flag_false
+0x51b99b27151d587e8891d780227c9e1ab863525c,RealToken S 14805 Fielding St Detroit MI,True,us_state_in_name
+0x529ff4d9b07acd6366d0c3eb077ebaa2b06e71c4,RealToken S 20160 Conant St Detroit MI,True,us_state_in_name
+0x53279e01efda8c67404ce98462b831611d5dcca2,RealToken S 18613 Anglin St Detroit MI,True,us_state_in_name
+0x537dc65657ed455d1c17e319fe6f4926d6033f2b,RealToken S 10974 Worden St Detroit MI,True,us_state_in_name
+0x53cebce6bd24f8e14da85ba0627a92336bd4f515,RealToken S 9200 Harvard Rd Detroit MI,True,us_state_in_name
+0x543eb06a961f042a7189e24ec8ab2db9cd313fc6,"7846 Archdale St, Detroit, MI 48228",False,source_flag_false
+0x54d0a50c94c75c4961b2b66f7e6b66d9b9e03900,"512 Northmeadow Ct, Arlington, TX 76011",False,source_flag_false
+0x550a0c95fe1762d9cb553402ccc65bcd71594692,RealToken S 3522-3526 Harding St Detroit MI,True,us_state_in_name
+0x555b626d8599cfd3392a1156954e1e5197e313a3,"Factoring, Profit Share, Type B, Series 15",False,source_flag_false
+0x558686234a9cdc02358a8e0b32a81787a1401334,"10465 Decker Ave, St. Louis, MO 63114",False,source_flag_false
+0x559a6c2f58e528efd9bd969069e88526cb2823f1,"9576 Robson St, Detroit, MI 48227",False,source_flag_false
+0x5600e25b4f24c63afa655c3bd96e3c178b654fa1,RealToken S 13045 Wade St Detroit MI,True,us_state_in_name
+0x563d4e689b357f4d2178b5a9a36df98e2674c157,"110 Churchill Blvd, San Angelo, TX 76903",False,source_flag_false
+0x56aa13dd3b1e3f6ec9281b36ce2fe943a217ceb4,"4456 Fairview St, Detroit, MI 48214",False,source_flag_false
+0x56c7083cb907e9a82db51fb98468f00af716f093,"2519 Highwood Dr, Dallas, TX 75228",False,source_flag_false
+0x56eba91a307d229c33e6f9dedf04d4e982ef5aca,"3783 Webb St, Detroit, MI 48206",False,source_flag_false
+0x5767851017f7849f6cd3b4b76bd58b727293116e,"15011 Monte Vista St, Detroit, MI 48238",False,source_flag_false
+0x578217c44d3482c86332b82932ce5fc175bba4d9,"14405 Prevost St, Detroit, MI 48227",False,source_flag_false
+0x57eadd2a542cfe9f00a37f55df4d5062f857c0e8,RealToken S 9943 Marlowe St Detroit MI,True,us_state_in_name
+0x57f6749261acca5b06e57bf4b883a65b99e5c81c,"Factoring, Profit Share, Type B, Series 04",False,source_flag_false
+0x582f17818abdef29dbed8e19cdac4b5cd625e910,"LOAN 1705 Oakman Blvd, Detroit, MI 48238",False,source_flag_false
+0x584967356bad1499c10a8695522983f2fb7d88f3,RealToken S 19191 Bradford Ave Detroit MI,True,us_state_in_name
+0x586781fe195926d896e8a11b7bbdbce4eee3e668,"Factoring, Profit Share, Type B, Series 16",False,source_flag_false
+0x587ae497d2a15f1abc7f3ca1b25f967bddafdf71,"19269 Conley St, Detroit, MI 48234",False,source_flag_false
+0x591882dc0581a69f377df4cad2cee4e9855ef34d,RealToken S 80 Colser Dr Covington GA,True,us_state_in_name
+0x59462dae804c98be53eb503330d69316fb0b0a9c,"10320 Roxbury St, Detroit, MI 48224",False,source_flag_false
+0x596e5319b8fc4fc1e1ffbac0fd3a6780e6e4eacf,"LOAN 8475 Grandville Ave, Detroit, MI 48228",False,source_flag_false
+0x59de64861ddf9309be2d03d647d21c7a7609e384,"12580 Maiden St, Detroit, MI 48213",False,source_flag_false
+0x59ea19f9c6006ae23466047c980cb3490c68c34c,"LOAN 9358 Rosemont Ave, Detroit, MI 48228",False,source_flag_false
+0x5a722eda908e3db61c9a14cce757ce673f5e3a17,RealToken S 7913 Faith Ln Montgomery AL,True,us_state_in_name
+0x5a7715cf01a08ff1903a240c339fe5e884c01dcf,RealToken S 1 Holdings Milton St Detroit MI,True,us_state_in_name
+0x5a831b2ec4202483ac2021b5b8c4037fc8aeede6,"19323 Packard St, Detroit, MI 48234",False,source_flag_false
+0x5afb209e5572141adbb07d702039dc2c89bbb317,"2966 E 65th St, Cleveland, OH 44127",False,source_flag_false
+0x5b25b13f39f57e5b370b793ef86c1207a12a18ce,"Vigo 308, Medellin, Antioquia, Colombia",False,source_flag_false
+0x5b571d103e670848ce8cde37f93821c9c93c7c43,RealToken S 14409 Linnhurst St Detroit MI,True,us_state_in_name
+0x5b690b010944bdfa8b26116967fe3fb3c38cfaac,RealToken S 13370 Wilshire Dr Detroit MI,True,us_state_in_name
+0x5b8a37f5e2290e116358fa1728ae898e2bbe7f2b,"1158 Bosworth Dr, St. Louis, MO 63137",False,source_flag_false
+0x5bb8d02c04ed4096c1a6e77a3e8d40267c9ccdbf,RealToken S 9795-9797 Chenlot St Detroit MI,True,us_state_in_name
+0x5c001ccc6340421590a200a328b1d7fc7d454964,RealToken S 1 Holdings Kinafremoha St Detroit MI,True,us_state_in_name
+0x5c206e529f0cae27f96c794cfc6e78d754af1940,"LOAN 9311 Fielding St, Detroit, MI 48228",False,source_flag_false
+0x5c4e3fa9704d4212c6434190af6379cfbda47e13,"18881 Mound Rd, Detroit, MI 48234",False,source_flag_false
+0x5c5ccece59706a538366ea7b41d239df18623662,"2956 Blaine St, Detroit, MI 48206",False,source_flag_false
+0x5ca198c20ad54d2c70c0adc3b0763c539004245e,RealToken S 5154 Turney Rd Garfield Heights OH,True,us_state_in_name
+0x5cc180bf9091a2284624567ee3c5a2a465656301,RealToken S 19003-19005 Moross Rd Detroit MI,True,us_state_in_name
+0x5d0436f003aef56990194f79a242bc185843aea5,RealToken S 19750 Marx St Highland Park MI,True,us_state_in_name
+0x5d0f382a64acb0fff716bf2f786b9df4dc8dad0c,RealToken S 12145 Kentucky St Detroit MI,True,us_state_in_name
+0x5d1cdfb3038f25c331fef652f75b3339ac4c52a1,"11401 Winthrop St, Detroit, MI 48227",False,source_flag_false
+0x5d4b2233282d49266bbe4bf92ed7aa6e6a56b83d,"14844 Hubbell Ave, Detroit, MI 48227",False,source_flag_false
+0x5d9eb5fc910176b08efa5f8d13812b85fdf3394b,RealToken S 13835 La Salle Blvd Detroit MI,True,us_state_in_name
+0x5dd8077430cc93d24e9a3f6f05d71433ec2097e7,RealToken S 4667 Lillibridge St Detroit MI,True,us_state_in_name
+0x5e29f1b62c15658e76671e199a7f16afddc9ad76,RealToken S 2661-2663 Cortland St Detroit MI,True,us_state_in_name
+0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72,RealToken S 11201 College St Detroit MI,True,us_state_in_name
+0x5f51b44cdbdd5dc9aecabc2ed80e2b2a8c002866,RealToken S 19643 Rogge St Detroit MI,True,us_state_in_name
+0x5ff86216bac301010d471e4b0f659a68cca4f0c6,"12789 Birwood St, Detroit, MI 48238",False,source_flag_false
+0x60139f99ddb56b846b998a655de2d775acd936a1,"1991 Ewald Cir, Detroit, MI 48238",False,source_flag_false
+0x60677266d8bedd6147e7070adfd8c681e2d88324,"15110 Freeland St, Detroit, MI 48227",False,source_flag_false
+0x60888b47eb7290eaa8823568fcffa17da1a853d9,RealToken S 1 Holdings French Rd Detroit MI,True,us_state_in_name
+0x60c9deddba39619e569e8c2d27bca5868510aabf,"14885 Appoline St, Detroit, MI 48227",False,source_flag_false
+0x6133a54e3895f478ee6aae582d7dbc7bbb086b7d,RealToken S 5517-5519 Elmhurst St Detroit MI,True,us_state_in_name
+0x617e80813da122f0a25e09a731664b5530b8745c,"15225 Bringard Dr, Detroit, MI 48205",False,source_flag_false
+0x62da320fadd249a49e3e8f5557fe8333bfc72f97,"LOAN 12850 W Chicago Blvd, Detroit, MI 48228",False,source_flag_false
+0x632fac8692861960b0d928cf6e91ff703ef5c9f5,RealToken S 2 Holdings Milton St Detroit MI,True,us_state_in_name
+0x63a1849b47ef5913ccc5adb0e2708b11a4ba6972,RealToken S 14918 Joy Rd Detroit MI,True,us_state_in_name
+0x640598796ae0cd02650e77a4c755ec1051d12046,"11260 Somerset Ave, Detroit, MI 48224",False,source_flag_false
+0x64d69276cc78adbb6d5fea95d3e6370b4844dc76,RealToken S 10645 Stratman St Detroit MI,True,us_state_in_name
+0x64e149cef5eff91d111621a0ab36e48f41046f38,"9657 Manor St, Detroit, MI 48204",False,source_flag_false
+0x64e72028862096c2a0d049923f2755fda90828de,"6838 S Ridgeland Ave, Chicago, IL 60649",False,source_flag_false
+0x65d81bf81a65b177012b323f14970071c5099226,RealToken S 9415-9417 Ravenswood St Detroit MI,True,us_state_in_name
+0x65f8227019661d36eb663b93b50fb722ca870b83,RealToken S 4433 Lillibridge St Detroit MI,True,us_state_in_name
+0x6607908da701d27f206b360fa46d5b00ceeb4b40,"3015 Northwestern St, Detroit, MI 48206",False,source_flag_false
+0x675807e2f73f62de04d9a78145a2325afad615d9,"14858 Braile St, Detroit, MI 48223",False,source_flag_false
+0x676af6cbfd595fe9a3c392e551082def6e6bb397,"4638 Blythin Rd, Garfield Heights, OH 44125",False,source_flag_false
+0x67a83b28f6dd8c07301495ee2c6f83b73fd21092,RealToken S 9309 Courville St Detroit MI,True,us_state_in_name
+0x67f685a20fb55ac5e7d128d66a13bdbe77599136,"9131 Quincy St, Detroit, MI 48204",False,source_flag_false
+0x68ce7f7f1af85d8ee199d18b506bc4d818644e45,"12097 Prairie St, Detroit, MI 48204",False,source_flag_false
+0x690602eb0bf5607e3586f1d3e4c4601ef6e4a89f,RealToken S 8531 Intervale St Detroit MI,True,us_state_in_name
+0x69075fe74ea11c5da9d32af3d8d6971b11b55d88,"1 Holdings Helen St, Detroit, MI 48234",False,source_flag_false
+0x693eb3a103cf5ecc0bc8790392c6bebd95b0a8b4,RealToken S 4315 E 119th St Cleveland OH,True,us_state_in_name
+0x696140e761afb57d7f2adc970c2b0e200975ee63,"3514 Medbury St, Detroit, MI 48211",False,source_flag_false
+0x69d1b42b20f3ded07bec322253d0140b04cbb6f5,RealToken S 1542 S Ridgeway Ave Chicago IL,True,us_state_in_name
+0x6a7fc002c7966c2e433b78d03578bbadcef54306,"13445 Elmdale St, Detroit, MI 48213",False,source_flag_false
+0x6a834befd26d1690cb90ac40a2a0f73213e7387f,"2 Holdings Pierson St, Detroit, MI 48223",False,source_flag_false
+0x6a94404f978a2ad1f7bf5f2a4fbb30f904b6e8ee,"18848 Bloom St, Detroit, MI 48234",False,source_flag_false
+0x6b39fb33da70e2d4f43c2717dfa34b9d330d05a0,"Playa Caracol Seashore 39, Punta Chame, Panama Oeste, Panama",False,source_flag_false
+0x6bb5e9cc5fd37cc3f1fcb3f5ebf465a453518501,"18014 North Blvd, Maple Heights, OH 44137",False,source_flag_false
+0x6bd094e39d0b839689e2f900bfdd180b10df62d7,RealToken S 12410 Hamburg St Detroit MI,True,us_state_in_name
+0x6c76cb9ff41b40f75fe8424268370a6c58f8468a,RealToken S 14102 Marlowe St Detroit MI,True,us_state_in_name
+0x6db6d540f5614e6bab7475af3f430f46a0b083e2,RealToken S 5942 Audubon Rd Detroit MI,True,us_state_in_name
+0x6f0e040d9f02830c6eea5b287ad74369a9e5f1e1,RealToken S 1 Holdings Rohns St Detroit MI,True,us_state_in_name
+0x6f442da588232dc57bf0096e8de48d6961d5cc83,RealToken S 13895 Saratoga St Detroit MI,True,us_state_in_name
+0x6f5258feb5862b661829315841b0718d6e56ca2c,RealToken S 20257 Monica St Detroit MI,True,us_state_in_name
+0x703ff030af7014550cae6295ae8a72324731065b,"6659 Bitteroot Ln, St. Louis, MO 63134",False,source_flag_false
+0x7068a5d8b3dd6a3033b8e9b9af757be55df85715,RealToken S 16811 Glendale Ave Cleveland OH,True,us_state_in_name
+0x70724f4332d7ee1918f71236c1746cdda732d90a,"5733 Neely Ln, Montgomery, AL 36116",False,source_flag_false
+0x707d18db2f7ffdb79d99dedf8f2110cb8966d7ff,"15860 Steel Ave, Detroit, MI 48227",False,source_flag_false
+0x7085c30b97f1af202f8dfec174f1e07d8f8f887d,RealToken S 13430 Tacoma St Detroit MI,True,us_state_in_name
+0x70b326d2de7bebc8d09adc6bbf01d95067ff130d,"4350 Chatsworth St, Detroit, MI 48224",False,source_flag_false
+0x710bd8d93bf9696037c65f786ce6021ac6ea1e86,"4308 W Grand St, Detroit, MI 48238",False,source_flag_false
+0x71242de9d4f3456d165942d6b758d19430e11dbd,"12631 Hayes St, Detroit, MI 48205",False,source_flag_false
+0x712d9c2b3077111493b8867c218f0d24a8aaf059,RealToken S 18524 Patton St Detroit MI,True,us_state_in_name
+0x717bfbfa88859ac34f9772d92749c4b384c6b479,RealToken S 1 Holdings Harding St Detroit MI,True,us_state_in_name
+0x7231cafcb32d2ad7072b7bee71ca9d4e5ebffafa,RealToken S 1 Holdings Tappan St Detroit MI,True,us_state_in_name
+0x7256d54f91402de3f5257af578d11e3673f374e3,"Le Prestige 501, Medellin, Antioquia, Colombia",False,source_flag_false
+0x72f1d0719d8ce0b03d35def98e5dbb17854ab285,RealToken S 11924 Wayburn St Detroit MI,True,us_state_in_name
+0x730fbb27b650a2a3bcaa6729e635dc255acee343,RealToken S 1115 S. Troy St Chicago IL,True,us_state_in_name
+0x7318c373695f8f3c8987a158d41d65eed4badb25,RealToken S 4628 Lillibridge St Detroit MI,True,us_state_in_name
+0x7389ef988fae6b3bcf520000c535e1e2d94c5427,RealToken S 18949 Fenmore St Detroit MI,True,us_state_in_name
+0x73bde888664df8ddfd156b52e6999eeabab57c94,RealToken S 9717 Everts St Detroit MI,True,us_state_in_name
+0x73caeb94bf5ec8c10f4dea0c65a904bd314b1f8f,RealToken S 10125 Somerset Ave Detroit MI,True,us_state_in_name
+0x741857c07b100c9c0c1272d95845dddc4f1b67cb,RealToken S 8342 Schaefer Hwy Detroit MI,True,us_state_in_name
+0x744ca59499be33f6a112eed3acca533954da1050,RealToken S 9135 Yorkshire Rd Detroit MI,True,us_state_in_name
+0x7505ecf9cef3bc8c34f02bf7547921d2058f3d35,RealToken S 2476 Clements St Detroit MI,True,us_state_in_name
+0x750fa12ae51d1515c893c1aaabe2c135937a2c8b,RealToken S 9465 Beaconsfield St Detroit MI,True,us_state_in_name
+0x7524d382373c1a091789978a8b2c1dc707d2b213,RealToken S 1890 Marloes Ave East Cleveland OH,True,us_state_in_name
+0x75da57b88e7c53505e343b1aa7b354f69358d39b,"Factoring, Profit Share, Type B, Series 09",False,source_flag_false
+0x75f06b482adbfb04b877d8ee683e2fcdf18ad153,RealToken S 18481 Westphalia St Detroit MI,True,us_state_in_name
+0x76dbeb740ecd1f3b052a9afa302abc7eb4fb5390,RealToken S 9133 Devonshire Rd Detroit MI,True,us_state_in_name
+0x7804e5ae01bb68e5a07a40b109ece66a66772d5e,RealToken S 1 Holdings Kitchener St Detroit MI,True,us_state_in_name
+0x7811a1c2d0da59fa1ad456b3daf76ca5b737093d,RealToken S 8225 Rolyat St Detroit MI,True,us_state_in_name
+0x78a9013b53d2d255935bbc43112d0dd3f475f3d3,RealToken S 15203 Park Grove St Detroit MI,True,us_state_in_name
+0x78f5268a7d646ef04c9d5869adae6b7654bdb725,"8308 Denison Ave, Cleveland, OH 44102",False,source_flag_false
+0x7909090541d646a262a3062639298772a2c79daa,RealToken S 3510 Ewald Cir Detroit MI,True,us_state_in_name
+0x798c383f49f0f3a16b45f810d3564c0a2e396869,"14271 Rosemary St, Detroit, MI 48213",False,source_flag_false
+0x79a956cf468ee592d6aef9ce06920989654b1ce3,RealToken S 450 Kitchener St Detroit MI,True,us_state_in_name
+0x79e18a519d60c2ef7e18aac08d60ba0d4eee2511,RealToken S 20039 Bloom St Detroit MI,True,us_state_in_name
+0x7a684f6d9a34175d642eedb31fa545604d8d3acf,RealToken S 2911 Sturtevant St Detroit MI,True,us_state_in_name
+0x7ad92301442b73bed8d9696d704ac24a0fef3b69,RealToken S 8056 E Hollywood St Detroit MI,True,us_state_in_name
+0x7af2c0df2789c2620794aeb24b3019fc350c369d,"Vervana T1v2, Playa Venao, Los Santos, Panama",False,source_flag_false
+0x7ca0118b50432d0a5c69f854ff017b6f22a10f88,"11125 Craft St, Detroit, MI 48224",False,source_flag_false
+0x7d3f9309822a47e41dd4756dbe162580e2546f33,"1 Holdings Strasburg St, Detroit, MI 48205",False,source_flag_false
+0x7dfeee178fc1f929a88ad69e4e8d493600dd26d0,RealToken S 14117 Manning St Detroit MI,True,us_state_in_name
+0x7e66a381cee09e1dc8cc489734c186ca6217cb33,"15720 Snowden St, Detroit, MI 48227",False,source_flag_false
+0x7e86774eefc42f05a3476793f7e81821229dc6ec,"20150 Hanna St, Detroit, MI 48203",False,source_flag_false
+0x7e95b310724334ff74537dc08bfd3377d25e65ce,RealToken S 15039 Ward Ave Detroit MI,True,us_state_in_name
+0x7f940b5509a22e81d29167581bdeea3fa5a0abee,RealToken S 15784 Monte Vista St Detroit MI,True,us_state_in_name
+0x7facb63afb928ac5a4650acc6eab701d7a8becb5,RealToken S 15894 Tacoma St Detroit MI,True,us_state_in_name
+0x801560797ab66934854b9cefe7711da55c479e21,"10064 Baltimore Ave, Saint Ann, MO 63074",False,source_flag_false
+0x804f6baa10615c85e4b4a5bc4efe516d9f7a4365,RealToken S 13606 Winthrop St Detroit MI,True,us_state_in_name
+0x806690b7a093d2cf6419a515abedb7f28595bc5e,RealToken S 9169 Boleyn St Detroit MI,True,us_state_in_name
+0x80d2956433a1622c336480ba5357350a30644c0a,RealToken S 9244 Mendota St Detroit MI,True,us_state_in_name
+0x80effd75fa30b8b89997d2522b3283a1e768f1bc,RealToken S 8821 Prairie St Detroit MI,True,us_state_in_name
+0x81cea1a7c83d5caed483dd4da59bfe98f24ef687,RealToken S 15379 Patton St Detroit MI,True,us_state_in_name
+0x820629db01bb56a62bc75aeef6eb8dfb0eec1d04,RealToken S 4407 McClellan Ave Detroit MI,True,us_state_in_name
+0x8236067c1b6dc176ebda95531168e93bbcee25b0,RealToken S 1 Holdings Conner St Detroit MI,True,us_state_in_name
+0x830b0e9a5ecf36d0a886d21e1c20043cd2d16515,RealToken S 19201 Westphalia St Detroit MI,True,us_state_in_name
+0x830e2556f31614f573bc8424af71e308034e617b,"2951 E 67th St, Cleveland, OH 44217",False,source_flag_false
+0x83b0025beb3fb0194a46c311d087a520e3cd379d,"19140 Hubbell St, Detroit, MI 48235",False,source_flag_false
+0x83b16b1dcaaeb59caa13b96da260d8b15671822a,RealToken S 1204 E Manhattan St Toledo OH ,True,us_state_in_name
+0x8490baf601215ab745763d0eaf373a4bf5d264fe,"11461 Christy St, Detroit, MI 48205",False,source_flag_false
+0x851535916a25b08933891ba1f2f6daa86f309a4d,"1 Holdings Crowley Dr, St. Louis, MO 63136",False,source_flag_false
+0x854a0cfa24012937d3d15682ecc3d5b474bfa97e,"14631-14633 Plymouth Rd, Detroit, MI 48227",False,source_flag_false
+0x855d7af8c1cd0b335a3775e50b276935c30b1c75,"16647 Rossini Dr, Detroit, MI 48205",False,source_flag_false
+0x85f1e02f51f1c36bda2ca2ffd49c2e8fc1b2cb98,RealToken S 9500 Wayburn St Detroit MI,True,us_state_in_name
+0x85f3278d2d5f44206cf87a80f3ceec665a83ebe3,"Factoring, Profit Share, Type B, series 01",False,source_flag_false
+0x8626b38267e4fc0d8c92e0bb86f97acab3f6aa05,RealToken S 10604 Somerset Ave MI,True,us_state_in_name
+0x86b4f8135a39dc349a963969f33c3d030726cf61,RealToken S 6582 Bewick St Detroit MI,True,us_state_in_name
+0x86cb13560e70250db48fc428da2b951734cf3d39,"6208 Carpenter Ave, Cleveland, OH 44127",False,source_flag_false
+0x870cb517bede293cde2593ad97c0316dcea9a36b,RealToken S 9576 Grandmont Ave Detroit MI,True,us_state_in_name
+0x874166e3cc2118892f7ebe5d92445084137cb5c9,"1 Holdings Fielding St, Detroit, MI 48223",False,source_flag_false
+0x87b2fb660f790b936e42093036e0b519f0b50b24,RealToken S 3588 Oakman Blvd Detroit MI,True,us_state_in_name
+0x883646e436238811d2ebc309891779dbacb0e917,RealToken S 17326 Albion St Detroit MI,True,us_state_in_name
+0x88f37cee57b669cc1557d4f353dc11c113873f0b,RealToken S 10511 Whittier Ave Detroit MI,True,us_state_in_name
+0x893fa9b9c752e20a1a83afd9b66933160495cb63,"Factoring, Profit Share, Type C, Series 11",False,source_flag_false
+0x8980070153a3f76128122a20837f84b2b1513665,"2953 E 120th St, Cleveland, OH 44120",False,source_flag_false
+0x8a25f83819fda66ff0fc6567c8327a5f154c2ec6,"425 Steward Ave, Jackson, MI 49201",False,source_flag_false
+0x8a34ec5829f25820be64d160db1751439ffe5557,RealToken S 13932 Patton St Detroit MI,True,us_state_in_name
+0x8a7cc65bd33641bd349b8a6dea34e2b73a0919b0,"12700 Christine Ave, Garfield Heights, OH 44105",False,source_flag_false
+0x8a9f904b4ead6a97f3ab304d0d2196f5c602c807,RealToken S 19311 Keystone St Detroit MI,True,us_state_in_name
+0x8b17cf969f2deb384f89ffd5cae9210baea9610c,"1 Cartagena Beaches, Cartagena, Bolivar, Colombia",False,source_flag_false
+0x8b7d956b2c3165eb3bf338ca221f152ba772b3ad,"351 E 119th Pl, Chicago, IL 60628",False,source_flag_false
+0x8be1619aa46bd35a867e290e932fa30160553876,"2815 Woodland Grove Dr, Kingwood, TX 77339",False,source_flag_false
+0x8c0c43b05feb05e306e0e9c71b97840fa373d33d,"14544 Patton St, Detroit, MI 48223",False,source_flag_false
+0x8c1c77c549a3f233fa8f8dea133ff5415d9bae11,RealToken S 1521-1523 S.Drake Ave Chicago IL,True,us_state_in_name
+0x8c3761c5d489ee5a5c30f874b5220c769a7c5a16,RealToken S 15841 Coram St Detroit MI,True,us_state_in_name
+0x8c4c77120758a619e5e99642f8c801b6ad0fb94b,"12800 Asbury Park, Detroit, MI 48227",False,source_flag_false
+0x8c60eccab34ffce7b54e985fc8b7ba280b45701d,RealToken S 8017-8019 S Paulina St Chicago IL,True,us_state_in_name
+0x8d1090df790ffafdaccda03015c05df3b4cc9c21,RealToken S 15753 Hartwell St Detroit MI,True,us_state_in_name
+0x8e03c1e3dc348bb3af4df618bdd1b2eec0b2ca45,"2042 Bridge Cross Ln, Houston, TX 77067",False,source_flag_false
+0x8e1de7a9fd1b1b2d761a448d63c4429377624843,"2 Holdings Arcola St, Detroit, MI 48234",False,source_flag_false
+0x8e1eb0d4093f0cc3e375084752a8fae2bff8996e,"16199 Strathmoor St, Detroit, MI 48235",False,source_flag_false
+0x8e282bcc52ef32273ccdc4efdb5b207888f173e6,"8644 Greenview Ave, Detroit, MI 48228",False,source_flag_false
+0x8e84e9afeead0ff87101b3c9743bce0538b44e45,"2903 E 61st St, Cleveland, OH 44217",False,source_flag_false
+0x8f0ef86efe4f2eba5f7a7bf4d0f3b6bc5681a7a7,RealToken S 3965 Fairview St Detroit MI,True,us_state_in_name
+0x8f1bedf87b6382f80da197dde690d8ff7455d19a,"4218 Denison Ave, Cleveland, OH 44109",False,source_flag_false
+0x8f2f4650ec6464cf1bb060755a76e67fa2c30f24,"1559 Hudson Rd, St. Louis, MO 63136",False,source_flag_false
+0x8fa86ba7959df7f3a793c2911f20050deb29167f,"3161 E 65th St, Cleveland, OH 44127",False,source_flag_false
+0x8fcb39a25e639c8fbd28e8a018227d6570e02352,RealToken S 1815 S.Avers Ave Chicago IL,True,us_state_in_name
+0x90a315a3a047bf09653a9ff5c0154a0a6e85482c,"1 Holdings Braile St, Detroit, MI 48223",False,source_flag_false
+0x90d280b6456f8233e115e6aabb2ca89249dafd39,"8034 Faith Ln, Montgomery, AL 36117",False,source_flag_false
+0x90f2d23ba8d860a03baf4b684cc307846146279e,"5292 Dickerson St, Detroit, MI 48213",False,source_flag_false
+0x92161385c9de8798ad5fb01c0be99ffcbc84dfd8,RealToken S 10084 Grayton St Detroit MI,True,us_state_in_name
+0x921db869845dfea51c7c9eb0395b8d6563ebeb5d,"15285 Fordham St, Detroit, MI 48205",False,source_flag_false
+0x92d31e19f88597f368825ba16410f263a844527a,RealToken S 8181 Bliss St Detroit MI,True,us_state_in_name
+0x92ea0f03b611e7e6d056371a3c6b2bb188199c47,RealToken S 15930 Monica St Detroit MI,True,us_state_in_name
+0x934e4bed6f85295581697002fadd816b07c03406,RealToken S 4000 Taylor St Detroit MI,True,us_state_in_name
+0x939539b48418752b6d373fe05bc108ecd85d9187,"9419 Lauder St, Detroit, MI 48228",False,source_flag_false
+0x940b60023484d593b8391521704abb063b5cccf0,RealToken S 18515-18517 Kelly Rd Detroit MI,True,us_state_in_name
+0x944823fbffdcf71b78e96ee7f37f62392de057f8,"14574 Strathmoor St, Detroit, MI 48227",False,source_flag_false
+0x945d833927380e25f402350667c6cd2d2615e7c2,RealToken S 18668 Saint Louis St Detroit MI,True,us_state_in_name
+0x94fa7f8cb8453ad57cd133363b3012044647078c,RealToken S 1244 S. Avers ST Chicago IL,True,us_state_in_name
+0x950bc24510274163aabf83339424e7b49bf6a0c0,RealToken S 7430 Nett St Detroit MI,True,us_state_in_name
+0x9528a7402c0fe85b817aa6e106eafa03a02924c4,RealToken S 14231 Strathmoor St Detroit MI,True,us_state_in_name
+0x952d5aea7fe9ffb481b57ae9adb0714844d3c454,RealToken S 17562 Mansfield St Detroit,True,us_state_in_name
+0x954f393ff46da9cfc07a9052d7c669710cf48ed4,RealToken S 305 Moss St Highland Park MI,True,us_state_in_name
+0x960e61f5c4107d71bd8936b010416738c250f91c,RealToken S 16851-16881 Greenfield Rd Detroit MI,True,us_state_in_name
+0x9636b0af2bfef88c1de3c35b21c0fa58f5e1a38e,"16704 Talford Ave, Cleveland, OH 44128",False,source_flag_false
+0x9642a2379bc359c8b10ead2e06c4a4156bbb3f57,RealToken S 14745 Plymouth Rd Detroit MI,True,us_state_in_name
+0x964ee9e5d9d8abfc768f8d860cc6c33e75d37112,RealToken S 9151 Whittier Ave Detroit MI,True,us_state_in_name
+0x96510c0bafc5b3305d2b468063f7b3f8e8389802,RealToken S 12779 Strathmoor St Detroit MI,True,us_state_in_name
+0x96700ffae33c651bc329c3f3fbfe56e1f291f117,RealToken S 4380 Beaconsfield St Detroit MI,True,us_state_in_name
+0x969d42ad7008e6651e1fd52742153f8743225d98,RealToken S 12409 Whitehill St Detroit MI,True,us_state_in_name
+0x969e3e55c8a4d9c4cd5e2660a2000ae12aad9e3e,RealToken S 4437 Lillibridge St Detroit MI,True,us_state_in_name
+0x97c1c41bc96709611f90798bdc23f31405048dd7,"17160 Runyon St, Detroit, MI 48234",False,source_flag_false
+0x9856c5ca15a4ac9c65aac090c38a9f39eb3b5eec,"18273 Monte Vista St, Detroit, MI 48221",False,source_flag_false
+0x988b40198194ea79fd650d1c61db996b7dcd0780,"12236 Sorrento Ave, Detroit, MI 48227",False,source_flag_false
+0x9917ec34cca28a46d823ebd55e815225f70fa823,"1 Holdings Ave 9 N 4N120, Cali, Valle del Cauca, Colombia",False,source_flag_false
+0x994c698175e5dbe405a46df94fbd54999a3676c2,RealToken S 2703-2705 W Grand St Detroit MI,True,us_state_in_name
+0x99b9150b78968bf6d8a03723931b86caf632395a,"15003 Appoline St, Detroit, MI 48227",False,source_flag_false
+0x9a7cc7e32a337499bb9fe54139fcc84ae9e2cef8,"4009 Lillibridge St, Detroit, MI 48214",False,source_flag_false
+0x9a99f283e1f6c3b7f24901995624ef7b78e94471,RealToken S 18466 Fielding St Detroit MI,True,us_state_in_name
+0x9abff92ddd896f3f7664ec232bb0a5db027d6724,RealToken S 11310 Abington Ave Detroit MI,True,us_state_in_name
+0x9afdd1e3eec7985b9dcc3da1ed030498ea031a6c,RealToken S 12641 Elmdale St Detroit MI,True,us_state_in_name
+0x9b091105b9a9eb118f4e0da06a090d6d95463357,RealToken S 11217 Greenwich Ave Cleveland OH,True,us_state_in_name
+0x9b5b4886033b4abc5eb0552fff7c15a67c3c47c7,RealToken S 11300 Roxbury St Detroit MI,True,us_state_in_name
+0x9d19b4d771ef67ea1da64699a388133b44eb434c,RealToken S 19962 Waltham St Detroit MI,True,us_state_in_name
+0x9d918ee39a356be8ef99734599c7e70160db4db6,"12405 Santa Rosa Dr, Detroit, MI 48204",False,source_flag_false
+0x9dfaa0b7b69f39632ad514cfaba2997cf5b58360,RealToken S 10764 Balfour Rd Detroit MI,True,us_state_in_name
+0x9dfd50ac7cb60832bf7b1c7c46204efcbd2cc959,"3406 Medbury St, Detroit, MI 48211",False,source_flag_false
+0x9ea9b45a500dd4346163ce7483dea2294ae88d1d,RealToken S 10099 Greensboro St Detroit MI,True,us_state_in_name
+0x9eb90ec3faafc22092c9b91559fddde538042093,RealToken S 18900 Mansfield St Detroit MI,True,us_state_in_name
+0x9ecf9c19344fea97901f50d8e1c744504718bfdf,"Factoring, Profit Share, Type B, Series 21",False,source_flag_false
+0x9f923653a19537b5a1b003854a1920fe67a8ffeb,RealToken S 13114 Glenfield Ave Detroit MI,True,us_state_in_name
+0x9fa3c15d8f21f1f35d1187069d66ae422ee45eba,"11887 Riad St, Detroit, MI 48224",False,source_flag_false
+0x9fef44fc4c571010bccd5b63e1cdc807d3b347bf,RealToken S 15095 Hartwell St Detroit MI,True,us_state_in_name
+0xa0b85db4c2b773fb98e9018b636fffdb6314ec83,"Vigo 1207, Medellin, Antioquia, Colombia",False,source_flag_false
+0xa0c483fbc5eda621ab5de70f76817aa2f9b88f86,"9179 Manistique St, Detroit, MI 48224",False,source_flag_false
+0xa12a334f563c1a9fef29cf11fac7e148fd54463b,RealToken S 11830 Camden Ave Detroit MI,True,us_state_in_name
+0xa137d82197ea4cdfd5f008a91ba816b8324f59e1,RealToken S 5601 S Wood St Chicago IL,True,us_state_in_name
+0xa14d2507a2b96adc13cb19642802fd4eaf9a8a32,"16810 Bringard Dr, Detroit, MI 48205",False,source_flag_false
+0xa1f40b6f4df7d9ba5978a0cdb5ab31d6446dce21,"16910 Grovewood Ave, Cleveland, OH 44110",False,source_flag_false
+0xa235a1208a59cee3380fa627056e63e612774949,"LOAN 11300 E 7 Mile Rd, Detroit, MI 48234",False,source_flag_false
+0xa29ae272bc89e5f315b2793925f700045f845d82,RealToken S 581-587 Jefferson Ave Rochester NY,True,us_state_in_name
+0xa2b2ae397492c7ed8a4c1e751ac72d2b59947e6b,RealToken S 9920 Bishop St Detroit MI,True,us_state_in_name
+0xa3947ea22a8200b217885a7e9c9bcbf704349509,RealToken S 1 Holdings Monterey St Detroit MI,True,us_state_in_name
+0xa3bb6ea63c0fbf259e16ffe0586d84b2c83d7229,RealToken S 14511 Houston-Whittier St Detroit MI,True,us_state_in_name
+0xa48ddf8d4f9b03c63d6340b5e0d2af293ab516ea,RealToken S 18608-18612 Moross Rd Detroit MI,True,us_state_in_name
+0xa53419bd805fa5f9f8ba9f84644ea3cf2ee20616,"20115 Barlow St, Detroit, MI 48205",False,source_flag_false
+0xa552e548fe4f566f0b4a8dca39b9b083a375fa35,"1012 Preserve Park Dr, Loganville, GA 30052",False,source_flag_false
+0xa5c16ae5fd75f4f079f3e33f0124899bacf567f9,RealToken S 882-884 Pingree St Detroit MI,True,us_state_in_name
+0xa5f2a5bcd08ddf43a06bc835de8754257e2788ff,"19396 Westphalia St, Detroit, MI 48205",False,source_flag_false
+0xa5fd99f142ebf4343974137a3200e5197bf0c81b,RealToken S 1907 Ottawa Dr Toledo OH,True,us_state_in_name
+0xa6004ca1fab428152f27135355f21d6bcdf355bd,RealToken S 16767 Greenfield Rd Detroit MI,True,us_state_in_name
+0xa6231a14bdb99ba817c211558fa8ebb2a74b959a,RealToken S 7501 Stockton St Detroit MI,True,us_state_in_name
+0xa6662b6c605afb2cd635b2511efb10a04a08e79b,RealToken S 1 Holdings N Arcola St Detroit MI,True,us_state_in_name
+0xa67082597c81c2b7b6a2f0a4cbd29cb7d0b6b382,RealToken S 5846 Crane St Detroit MI,True,us_state_in_name
+0xa68b7779504b0ae372ddcc109f8786db9b91e93e,RealToken S 4338-4340 East 71 Cleveland OH,True,us_state_in_name
+0xa69d7d4ddf397f3d1e7ebaf108555d1107b3b117,RealToken S 9166 Devonshire Rd Detroit MI,True,us_state_in_name
+0xa6d4ad59bf770e14eb4db51bc16b1467ab202dc0,RealToken S 14997 E State Fair St Detroit MI,True,us_state_in_name
+0xa7b8a6b1eb99f7163457b435a16ef0dbe2ae40ef,"16131 Canaridge Dr, Houston, TX 77053",False,source_flag_false
+0xa816636edd3e777b733177cb5aeefbd931565fb5,"LOAN 2025 Fullerton Ave, Detroit, MI 48238",False,source_flag_false
+0xa81f77e8988b28fb74243b907ace3c83353dc80a,RealToken S 15634 Liberal St Detroit MI,True,us_state_in_name
+0xa83cbd26964ea953f86c741871a1ab2a256cb82d,"9311 Bedford St, Detroit, MI 48224",False,source_flag_false
+0xa8a37b03e786ab915c960fe69914df892a69f183,"Factoring, Profit Share, Type C, Series 17",False,source_flag_false
+0xa8ab830bfd0d91bc017cdec98a2a198b9938ea8d,RealToken S 12747-12749 Nashville St Detroit MI,True,us_state_in_name
+0xa918027e8e41152ca3420e78a09000ab40adb99b,"3742-3746 Whitney St, Detroit, MI 48206",False,source_flag_false
+0xa968d38570c5d773d72a863a716672506f388b33,"2 Holdings Fielding St, Detroit, MI 48223",False,source_flag_false
+0xa984e4c759bea433bef9239736d5f9a9af0e7389,RealToken S 10703 McKinney St Detroit MI,True,us_state_in_name
+0xa9e20a86d66493fd146abb9a1f946864773ce0ae,RealToken S 3784 Seneca St Detroit MI,True,us_state_in_name
+0xa9f30c907321718e655b74463ca665b690b78894,RealToken S 15860 Hartwell St Detroit MI,True,us_state_in_name
+0xab269dcd4a424cb8fa9432adc37d021c3d183578,"19731 Shields St, Detroit, MI 48234",False,source_flag_false
+0xab322771434fdea535c398fe9001c85c550dca1f,RealToken S 3469 Martin Luther King Jr Dr Cleveland OH,True,us_state_in_name
+0xab51a4150d695cb18a8cb6888679eb50e278c5b4,"208 Cliffbrook Ln, Cleveland, TX 77327",False,source_flag_false
+0xac0d5dbfed881b3ffaebc7152bc2bc23464fe0cc,RealToken S 19751 Marx St Highland Park MI,True,us_state_in_name
+0xacbd31b19cd7cca21ba3db4d143247668e62a88c,"14248 Greenlawn St, Detroit, MI 48238",False,source_flag_false
+0xad010246ecc63d57797217fc3bc3b76e35c07cf3,"RealToken Playa Caracol 303200 E, Punta Chame, Panama Oeste, Panama",False,excluded_instrument_or_foreign
+0xad903115c5d75f2e75be7bfc488228cec1fb206e,"8924 Bessemer Ave, St. Louis, MO 63134",False,source_flag_false
+0xad91999f534f4075b00ba4231c018e57bdebb342,RealToken S 18983 Alcoy Ave Detroit MI,True,us_state_in_name
+0xae3713ac3717fa539e98618a03e99a68443f5789,RealToken S 15084 Lesure St Detroit MI,True,us_state_in_name
+0xaee3f1143003e6c0f342039a7efb63f543b2d33a,RealToken S 1 Holdings Pierson St Detroit MI,True,us_state_in_name
+0xaee6ded2c8723c1d81d1b5325a2e620fb055b77b,RealToken S 13700 Dexter Ave Detroit MI,True,us_state_in_name
+0xaf3e882320e3a5dbaa1e08c0613eefa143fcdd91,RealToken S 14876 Hartwell St Detroit MI,True,us_state_in_name
+0xaf6b5037465276e8009d1372cb71876e18038eb5,"18410 Rosemont Ave, Detroit, MI 48219",False,source_flag_false
+0xaf83655ceeecdf8839988865f18f6fc0f1161b52,"1311 Creek Hollow Dr, Seabrook, TX 77586",False,source_flag_false
+0xafa4f47184e37f0502b7afc27e24779906eeee49,RealToken S 18980 Fenton St Detroit MI,True,us_state_in_name
+0xafa816f7fff6f252e5cdbd40b80d9ef77b7e289b,RealToken S 19041 Lenore Ave Detroit MI,True,us_state_in_name
+0xafc8b095ce1b1ceff3e8f292303fd068a2212e36,"16670 Collingham Dr, Detroit, MI 48205",False,source_flag_false
+0xafd76591d02462cce1aa5b6c6430854aa9a17e56,RealToken S 2550 Greenway St Toledo OH,True,us_state_in_name
+0xb061e8da0b08c8647516921af6a49b81d425f09f,RealToken S 11380 Pinehurst St Detroit MI,True,us_state_in_name
+0xb09850e2b93aa3aaa1476bf0c007cfc960e2de79,RealToken S 14229 Wilshire Dr Detroit MI,True,us_state_in_name
+0xb0bd62447ec79ae63407f34d27cb7e536c28179e,RealToken S 14903 Promenade St Detroit MI,True,us_state_in_name
+0xb0d84f5ae30c5a07273fc98ad16682c0d0d97e2f,"1268 E 145th St, Cleveland, OH 44112",False,source_flag_false
+0xb10a25660abeb2b9d5a9abd8044687b648e7f1d0,"13885 Bringard Dr, Detroit, MI 48205",False,source_flag_false
+0xb169122ae9f775a38cc708bef5232a7807e0d7f4,"14230 Fielding St, Detroit, MI 48223",False,source_flag_false
+0xb215e196f5780327b0364ecfc442ad0fc3762ec7,"Factoring, Profit Share, Type D, Series 20",False,source_flag_false
+0xb25dcc59e892cfe2f120b75a6fa17cd67bb4d3cd,"677 E 118th St, Cleveland, OH 44108",False,source_flag_false
+0xb2960e73b260812e4326723c7136e7b1988a036a,RealToken S 8060 Dreamsicle Dr Kissimmee FL,True,us_state_in_name
+0xb33cd98c0018295aeec82a86bb3d5bcd1cd94a28,"20265 Evergreen Rd, Detroit, MI 48219",False,source_flag_false
+0xb3b4064b998f5489eca79ff9c86d7bc2906149ea,"6600 Percy Ave, Cleveland, OH 44127",False,source_flag_false
+0xb3b66e4177584adec349f4d4ba0e55f57aea4d6a,"3448 E 73rd St, Cleveland, OH 44127",False,source_flag_false
+0xb3d3c1bbcef737204aadb4fa6d90e974bc262197,RealToken S 15796 Hartwell St Detroit MI,True,us_state_in_name
+0xb58357eb374d9b393a3d00577414f33aee95c2bd,"14294 Cherrylawn St, Detroit, MI 48238",False,source_flag_false
+0xb5d30c28f87acf675ed5b9f343e5fff39ec9942c,RealToken S 10024-10028 Appoline St Detroit MI,True,us_state_in_name
+0xb5dd2b6e0a0422e069e1d2cc3ed16533488a05e3,RealToken S 12866 Lauder St Detroit MI,True,us_state_in_name
+0xb5fb9e224a5cc76e61928ea7985d251520a5579c,RealToken S 3851 McClellan Ave Detroit MI,True,us_state_in_name
+0xb617cfff45aff9848a5a3f7943e27fc62b6f23f4,"3602 E 78th St, Cleveland, OH 44105",False,source_flag_false
+0xb64007d64b12dff3185c8cef9205b2264c60c5b7,"12014 Wilfred St, Detroit, MI 48213",False,source_flag_false
+0xb6c4e2b715f8edafeb997505c7fd2d26ce922f21,"11093 Nashville St, Detroit, MI 48205",False,source_flag_false
+0xb6f71c4f527d65087ff0c3240f0ee0630bca7047,RealToken S 16767 Greenfield Rd Detroit MI,True,us_state_in_name
+0xb6fd3a633ed044001ce3ca16f226485e8a758801,"14651 Eastburn St, Detroit, MI 48205",False,source_flag_false
+0xb7c1c306bff953df8997cc8d91949b7aff36772b,RealToken S 1 Holdings Holcomb St Detroit MI,True,us_state_in_name
+0xb80173756781960761aa59c9eeebe191f049f4c8,RealToken S 19391 Grandview St Detroit MI,True,us_state_in_name
+0xb8403b7730368942a5bfe5aac04a31b44015b1cc,RealToken S 11078 Wayburn St Detroit MI,True,us_state_in_name
+0xb87798476389475cbc96d63aa801b7d25c50d5f1,RealToken S 3953 Fairview St Detroit MI,True,us_state_in_name
+0xb890b3cc0f2874b15b0dbf6377d39c106ca29fbf,RealToken S 2626-2638 Wreford St Detroit MI,True,us_state_in_name
+0xb941ac736f5d8967143f53ef728df0761a1c9b04,"4575 E 86th St, Cleveland, OH 44105",False,source_flag_false
+0xb9a8d6d0d8ade99bc9868339d9950db7a7a70eb4,RealToken S 14857 Stout St Detroit MI,True,us_state_in_name
+0xba07997f594a52df179620284b52b50a4e66227d,RealToken S 18776 Sunderland Rd Detroit MI,True,us_state_in_name
+0xba6ea3b2d2a975efe9f094fa640761191dd54bc9,RealToken S 15930 Monica St Detroit MI,True,us_state_in_name
+0xba8e6028d951e16456845c889cbe970d5088496f,RealToken S 5530 Marseilles St Detroit MI,True,us_state_in_name
+0xbabc257b4958556bda696e7705cf535f400d8b09,RealToken S 10717-10719 Bryant Ave Cleveland OH,True,us_state_in_name
+0xbb32de53a057f29280ad889a92fe99d69d470ef0,RealToken S 14439 Longview St Detroit MI,True,us_state_in_name
+0xbc2fde1dde9589a168e318c58cc88e7eadc2dacd,"Factoring, Profit Share, Type B, Series 02",False,source_flag_false
+0xbcb0ce83aa0898fbd26c35f38d8a448bcadf7333,"14176 Plainview Ave, Detroit, MI 48223",False,source_flag_false
+0xbd1ed7a8e0dae39e41c6cda5b14f3a21226aa1e3,"4609 Lillibridge St, Detroit, MI 48214",False,source_flag_false
+0xbd42a15a05d51158ca3c46cfd26fb19476f91ce6,RealToken S 13000 Promenade St Detroit MI,True,us_state_in_name
+0xbda9f29b1c01c26179d4fe24cca57d14eb9abf3f,"Factoring, Profit Share, Type B, Series 19",False,source_flag_false
+0xbdbe5f1b50c3ffa45006e82e7b66bfd61aafa711,"16126 Freeland St, Detroit, MI 48235",False,source_flag_false
+0xbdc1f8ccd117fe4e34f6c78f5293cd126b0c0474,RealToken S 10518 Woodland Ave Cleveland OH,True,us_state_in_name
+0xbefbddece97a1d4182c96153d13ba0e487a63d7b,RealToken S 4601 Lillibridge St Detroit MI,True,us_state_in_name
+0xbf1a3181167e4979fd121ef247d9af4fc884cc46,RealToken S 19400 Hickory St Detroit MI,True,us_state_in_name
+0xbf9f4f368a4d963f9a038386934a4079c282861b,RealToken S 5517-5519 Elmhurst St Detroit MI,True,us_state_in_name
+0xbfe5ea655166328db63e58c9a683d44b0e769a04,RealToken S 10048 Grayton St Detroit MI,True,us_state_in_name
+0xc1014b2ad0a731a28c0b74890ad3c50837faa309,"14814 Patton St, Detroit, MI 48223",False,source_flag_false
+0xc113f50e638f8cb61a38d70735feb42360d9dead,"14830 Pierson St, Detroit, MI 48223",False,source_flag_false
+0xc1c1031e4a44b98707203480029e6576cb3267e3,RealToken S 11898 Laing St Detroit MI,True,us_state_in_name
+0xc25d2de29428d0f5869b6b951e0f9fa19c414156,"18415 Fielding St, Detroit, MI 48219",False,source_flag_false
+0xc2fb83f45c53d2194a9ee82e4bda3ee2120141f5,"5837 Moran St, Detroit, MI 48211",False,source_flag_false
+0xc363ea8a468b3970ef93140d5d4ad9d124178f6e,RealToken S 20418 Andover St Detroit MI,True,us_state_in_name
+0xc38e84bcc2d2693dd77d89f2b86a83e7fe98afa5,"Realtoken Villa Marina 514, Playa Venao, Los Santos, Panama",False,excluded_instrument_or_foreign
+0xc49297c99f880f5f19df4ac988eba4df03ef6333,"10924 Balfour Rd, Detroit, MI 48224",False,source_flag_false
+0xc4a58f3746663bc22a0da17846b5f9c6b8ab4876,RealToken S 8106 Faith Ct Montgomery AL,True,us_state_in_name
+0xc5294e24145408e9fdf98863f5761949c6528078,"8213 Faith Ln, Montgomery, AL 36117",False,source_flag_false
+0xc731eca970979cd2da2a1094a808f49894070d35,RealToken S 19218 Houghton St Detroit MI,True,us_state_in_name
+0xc73abb210b1ee3304987c310626f19432b2e17b4,"14256 Montrose St, Detroit, MI 48227",False,source_flag_false
+0xc767319ffb8c35b6e8685d9729273cccc094f8aa,RealToken S 581-587 Jefferson Ave Rochester NY,True,us_state_in_name
+0xc7697f5e86a102eaf4000719a2dc477d65beea7d,RealToken S 16728-16730 Woodingham Dr Detroit MI,True,us_state_in_name
+0xc7785a2575606d444cefbc8a22591600ae5aa9b4,RealToken S 13041 Hayes St Detroit MI,True,us_state_in_name
+0xc80113af48d272827a8bfb0b68c8b7b120d948c6,"14892 Wildemere St, Detroit, MI 48238",False,source_flag_false
+0xc84842aa7578924962e48f39c4ebfb5d52e5dfd8,RealToken S 18703 Gilchrist St Detroit MI,True,us_state_in_name
+0xc8b50cdff9cdb9ff380a48c7c0083b6b987379f1,"8131 Sorrel Ln, Montgomery, AL 36117",False,source_flag_false
+0xc8ed28ce508811216030b96e2dc70883abad5408,RealToken S 7519-7521 Wykes St Detroit MI,True,us_state_in_name
+0xc9eb6e26bb3d773eb085827f62a162f570af92a7,"1760 Elkins Dr, St. Louis, MO 63136",False,source_flag_false
+0xca4e38439d5d86554431e15eced03b8bcf2abddd,RealToken S 15864 Eastburn St Detroit MI,True,us_state_in_name
+0xca7525798fa49e852603a4b6504f2791e9b1fd0d,"Factoring, Profit Share, Type B, Series 05",False,source_flag_false
+0xcaf963cd253cf81664ecbcad71d043c47edf77fb,RealToken S 11217 Beaconsfield St Detroit MI,True,us_state_in_name
+0xcb061ae1f9b618c44ac10a47a672bf438da01fd8,RealToken S 893-895 W Philadelphia St Detroit MI,True,us_state_in_name
+0xcb2928d422cc2f349bfb67ee74113a3101a58cb4,RealToken S 2518 Glendale Ave Detroit MI,True,us_state_in_name
+0xcbbb0da4bfe47876e977f3c1f40ebce23315e8d4,"927 Buckeye Dr, St. Louis, MO 63135",False,source_flag_false
+0xcbc7c6318f2f6f7778b55fd1fcfbda13ea7659ba,"3162 E 66th St, Cleveland, OH 44127",False,source_flag_false
+0xcbe64ee1a2f4da721e98326f29b875cb9cf6751b,"12518 Laing St, Detroit, MI 48224",False,source_flag_false
+0xcc21b161171b181aa9cd7226a2c484175afd1fed,RealToken S 17310 Bentler St Detroit MI,True,us_state_in_name
+0xccca5323052435aa4b0ec94c1d0255f17e4f495c,RealToken S 11750 Morang Ave Detroit MI,True,us_state_in_name
+0xcce09824c2b9c70cd4bd3726ce36398dc1373797,RealToken S 20160 Conant St Detroit MI,True,us_state_in_name
+0xcd7dc5e034b631331bc0cfc4ea71d2dc7b53c338,RealToken S 2950-2952 Monterey St Detroit MI,True,us_state_in_name
+0xcdf955df8a7ae1264f3b4f8ee5fa68507e8528aa,RealToken S 5278-5280 Drexel St Detroit MI,True,us_state_in_name
+0xce0ef526bdc57064fe556a9b2614eeb66608892f,"9950 Beaconsfield St, Detroit, MI 48224",False,source_flag_false
+0xce111a198eb04f388aceb78c40ced6daf1b0514a,RealToken S 272 N.E. 42nd Court Deerfield Beach FL,True,us_state_in_name
+0xcea93e3bb140fba0d359bc51e3044843aecd7e6e,"10905 Eliot Ave, Cleveland, OH 44104",False,source_flag_false
+0xcfe61eff2cde5c5885ba3a649ab092f56bd2830f,RealToken S 3747 Scovel Pl Detroit MI,True,us_state_in_name
+0xd018c66416f3fb6e96f1ad2a758677e1e019e3fb,RealToken S 16644 Rossini Dr Detroit MI,True,us_state_in_name
+0xd08d2b199e9e5df407427d4085877d1fdff3b1d6,RealToken S 6923 Greenview Ave Detroit MI,True,us_state_in_name
+0xd0ef2feeef879eb6ceb23a7809f6bb39e13ff0a8,RealToken S 10822 Whitehill St Detroit MI,True,us_state_in_name
+0xd1095b31f41d3bdbb66a52b94a737b2d7ac17635,RealToken S 14263 Ohio St Detroit MI,True,us_state_in_name
+0xd10f30d8cbca2f5d4d89878111130cb93bd338ea,"11410 Avon Ave, Cleveland, OH 44105",False,source_flag_false
+0xd1bf0f64eba2f8babfdf71de3e5cc9e33f97a46a,"13510 Dale St, Detroit, MI 48223",False,source_flag_false
+0xd1c15cebfdcd16f00d91666bf64c8b66cbf5e9b5,RealToken S 10612 Somerset Ave Detroit MI,True,us_state_in_name
+0xd2f3f2c6ec04c657dd8e60503b382edbe77616ba,"12041 Wilfred St, Detroit, MI 48213",False,source_flag_false
+0xd358021be065bda24fd1b713b4f9377696b04a3b,"11222 E 7 Mile Rd, Detroit, MI 48234",False,source_flag_false
+0xd3b8ac58973a5896263b9ce25a5d16189dd07358,"3450 E 76th St, Cleveland, OH 44127",False,source_flag_false
+0xd3f7130940c7746298d9778f79e7bba4c552f176,RealToken S 11758 Christy St Detroit MI,True,us_state_in_name
+0xd4178045de5a66923d99ff32fb0eea18dcc45d40,"10062 Somerset Ave, Detroit, MI 48224",False,source_flag_false
+0xd46f25e687b6cbdf71a6981b9937baece791decf,"3544 E 133rd St, Cleveland, OH 44120",False,source_flag_false
+0xd5337f13b644fc3a4c4a1ef74d63e2cbd7958e59,RealToken S 1 Holdings Patton St Detroit MI,True,us_state_in_name
+0xd54cc5999d383254334926c06405e5b800ffa1db,"17157 Rowe St, Detroit, MI 48205",False,source_flag_false
+0xd590ab93067c473fb0647e7a8271979447519db0,"20013 Revere St, Detroit, MI 48234",False,source_flag_false
+0xd5d14c3bf4aa3078feec6557c2d7f6d1bf102a80,RealToken S 5224 Hereford St Detroit MI,True,us_state_in_name
+0xd5d1adf54fbf73a00b197ddcfdad7cc27d93002f,RealToken S 10629 McKinney St Detroit MI,True,us_state_in_name
+0xd5fc0c4c4c5ff316e1e91494d963ff1d52ba25ff,RealToken S 11078 Longview St Detroit MI,True,us_state_in_name
+0xd63265bbe136deff4f26e5976d21840c25df5e7a,RealToken S 1 Holdings Navahoe St Detroit MI,True,us_state_in_name
+0xd67ba795ca466a85be46b13763adcb729be49a82,RealToken S 11845 Camden Ave Detroit MI,True,us_state_in_name
+0xd6a1e5925a320c547c7fcd91f7ac5016a30bbb52,"6353 Hereford St, Detroit, MI 48224",False,source_flag_false
+0xd7000fdd1260db38b2d4e1fa5d0f9f64141cf443,"11727 Christy St, Detroit, MI 48205",False,source_flag_false
+0xd760e2cb1c9592d24ba0f2d4caf7ffe21c8721ad,"Factoring, Profit Share, Type B, Series 10",False,source_flag_false
+0xd7666cb7f9092638913229d09ef8c6084ab50555,"350 E 74th St, Chicago, IL 60619",False,source_flag_false
+0xd79e63912dbeb409ea350138503a9eb29d73728f,RealToken S 10862 Marne St Detroit MI,True,us_state_in_name
+0xd84d9c58a93e3d4b0acc5ab5a5aa5e2fa6b7ab75,RealToken S 18527-18529 Kelly Rd Detroit MI,True,us_state_in_name
+0xd8729957095dba4f8055dfe5c58c65720d817eb0,RealToken S 19340 Packard St Detroit MI,True,us_state_in_name
+0xd88e8873e90f734c9d3e3519e9e87345478c1df2,RealToken S 1610 E State Fair Ave Detroit MI,True,us_state_in_name
+0xd8b19f31186fc7350be018651aa1383175923bb3,"11373 Prest St, Detroit, MI 48227",False,source_flag_false
+0xd8b64f80482b8928e99e082f61427ed21a3b9706,"12605 Payton St, Detroit, MI 48224",False,source_flag_false
+0xd8b9c3c10ba1d9f926b94b45859b65b2900e49bb,RealToken S 1 Holdings Montclair St Detroit MI,True,us_state_in_name
+0xd8fb5b929b08a60fc50d319d6c5ce21d61c7fd83,RealToken S 5933 Moran St Detroit MI,True,us_state_in_name
+0xd9e89bfebae447b42c1fa85c590716ec8820f737,RealToken S 4061 Grand St Detroit MI,True,us_state_in_name
+0xda47bd33e8f5d17bb81b8752784bfb46c1c44b2a,RealToken S 15350 Greydale St Detroit MI,True,us_state_in_name
+0xdacff6001d6fb5aca30a683036d114cee9379077,"12901 Lenacrave Ave, Cleveland, OH 44105",False,source_flag_false
+0xdaf6b273691372e4eb2fe353624f8f4f768c2099,RealToken S 618 E 79th St Chicago IL,True,us_state_in_name
+0xdbc4e32037d5d8bbeb975006467e8b40737c77b0,RealToken S 18303 Maple Heights Blvd Maple Heights OH,True,us_state_in_name
+0xdbd2a18f44a95a1c86c8472669baf02b945227de,"4147 E 99th St, Cleveland, OH 44105",False,source_flag_false
+0xdc72bd5005b582630d297f6f0825ee77620ddec5,"2992 E 61st St, Cleveland, OH 44127",False,source_flag_false
+0xdcfe90e59b574839e028ec28e78018b84b6fcdab,RealToken S 14622 Hubbell Ave Detroit MI,True,us_state_in_name
+0xdd3d658579a733c3c1a3e594094ec4c6c58bbb38,"4037 Fairview St, Detroit, MI 48214",False,source_flag_false
+0xdd79587c22d7b2a68c0aa0752a6f83b1d77556cd,RealToken S 10756 Balfour Rd Detroit MI,True,us_state_in_name
+0xdd833d0eef6d5d7cec781b03c19f3b425f3039df,"11957 Olga St, Detroit, MI 48213",False,source_flag_false
+0xde9122799c313d5cc5c4385984156ad068cde331,RealToken S 1612 Denver St Toledo OH ,True,us_state_in_name
+0xdec38e85677f0e38b575f1f084c67b13316dd237,"1 Holdings Fairview St, Detroit, MI 48214",False,source_flag_false
+0xded2295d6f2d2bd0203cded443635e134448af17,"8314 Hubbell St, Detroit, MI 48228",False,source_flag_false
+0xdf1dba31476d49404b4de9c2b7b4319f121b926f,"12905 Lenacrave Ave, Cleveland, OH 44105",False,source_flag_false
+0xdf73fad4a7a5f755e765710271dee1c456c8a3d2,"9433 Ardmore Dr, St. Louis, MO 63137",False,source_flag_false
+0xdf7a80778a8be812e654291ffab21d61e9c21323,RealToken S 10030 Cadieux Rd Detroit MI,True,us_state_in_name
+0xdfdc10a5dbb68d36782a0933678dc187ec1c2ea4,RealToken S 2 Holdings Tappan St Detroit MI,True,us_state_in_name
+0xe0caf659d1bb4403c8f4b883077619159369f652,"19736 Whitcomb St, Detroit, MI 48235",False,source_flag_false
+0xe134c13bbac45a9c5f949ced4aff5a0b08a70792,"14379 Braile St, Detroit, MI 48223",False,source_flag_false
+0xe1959cb6d73c604305fb05f9bb227ecb12616ed7,"11712 Dove Ave, Cleveland, OH 44105",False,source_flag_false
+0xe1c4610477da28f6852ced5666aa6f3ccbd73b02,RealToken S 13628 Tacoma St Detroit MI,True,us_state_in_name
+0xe21f218423e95a027a09a3e03b24553cd1630f3a,"18401 Joy Rd, Detroit, MI 48228",False,source_flag_false
+0xe23a5fc3502976de653cb64e5c27dc01d700db36,RealToken S 19144 Riopelle St Highland Park MI,True,us_state_in_name
+0xe255caf8893382465368b8e1cd4ef8436acf0ade,RealToken S 402 S Kostner Ave Chicago IL,True,us_state_in_name
+0xe2fbdeadc82c71c1b8bff9ca4f9e7666224a362c,RealToken S 16085 E Seven Mile Detroit MI,True,us_state_in_name
+0xe3318d92c533b5a2804d64474d0ec7b23aef4258,"Vigo 1002, Medellin, Antioquia, Colombia",False,source_flag_false
+0xe3902e329ef2d3fd7666022c139d75bcc984b7a5,RealToken S 15048 Freeland St Detroit MI,True,us_state_in_name
+0xe44506459a954da2d291501b57016f9ccae365a7,"9585 Mettetal St, Detroit, MI 48227",False,source_flag_false
+0xe447e8ec034c9100c1ff9bc401b5cd2fe15c9dcc,RealToken S 8065 Lost Shaker Ln Kissimmee FL,True,us_state_in_name
+0xe4c74c3852cb088e49a010fb0b79159859623da2,"11420 Montrose St, Detroit, MI 48227",False,source_flag_false
+0xe5b46b4c5c7f974e55ded0b0099c02774f0023c1,RealToken S 14329 Strathmoor St Detroit MI,True,us_state_in_name
+0xe5c68e1acae47251fa2edb795b9ddb18cddecc52,"15303 Liberal St, Detroit, MI 48205",False,source_flag_false
+0xe5ce63ac9a08c1eb160889151cd84855f16c94d2,RealToken S 10616 McKinney St Detroit MI,True,us_state_in_name
+0xe5e7aaf681baf92300dc6c5fa1d68d449e41f6c0,"9959 Lauder St, Detroit, MI 48227",False,source_flag_false
+0xe68de6869bb58acf8ce4dbdccf1b26c5d1b6050c,"12047 Nashville St, Detroit, MI 48205",False,source_flag_false
+0xe6cc85f2c6c40d3bea4c09a11f1351923f4c5602,"16704 Carlisle St, Detroit, MI 48205",False,source_flag_false
+0xe7b6de709ffc3bd237c2f2c800e1002f97a760f3,RealToken S 4852-4854 W Cortez St Chicago IL,True,us_state_in_name
+0xe7e80e20ce71acd578b18c54382567385771cc37,RealToken S 1 Holdings Palmetto St Detroit MI,True,us_state_in_name
+0xe7f4bfa5b66e5dc1be1d4d424eaba414f03a295e,"172 Crown Forest Dr, McDonough, GA 30252",False,source_flag_false
+0xe82cbb7c29d00a4296ee505d12a473c26cd9c423,RealToken S 10700 Whittier Ave Detroit MI,True,us_state_in_name
+0xe887dc4fcb5240c0c080aeab8870421d3ebd0b28,RealToken S 14066 Santa Rosa Dr Detroit MI,True,us_state_in_name
+0xe8b0dcf028983e16b035056e34aeae15292645ff,"19184 Hasse St, Detroit, MI 48234",False,source_flag_false
+0xe90e02790f5070fb89b15863e2dbc3c22532b43e,RealToken S 1 Holdings S Arcola St Detroit MI,True,us_state_in_name
+0xe919df5f4eff1e6e6c6fe7c82471a5e6ce3437f1,RealToken S 1630 E State Fair Ave Detroit MI,True,us_state_in_name
+0xe99060132cc7440fdf6ca7cc13ddfb37fe04325a,"3629 E 46th St, Cleveland, OH 44105",False,source_flag_false
+0xe9e603c04d33e205eeb5009e542f52aa851e69d8,"4478 Lillibridge St, Detroit, MI 48214",False,source_flag_false
+0xea91a67a23943984bc8017e20c9fd2e40fd38c3d,RealToken S 19539 Hickory St Detroit MI,True,us_state_in_name
+0xeb1377cec5e576384f3bffdfca6ec9da52905750,RealToken S 1521-1523 S.Drake Ave Chicago IL,True,us_state_in_name
+0xeb3b5f86904d671747d8c41e6dbdfa2aadcdf72f,"1 Holdings W Arizona St, Highland Park, MI 48203",False,source_flag_false
+0xebbe401d2a362f01a08f03c8a45813322b1d0596,"11076 St Patrick St, Detroit, MI 48205",False,source_flag_false
+0xec72022809156fb57564c8c3412e62dbc46298c3,"13595 Griggs St, Detroit, MI 48238",False,source_flag_false
+0xec865454a3ab783a1f18e2096c63aa9faebb0c6c,RealToken S 5590 Beaconsfield St Detroit MI,True,us_state_in_name
+0xed577ac35ae0335861c6ba6fb85297c9c6966d04,"431 Northfield Dr, Mooresville, IN 46158",False,source_flag_false
+0xed9fa34959acfbd33d10b3ea3589ea1e0c9f7ffe,"5760 Chatsworth St, Detroit, MI 48224",False,source_flag_false
+0xeda173774c85319f1823ecbc593940567a7b254f,"2411 Caverhill Dr, St. Louis, MO 63136",False,source_flag_false
+0xedcddc374c78bb8596352a28faf1eba9874aa2e1,RealToken S 11701 Morang Ave Detroit MI,True,us_state_in_name
+0xee2dacc1e9264cbcb19c46863373fbff4ba7a9bd,RealToken S 4342-4344 Cortland St Detroit MI,True,us_state_in_name
+0xee2f2212a64ec3f6bc0f7580e10c53cb38b57508,RealToken S 12334 Lansdowne St Detroit MI,True,us_state_in_name
+0xeedc2f5f4d1226759b1acf9efa23a99661de6663,RealToken S 20200 Lesure St Detroit MI,True,us_state_in_name
+0xef0c14c5d7da4d0447c28da7a9c8145d0a5a6f61,RealToken S 9795-9797 Chenlot St Detroit MI,True,us_state_in_name
+0xef2b6234e376c3b152c5febe47e1ca3c73cdaa9f,RealToken S 15208 Bringard Dr Detroit MI,True,us_state_in_name
+0xef72555b093563ca00fb3493a165787f19e8dbb6,"22 Lamar Dr, Jennings, MO 63136",False,source_flag_false
+0xefa67f9711b53d76d020d8b1bf05a03f0853b26f,"13933 Fielding St, Detroit, MI 48223",False,source_flag_false
+0xefe82d6baf0db71f92889eb9d00721bd49121316,RealToken S 4680 Buckingham Ave Detroit MI,True,us_state_in_name
+0xeffc3018fe9da6ca48f384d512da972217c596c3,"9164 Longridge Dr, St. Louis, MO 63137",False,source_flag_false
+0xf070fbec84004ff48ca17bd6523f4d4448cd656f,"18662 Blackmoor St, Detroit, MI 48234",False,source_flag_false
+0xf13d215776dac65c9c1e80d8f3daf6d91cc062d5,RealToken S 16007 Nelacrest Rd East Cleveland OH,True,us_state_in_name
+0xf14cfe2ab33ee647f9f59ef99e45891c6ad55f2f,"18605 Orleans St, Detroit, MI 48203",False,source_flag_false
+0xf17db2dc6461014b81828d78b57a277e72638ea3,"18915 Hamburg St, Detroit, MI 48205",False,source_flag_false
+0xf18cffb528eca0ea31d1d6b28bc80d2eca34d14d,RealToken S 25097 Andover Dr Dearborn MI,True,us_state_in_name
+0xf1e9d68db090bd79151bfbfca323e00177decce0,"1866 Reyburn Rd, Cleveland, OH 44112",False,source_flag_false
+0xf1f247098d935d0cc19ba9fea2986b89a20366b5,"9140 Bedford St, Detroit, MI 48224",False,source_flag_false
+0xf23b80216a10e6f0c0d3b5ad5c9349e9425cad40,RealToken S 15778 Manor St Detroit MI,True,us_state_in_name
+0xf36c99b073826dc7a056147a0c41b5dbdef8b32b,"2 Holdings Fairview St, Detroit, MI 48214",False,source_flag_false
+0xf3c4c10ab96f9b6d7719de63f4219f69078df976,RealToken S 14881 Greenfield Rd Detroit MI,True,us_state_in_name
+0xf4657ab08681214bcb1893aa8e9c7613459250ec,RealToken S 1617 S.Avers Ave Chicago IL,True,us_state_in_name
+0xf549b95362e6062999bdfe6c61e75e4547b8116d,RealToken S 11117 Worden St Detroit MI,True,us_state_in_name
+0xf552ac17a396487f233a696bf52b82bf53080c6d,RealToken S 4021 E Outer Dr Detroit MI,True,us_state_in_name
+0xf580651ba2090fd8ba5a6bdc999f46dc6532f894,RealToken S 14872 Ilene St Detroit MI,True,us_state_in_name
+0xf5a6709124f83df58b6d88b81d816eb8e004c590,"The Rider Wynwood 1101, Miami, FL 33127",False,source_flag_false
+0xf5ab89c2cf214a2bb0b828646f2721b50705612e,"14610 Fairmont Dr, Detroit, MI 48205",False,source_flag_false
+0xf5aeab9d9c707b56311066e5172239686ab88110,RealToken S 2318-2324 W Marquette Rd Chicago IL,True,us_state_in_name
+0xf6e2736f28756b8d5918e0adf38842edb2e4971d,"10331 Greensboro St, Detroit, MI 48224",False,source_flag_false
+0xf6e71d448e612341b21cc537cfbd87290d760926,"12130 Manor St, Detroit, MI 48204",False,source_flag_false
+0xf7412e264fa85ae5e79ac3a4b64ce4669e32b98f,RealToken S 19000 Fenton St Detroit MI,True,us_state_in_name
+0xf77b57193733b242bef52b97712654b09a76f6d2,"Factoring, Profit Share, Type B, Series 14",False,source_flag_false
+0xf793d1ba72e2914525205ca592dec2142e700cb4,RealToken S 10040 Cadieux Rd Detroit MI,True,us_state_in_name
+0xf87749b95a5179f36ce75b52c7d3d5a6dd28fe19,"10621 Vernon Ave, Garfield Heights, OH 44125",False,source_flag_false
+0xf921da2fd30df09e32f54e258d45fb4fd821a11d,"Factoring, Profit Share, Type C, Series 07",False,source_flag_false
+0xf96bcf8a5d9fa5258bcf243feb43500a2174abd6,RealToken S 3996 Lillibridge St Detroit MI,True,us_state_in_name
+0xf98be7ddab511622b5de91039c48f1f2e37d0bc1,RealToken S 9624 Abington Ave Detroit MI,True,us_state_in_name
+0xf9a932df2010bd3d0e0f47bc61b7104ab82874da,RealToken S 18286 Oakfield Ave Detroit MI,True,us_state_in_name
+0xfa5a937e5f0dbe4a069a897a2c949350623c4ed8,"Factoring, Profit Share, Type C, Series 06",False,source_flag_false
+0xfaa42fcd1e2c9a9c615063c8353977b2fd9f413b,"3420 E 75th St, Cleveland, OH 44127",False,source_flag_false
+0xfaf673e618039e0ce738c98e4402cea6e2f0c797,"14006 Bringard Dr, Detroit, MI 48205",False,source_flag_false
+0xfb260178c2c0e5f920adea3dcc906bee4fea8a27,"18933 Fairport St, Detroit, MI 48205",False,source_flag_false
+0xfbc42781ec26a4c6bb1a48dfb7815b825e44a140,"3387 E 106th St, Cleveland, OH 44104",False,source_flag_false
+0xfc45ea46c0ef844de8f0c3b5d289d2e6ad929665,RealToken S 13881 Saratoga St Detroit MI,True,us_state_in_name
+0xfc5073816fe9671859ef1e6936efd23bb7814274,RealToken S 1418 W Marquette Rd Chicago IL,True,us_state_in_name
+0xfdac8839e977bb556c85cea620cdee02339a6893,"8565 Northlawn St, Detroit, MI 48204",False,source_flag_false
+0xfddb1a1a7313255cfe591d2c83b6baa3393a7cb6,"15662 Manning St, Detroit, MI 48205",False,source_flag_false
+0xfe17c3c0b6f38cf3bd8ba872bee7a18ab16b43fb,RealToken S 15777 Ardmore St Detroit MI,True,us_state_in_name
+0xfe891be463262e733fc61024c0583abb3c548097,RealToken S 7359 S Lowe Ave Chicago IL,True,us_state_in_name
+0xfe9072b585e5470c6309d85eebe9279ff7a6bb08,"12090 Engleside St, Detroit, MI 48205",False,source_flag_false
+0xfea36b6bb3a3a19a9b5e9dbaf71a04e7f728e575,"14897 Braile St, Detroit, MI 48223",False,source_flag_false
+0xff1b4d71ae12538d86777a954b136cf723fccefd,RealToken S 14882 Troester St Detroit MI,True,us_state_in_name
+0xff4cfb758c8bc84ecc76968e82cb949ba22401d3,RealToken S 19555 Barlow St Detroit MI,True,us_state_in_name
