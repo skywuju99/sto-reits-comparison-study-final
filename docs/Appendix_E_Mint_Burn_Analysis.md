@@ -31,16 +31,22 @@ The complete event file contains:
 
 These event counts should not be interpreted directly as the number of separate property offerings or exits. A single asset may generate multiple investor-level burn transactions.
 
-## E.4 Analytical use
+## E.4 Event-Pattern Classification and Analytical Use
 
-The analysis distinguishes:
+For descriptive purposes, the observed on-chain event patterns are classified as:
 
 - initial mint;
 - additional mint;
 - partial burn; and
 - full burn.
 
-A burn event alone does not establish whether the cause was a property sale, redemption, liquidation, migration, or technical restructuring.
+These classifications refer only to the timing and pattern of observed on-chain Transfer events.
+
+Mint and burn records are used to document the occurrence and timing of token creation or destruction events. They are not used to infer the underlying economic purpose of the event.
+
+In particular, a burn event alone does not establish whether the cause was a property sale, investor redemption, liquidation, token migration, contract restructuring, or another technical or economic event.
+
+Accordingly, the mint and burn analysis is descriptive and does not assign an economic reason to individual burn events without an independent authoritative source.
 
 ## E.5 Repository files
 
