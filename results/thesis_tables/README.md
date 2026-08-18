@@ -35,6 +35,6 @@ The 2026 results are supplementary partial-year analyses and are not interpreted
 - `table_5_09_secondary_market_capital_returns.csv`
 - `table_5_10_market_price_composite_return_proxy.csv`
 - `table_5_11_platform_price_level_comparison.csv`
-- `table_5_12_2026_common_asset_supplement.csv`
+- `supplement_2026_common_asset_returns.csv`
 - `table_5_12_monthly_price_key_points.csv`
 - `table_5_13_robustness.csv`
