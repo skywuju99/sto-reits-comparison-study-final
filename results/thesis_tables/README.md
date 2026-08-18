@@ -12,7 +12,7 @@ Important limitations:
 - Year-specific samples in Table 5-11 differ. Relative differences across years must not be interpreted as a continuous same-asset pricing-gap series, contemporaneous pricing gaps, or investment returns.
 - The 2026 common-asset supplementary output compares the 2025 year-end 90-day VWAP with the recent 2026 90-day VWAP for matched assets and is separate from the Table 5-11 platform-price comparison.
 - The monthly-price output contains selected monthly price-level points rather than the complete monthly transaction panel.
-- Table 5-13 reports robustness results using alternative transaction-value thresholds and payment-token specifications.
+- Table 5-13 reports robustness results using alternative outlier treatments, weighting methods, and transaction-value thresholds.
 - Table 5-7 is not included because the exact variable name and unit reported in Smith and Baur (2025) were not independently reproduced in the repository source data.
 
 The 2026 results are supplementary partial-year analyses and are not interpreted as completed annual returns.
