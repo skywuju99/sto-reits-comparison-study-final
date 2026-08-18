@@ -73,8 +73,8 @@ data/secondary_market/common_asset_returns_us_residential.csv,main_return_summar
 data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,assets_up,integer,assets,양(+)의 수익률 자산 수,수익률 > 1e-12,방향 분포
 data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,assets_down,integer,assets,음(-)의 수익률 자산 수,수익률 < -1e-12,방향 분포
 data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,assets_unchanged,integer,assets,변화가 없는 것으로 분류된 자산 수,절댓값 ≤ 1e-12,방향 분포
-data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,sample,string,category,표본 구분,"US_Residential, All_RealToken, US_Residential_BroadUSD",표본 식별
-data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,threshold_usd,number,USD,최소 거래금액 필터,1 또는 5,강건성 기준
+data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,sample,string,category,표본 구분,US_Residential,본분석 표본 식별
+data/secondary_market/common_asset_returns_us_residential.csv,main_return_summary,threshold_usd,number,USD,최소 거래금액 필터,1,본분석 필터 기준
 data/secondary_market/common_asset_returns_robustness.csv,robustness_return_summary,period,string,YYYY-YYYY or YTD label,수익률 비교기간,,기간 식별
 data/secondary_market/common_asset_returns_robustness.csv,robustness_return_summary,price_method,string,category,가격 산정방식,주로 vwap_last_90d,방법 식별
 data/secondary_market/common_asset_returns_robustness.csv,robustness_return_summary,common_assets,integer,assets,인접연도 모두 가격이 존재하는 공통자산 수,,표본 수
@@ -162,7 +162,7 @@ data/mint_burn/mint_burn_token_coverage.csv,mint_burn_coverage,total_events,inte
 data/mint_burn/mint_burn_token_coverage.csv,mint_burn_coverage,collection_success,string,Y/N,RPC 이벤트 수집 성공 여부,Y 또는 N,품질 점검
 data/metadata/asset_master_match.csv,asset_master_match,token_address,string,address,거래자료에서 확인된 RealToken 주소,,자료 결합
 data/metadata/asset_master_match.csv,asset_master_match,trade_name,string,text,온체인 또는 거래자료의 토큰명,,자산 식별
-data/metadata/asset_master_match.csv,asset_master_match,is_us_residential,boolean,TRUE/FALSE,미국 주거용 표본 분류값,,표본 선정
+data/metadata/asset_master_match.csv,asset_master_match,is_us_residential,boolean,TRUE/FALSE,원본 매칭자료에 포함된 미국 주거용 분류값,최종 분석에서는 자산명을 이용해 재분류하고 asset_master_clean.csv에 저장,원자료 검증
 data/metadata/asset_master_match.csv,asset_master_match,traded_years,string,comma-separated years,거래가 확인된 연도 목록,,자료 범위
 data/metadata/asset_master_match.csv,asset_master_match,total_trades,integer,trades,전체 기간 거래건수,,유동성
 data/metadata/asset_master_match.csv,asset_master_match,total_volume_usd,number,USD,전체 기간 거래금액,,유동성
@@ -170,6 +170,7 @@ data/metadata/asset_master_match.csv,asset_master_match,total_amount,number,Real
 data/metadata/asset_master_clean.csv,asset_master_clean,token_address,string,address,정규화된 RealToken 주소,,자료 결합
 data/metadata/asset_master_clean.csv,asset_master_clean,realtoken_name,string,text,정제된 RealToken 자산명,,자산 식별
 data/metadata/asset_master_clean.csv,asset_master_clean,is_us_residential,boolean,TRUE/FALSE,미국 주거용 분석대상 여부,,표본 선정
+data/metadata/asset_master_clean.csv,asset_master_clean,classification_reason,string,category,미국 주거용 표본 분류 사유,us_state_in_name 또는 제외·비매칭 사유,표본 선정 검증
 data/metadata/yam_token_metadata.csv,yam_token_metadata,address,string,address,YAM 관련 토큰 컨트랙트 주소,,토큰 식별
 data/metadata/yam_token_metadata.csv,yam_token_metadata,name,string,ERC-20 name,온체인 토큰명,,토큰 식별
 data/metadata/yam_token_metadata.csv,yam_token_metadata,symbol,string,ERC-20 symbol,온체인 토큰심볼,,토큰 식별
@@ -180,7 +181,7 @@ data/metadata/payment_token_decimals.csv,payment_token_decimals,name,string,ERC-
 data/metadata/payment_token_decimals.csv,payment_token_decimals,symbol,string,ERC-20 symbol,결제토큰심볼,,표시
 data/metadata/payment_token_decimals.csv,payment_token_decimals,raw_decimals,integer,decimals,원자료에 기록된 decimals,,검증
 data/metadata/payment_token_decimals.csv,payment_token_decimals,onchain_decimals,integer,decimals,온체인 조회 decimals,,검증
-data/metadata/payment_token_decimals.csv,payment_token_decimals,corrected_decimals,integer,decimals,분석에 실제 적용한 decimals,,수량 보정
+data/metadata/payment_token_decimals.csv,payment_token_decimals,corrected_decimals,integer,decimals,검증 및 정규화 과정에서 확정한 decimals,원자료 및 온체인 decimals 비교 결과,소수점 검증·정규화
 data/metadata/payment_token_decimals.csv,payment_token_decimals,correction_note,string,text or blank,decimals 수정 사유,수정 없음은 공란,재현성
 data/metadata/exclusion_report.csv,exclusion_report,tx_hash,string,hash or category marker,제외된 거래의 식별값 또는 중복 분류표시,,제외 추적
 data/metadata/exclusion_report.csv,exclusion_report,reason,string,text,거래 제외 사유,예: 중복 거래,표본 검증
