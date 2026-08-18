@@ -9,9 +9,16 @@ REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 OUT = os.path.join(REPO_ROOT, 'recalculated_output')
 os.makedirs(OUT, exist_ok=True)
 
-# Raw transaction inputs are not stored in this repository.
-# Place the two raw transaction files in data/raw_secondary_market/
-# before running this script.
+# Raw YAM and Swapcat transaction files are distributed separately
+# through the GitHub Release asset:
+# secondary_market_raw_sources_v2.0.zip
+#
+# They are not tracked directly in the main repository because of file-size limits.
+# Before running this script, download the release archive and place:
+#   yam_offeraccepted_raw.csv
+#   swapcat_realtoken_trades.csv
+# in data/raw_secondary_market/
+
 RAW_DIR = os.path.join(REPO_ROOT, 'data', 'raw_secondary_market')
 
 YAM = os.path.join(RAW_DIR, 'yam_offeraccepted_raw.csv')
