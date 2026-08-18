@@ -162,15 +162,15 @@ data/mint_burn/mint_burn_token_coverage.csv,mint_burn_coverage,total_events,inte
 data/mint_burn/mint_burn_token_coverage.csv,mint_burn_coverage,collection_success,string,Y/N,RPC 이벤트 수집 성공 여부,Y 또는 N,품질 점검
 data/metadata/asset_master_match.csv,asset_master_match,token_address,string,address,거래자료에서 확인된 RealToken 주소,,자료 결합
 data/metadata/asset_master_match.csv,asset_master_match,trade_name,string,text,온체인 또는 거래자료의 토큰명,,자산 식별
-data/metadata/asset_master_match.csv,asset_master_match,is_us_residential,boolean,TRUE/FALSE,원본 매칭자료에 포함된 미국 주거용 분류값,최종 분석에서는 자산명을 이용해 재분류하고 asset_master_clean.csv에 저장,원자료 검증
+data/metadata/asset_master_match.csv,asset_master_match,is_us_residential,boolean,TRUE/FALSE,원본 매칭자료에 포함된 미국 주거용 후보 분류값,주소별 중복행 중 하나라도 TRUE이면 source_true=TRUE; 최종 표본 여부는 asset_master_clean.csv에서 미국 주·DC 코드 확인 및 제외대상 검증 후 결정,원자료 검증
 data/metadata/asset_master_match.csv,asset_master_match,traded_years,string,comma-separated years,거래가 확인된 연도 목록,,자료 범위
 data/metadata/asset_master_match.csv,asset_master_match,total_trades,integer,trades,전체 기간 거래건수,,유동성
 data/metadata/asset_master_match.csv,asset_master_match,total_volume_usd,number,USD,전체 기간 거래금액,,유동성
 data/metadata/asset_master_match.csv,asset_master_match,total_amount,number,RealTokens,전체 기간 거래수량,,유동성
 data/metadata/asset_master_clean.csv,asset_master_clean,token_address,string,address,정규화된 RealToken 주소,,자료 결합
 data/metadata/asset_master_clean.csv,asset_master_clean,realtoken_name,string,text,정제된 RealToken 자산명,,자산 식별
-data/metadata/asset_master_clean.csv,asset_master_clean,is_us_residential,boolean,TRUE/FALSE,미국 주거용 분석대상 여부,,표본 선정
-data/metadata/asset_master_clean.csv,asset_master_clean,classification_reason,string,category,미국 주거용 표본 분류 사유,us_state_in_name 또는 제외·비매칭 사유,표본 선정 검증
+data/metadata/asset_master_clean.csv,asset_master_clean,is_us_residential,boolean,TRUE/FALSE,최종 미국 주거용 분석대상 여부,TRUE iff source_true=TRUE AND 미국 주·DC 코드 확인 AND 제외 키워드 없음,표본 선정
+data/metadata/asset_master_clean.csv,asset_master_clean,classification_reason,string,category,최종 미국 주거용 표본 분류 사유,us_state_in_name; source_flag_false; excluded_instrument_or_foreign; no_us_state_match,표본 선정 검증
 data/metadata/yam_token_metadata.csv,yam_token_metadata,address,string,address,YAM 관련 토큰 컨트랙트 주소,,토큰 식별
 data/metadata/yam_token_metadata.csv,yam_token_metadata,name,string,ERC-20 name,온체인 토큰명,,토큰 식별
 data/metadata/yam_token_metadata.csv,yam_token_metadata,symbol,string,ERC-20 symbol,온체인 토큰심볼,,토큰 식별
