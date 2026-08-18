@@ -135,6 +135,8 @@ The main secondary-market sample includes RealTokens satisfying the following co
 5. A year-end 90-day VWAP can be calculated.
 6. The same token contract is observed in adjacent comparison periods.
 
+The main analysis applies a minimum transaction-value threshold of USD 1. A USD 5 threshold is used as a robustness specification.
+
 The following are excluded from the main sample:
 
 - Payment tokens and stablecoins
@@ -144,7 +146,7 @@ The following are excluded from the main sample:
 - Non-U.S. assets
 - Non-residential assets
 - Invalid-decimal or non-economic transactions
-- Assets without sufficient year-end price observations
+- Assets without a calculable year-end 90-day VWAP
 
 Detailed sample criteria are documented in:
 
@@ -205,9 +207,10 @@ sto-reits-comparison-study-final/
 ├── docs/
 ├── logs/
 ├── results/
-├── requirements.txt
 └── .gitignore
 ```
+
+The large raw YAM and Swapcat transaction files are not tracked directly in the main repository because of file-size limits. They are distributed separately through GitHub Release v2.0.0.
 
 ---
 
@@ -216,14 +219,69 @@ sto-reits-comparison-study-final/
 ### 6.1 Environment
 
 - Python 3.10 or later
-- Required packages are listed in `requirements.txt`
+- The main recalculation script uses only Python standard-library modules and does not require additional third-party packages.
 
 ### 6.2 Main Analysis Script
 
-The main YAM and Swapcat secondary-market analysis is reproduced using:
+The large raw transaction files required for the YAM and Swapcat recalculation are distributed separately through GitHub Release v2.0.0.
+
+Download:
+
+`secondary_market_raw_sources_v2.0.zip`
+
+The release archive contains the raw YAM and Swapcat transaction data used in the study.
+
+Before running the analysis, create the following local directory:
+
+```text
+data/raw_secondary_market/
+```
+
+Place the following two files from the release archive in that directory:
+
+```text
+data/raw_secondary_market/yam_offeraccepted_raw.csv
+data/raw_secondary_market/swapcat_realtoken_trades.csv
+```
+
+The metadata files required by the script are already included in the main repository:
+
+```text
+data/metadata/yam_token_metadata.csv
+data/metadata/asset_master_match.csv
+```
+
+The expected local structure before execution is:
+
+```text
+sto-reits-comparison-study-final/
+├── code/
+│   └── recalculate_yam_swapcat.py
+└── data/
+    ├── metadata/
+    │   ├── yam_token_metadata.csv
+    │   └── asset_master_match.csv
+    └── raw_secondary_market/
+        ├── yam_offeraccepted_raw.csv
+        └── swapcat_realtoken_trades.csv
+```
+
+Run the main recalculation script from the repository root:
 
 ```bash
 python code/recalculate_yam_swapcat.py
+```
+
+The script generates recalculated outputs in:
+
+```text
+recalculated_output/
+```
+
+and creates the replication archive:
+
+```text
+yam_swapcat_recalculated_results.zip
 ```
 
 ### 6.3 Analysis Procedure
@@ -248,4 +306,4 @@ The final observed Swapcat transaction timestamp is July 6, 2026 20:28:20 UTC.
 
 The final observed YAM transaction timestamp is August 3, 2026 20:09:20 UTC.
 
-For the combined 2026 analysis, both markets are restricted to the common source-coverage cutoff of July 6, 2026 20:28:20 UTC. YAM observations after this cutoff are excluded.
+For the combined 2026 analysis, both markets are restricted to the common source-coverage cutoff of July 6, 2026 20:28:20 UTC. A total of 1,502 YAM observations after this cutoff are excluded.
