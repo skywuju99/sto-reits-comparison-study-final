@@ -183,7 +183,5 @@ data/metadata/payment_token_decimals.csv,payment_token_decimals,raw_decimals,int
 data/metadata/payment_token_decimals.csv,payment_token_decimals,onchain_decimals,integer,decimals,온체인 조회 decimals,,검증
 data/metadata/payment_token_decimals.csv,payment_token_decimals,corrected_decimals,integer,decimals,검증 및 정규화 과정에서 확정한 decimals,원자료 및 온체인 decimals 비교 결과,소수점 검증·정규화
 data/metadata/payment_token_decimals.csv,payment_token_decimals,correction_note,string,text or blank,decimals 수정 사유,수정 없음은 공란,재현성
-data/metadata/exclusion_report.csv,exclusion_report,tx_hash,string,hash or category marker,제외된 거래의 식별값 또는 중복 분류표시,,제외 추적
-data/metadata/exclusion_report.csv,exclusion_report,reason,string,text,거래 제외 사유,예: 중복 거래,표본 검증
 data/metadata/raw_validation_report.csv,raw_validation_report,item,string,text,원자료 검증 항목,,품질 점검
 data/metadata/raw_validation_report.csv,raw_validation_report,value,string,mixed,검증 결과값,숫자·날짜·설명 혼합,품질 점검
