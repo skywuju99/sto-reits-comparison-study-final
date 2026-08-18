@@ -1,4 +1,4 @@
-# REIT Benchmark Data
+# REIT Benchmark Documentation
 
 This directory documents the official REIT benchmarks used in the thesis.
 
