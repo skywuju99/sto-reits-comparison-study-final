@@ -1,8 +1,8 @@
-﻿row_type,year_or_stat,rental_yield_proxy_pct,capital_return_proxy_pct,composite_return_proxy_pct,us_residential_reit_total_return_pct
-annual,2022,10.58,10.17,20.76,-31.34
-annual,2023,9.36,0.34,9.7,7.66
-annual,2024,10.7,-0.16,10.54,12.83
-annual,2025,9.76,1.21,10.97,-7.43
-summary,mean_2022_2025,10.1,2.89,12.99,-4.57
-summary,sample_std_2022_2025,0.65,4.89,5.2,19.81
-summary,sharpe_type_2022_2025,,,2.5,-0.23
+row_type,year_or_stat,rental_yield_proxy_pct,capital_return_proxy_pct,composite_return_proxy_pct
+annual,2022,10.58,10.17,20.76
+annual,2023,9.36,0.34,9.7
+annual,2024,10.7,-0.16,10.54
+annual,2025,9.76,1.21,10.97
+summary,mean_2022_2025,10.1,2.89,12.99
+summary,sample_std_2022_2025,0.65,4.89,5.2
+summary,sharpe_type_2022_2025,,,2.5
