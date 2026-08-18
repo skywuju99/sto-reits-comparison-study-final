@@ -1,6 +1,6 @@
 # Appendix F. REIT Benchmarks
 
-## F.1 Primary benchmark
+## F.1 Primary Benchmark
 
 - Index series: FTSE Nareit U.S. Real Estate Index Series
 - Property sector: Residential
@@ -13,20 +13,9 @@ The U.S. Residential sector is used as the primary benchmark because the RealT s
 
 RealT and listed Residential REITs differ in portfolio diversification, leverage, management, liquidity, and price formation. The comparison is therefore exploratory and does not represent a comparison of identical assets.
 
-## F.2 Primary benchmark returns
+The annual benchmark values used in the thesis were obtained from the official Nareit/FTSE source materials. The underlying benchmark data are not redistributed in this repository because of licensing and redistribution restrictions.
 
-| Year | U.S. Residential REIT total return |
-|---:|---:|
-| 2022 | -31.34% |
-| 2023 | +7.66% |
-| 2024 | +12.83% |
-| 2025 | -7.43% |
-
-Repository file:
-
-`data/reits/ftse_nareit_us_residential_total_return_2022_2025_final.csv`
-
-## F.3 Supplementary benchmark
+## F.2 Supplementary Benchmark
 
 - Index series: FTSE EPRA Nareit Global Real Estate Index Series
 - Geographic scope: Global
@@ -35,23 +24,32 @@ Repository file:
 - Analysis period: 2022–2025
 - Role: Supplementary benchmark
 
-| Year | Global USD total return |
-|---:|---:|
-| 2022 | -23.58% |
-| 2023 | +9.78% |
-| 2024 | +1.57% |
-| 2025 | +11.04% |
+The Global USD Total Return series is used only as a supplementary benchmark.
 
-Repository file:
+The underlying benchmark data are not redistributed in this repository. Researchers seeking to reproduce the REIT comparison should obtain the corresponding index observations directly from the official Nareit/FTSE source.
 
-`data/reits/ftse_epra_nareit_global_usd_total_return_2022_2025_final.csv`
+## F.3 Interpretation
 
-## F.4 Interpretation
+The STO observed capital-return measure excludes rental distributions, whereas the official REIT total-return measure includes price changes and distributions.
 
-The STO observed capital-return measure excludes rental distributions, whereas the official REIT total-return measure includes price changes and distributions. The comparison is descriptive and does not establish direct performance superiority.
+The market-price-reflected STO composite-return measure is an exploratory proxy and is not identical to an official REIT total-return measure.
 
-Both official source tables are labeled Total Return. Gross/net classification is not separately identified in the source tables.
+The comparison is therefore descriptive and does not establish direct performance superiority.
 
-## F.5 ETF proxy data
+Both official benchmark sources used in the thesis are identified as Total Return series. Gross/net classification is not separately identified in the source materials used for the study.
 
-ETF adjusted-price data are not official FTSE Nareit index observations and are not used as the primary benchmark.
+The 2026 partial-year STO results are not directly compared with the complete-calendar-year 2022–2025 REIT returns.
+
+## F.4 Data Availability
+
+Due to FTSE/Nareit licensing and redistribution restrictions, the complete source data and machine-readable reproductions of the REIT benchmark observations are not included in this repository.
+
+The repository provides only:
+
+- benchmark definitions;
+- source documentation;
+- access records;
+- methodological notes; and
+- instructions necessary to identify the official benchmark series used in the thesis.
+
+Researchers must obtain the benchmark data independently from the official Nareit/FTSE source.
