@@ -1,5 +1,0 @@
-﻿variable_name,definition,unit,calculation,interpretation_limit
-year_end_90d_vwap,Observed transaction-price level during the final 90 days of the year,USD per token,sum(price*quantity)/sum(quantity),Does not imply full-supply liquidation at the observed price
-observed_capital_return,Price change based on adjacent-period 90-day VWAPs,percent,VWAP_t/VWAP_t-1-1,Only assets traded in both periods
-market_price_composite_return_proxy,Rental-yield proxy plus observed capital return,percent,RY+CR,Not a strict investor-level holding-period total return
-current_platform_price_relative_difference,Observed VWAP relative to the 2026-05-24 tokenPrice snapshot,percent,Observed_VWAP/current_tokenPrice-1,Non-contemporaneous; year-specific samples differ
