@@ -40,11 +40,15 @@ Swapcat and YAM transaction records are verified using Gnosis Chain data.
 
 For the combined 2026 analysis, both YAM and Swapcat are therefore restricted to the common source-coverage cutoff above.
 
-Large raw YAM and Swapcat transaction files are not stored directly in the main repository. They are distributed through GitHub Release v2.0.0 in:
+Large raw YAM and Swapcat transaction files are not stored directly in the main repository. The raw source archive and the final processed replication archive are distributed through GitHub Release v2.0.0:
 
 `secondary_market_raw_sources_v2.0.zip`
 
-Current processed outputs corresponding to the final sample-classification procedure are maintained in:
+`secondary_market_processed_results_v2.0.zip`
+
+The processed archive corresponds to the final **404-address U.S. residential classification**.
+
+Current processed CSV outputs corresponding to the same final classification are also maintained in:
 
 `data/secondary_market/`
 
