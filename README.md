@@ -2,7 +2,7 @@
 
 Replication materials for the master's thesis:
 
-**“A Comparative Study of Real Estate STOs and REITs: Structural Differences, Return and Risk Characteristics, and Investor Protection Frameworks”**
+**“A Comparative Study on Return–Risk Characteristics and Investor Protection Systems of Real Estate STOs and REITs”**
 
 This repository provides data documentation, processed research outputs, analysis code, validation materials, and reproducibility notes used in the thesis.
 
@@ -79,9 +79,19 @@ Main outputs include:
 - Common-asset capital-return estimates
 - Equal-weighted, median, and trade-value-weighted results
 - Minimum-trade-value and outlier robustness checks
-- Sample diagnostics and exclusion results
+- Sample diagnostics and robustness results
 
-Large raw transaction-level source files are provided separately through GitHub Release v2.0.0. The current processed outputs corresponding to the final 404-address classification are maintained in `data/secondary_market/`.
+Large raw transaction-level source files are provided separately through GitHub Release v2.0.0.
+
+The final processed replication archive corresponding to the **404-address U.S. residential classification** is provided through GitHub Release v2.0.1:
+
+`secondary_market_processed_results_v2.0.1.zip`
+
+The processed archive in Release v2.0.0 reflects the earlier preliminary 408-address classification and is retained only for version history.
+
+Current processed CSV outputs corresponding to the final 404-address classification are also maintained in:
+
+`data/secondary_market/`
 
 ### 2.3 Mint and Burn Data
 
@@ -238,7 +248,9 @@ sto-reits-comparison-study-final/
 └── .gitignore
 ```
 
-The large raw YAM and Swapcat transaction files are not tracked directly in the main repository because of file-size limits. They are distributed separately through GitHub Release v2.0.0.
+The large raw YAM and Swapcat transaction files are not tracked directly in the main repository because of file-size limits. The unchanged raw source data are distributed separately through GitHub Release v2.0.0.
+
+The final processed replication outputs corresponding to the **404-address U.S. residential classification** are distributed through GitHub Release v2.0.1. The processed archive in v2.0.0 reflects the earlier preliminary 408-address classification and is retained only for version history.
 
 ---
 
@@ -257,12 +269,13 @@ Download:
 
 `secondary_market_raw_sources_v2.0.zip`
 
-The release archive contains the raw YAM and Swapcat transaction data used in the study.
+The release archive contains the raw YAM and Swapcat transaction data used in the study. These raw source data are unchanged by the subsequent U.S. residential classification correction.
 
 Before running the analysis, create the following local directory:
 
 ```text
 data/raw_secondary_market/
+
 ```
 
 Place the following two files from the release archive in that directory:
@@ -312,28 +325,128 @@ and creates the replication archive:
 yam_swapcat_recalculated_results.zip
 ```
 
+For researchers who do not wish to rerun the raw-data processing, the final processed replication archive corresponding to the **404-address U.S. residential classification** is available in GitHub Release v2.0.1:
+
+```text
+secondary_market_processed_results_v2.0.1.zip
+```
+
+The processed archive in Release v2.0.0 corresponds to the preliminary 408-address classification and should not be used to reproduce the final thesis results.
+
 ### 6.3 Analysis Procedure
 
 The script performs the following steps:
 
 1. Load YAM and Swapcat transaction data.
-2. Standardize RealToken contract addresses.
+2. Standardize RealToken and payment-token contract addresses.
 3. Apply payment-token decimal specifications.
-4. Identify USD-linked payment transactions.
-5. Calculate transaction prices, quantities, and USD trading values.
+4. Identify eligible USD-linked payment transactions.
+5. Calculate RealToken quantities, payment quantities, transaction prices, and USD trading values.
 6. Group the asset-matching source by normalized RealToken address and construct the final U.S. residential classification using `source_true`, U.S. state/DC-name confirmation, and exclusion criteria.
-7. Apply transaction-value and exclusion criteria.
-8. Calculate year-end 90-day VWAPs.
-9. Match common assets across adjacent periods.
-10. Calculate equal-weighted, median, and trade-value-weighted capital returns.
-11. Generate robustness checks, sample diagnostics, and replication outputs.
+7. Do not broaden addresses with `source_true=FALSE` solely on the basis of the asset name.
+8. Remove duplicate YAM event records using transaction hash and log index and defensively remove exact duplicate Swapcat trade records.
+9. Apply the primary USD 1 minimum transaction-value threshold.
+10. Calculate asset-level 30-day, 60-day, and 90-day VWAPs.
+11. Use the final 90-calendar-day VWAP as the primary year-end observed market-price measure.
+12. Match identical normalized RealToken contract addresses across adjacent periods.
+13. Calculate equal-weighted, median, and trade-value-weighted capital returns.
+14. Recalculate USD 5 and broader USD-like robustness specifications.
+15. Generate asset-year summaries, annual sample diagnostics, common-asset return outputs, and validation files.
 
-The final address-level U.S. residential classification generated by this procedure contains **404 unique RealToken contract addresses**. Period-specific return sample sizes are smaller because valid trading and adjacent-period 90-day VWAP observations are additionally required.
+The final address-level U.S. residential classification generated by this procedure contains **404 unique RealToken contract addresses**.
+
+The 404-address figure represents the address-level classification universe before year-specific trading, transaction-value, year-end VWAP, and adjacent-period matching requirements are applied. Period-specific return sample sizes are therefore smaller than 404.
 
 ### 6.4 2026 Source-Coverage Cutoff
 
-The final observed Swapcat transaction timestamp is July 6, 2026 20:28:20 UTC.
+The final observed Swapcat transaction timestamp is:
 
-The final observed YAM transaction timestamp is August 3, 2026 20:09:20 UTC.
+`July 6, 2026 20:28:20 UTC`
 
-For the combined 2026 analysis, both markets are restricted to the common source-coverage cutoff of July 6, 2026 20:28:20 UTC. A total of 1,502 YAM observations after this cutoff are excluded.
+The final observed YAM transaction timestamp is:
+
+`August 3, 2026 20:09:20 UTC`
+
+For the combined 2026 analysis, both markets are restricted to the common source-coverage cutoff:
+
+`July 6, 2026 20:28:20 UTC`
+
+A total of **1,502 YAM observations** after this cutoff are excluded from the combined 2026 analysis.
+
+The 2026 results are treated only as supplementary partial-year evidence and are not interpreted as completed annual returns.
+
+---
+
+## 7. Key Repository Documentation
+
+Detailed methodological documentation is provided in:
+
+- `docs/Appendix_A_Data_Sources.md`
+- `docs/Appendix_B_Sample_Construction.md`
+- `docs/Appendix_C_YAM_Swapcat_Integration.md`
+- `docs/Appendix_D_Return_Calculation.md`
+- `docs/Appendix_E_Mint_Burn_Analysis.md`
+- `docs/Appendix_F_REITs_Benchmark.md`
+- `docs/Appendix_G_Data_Limitations.md`
+
+Important metadata and validation files include:
+
+- `data/metadata/source_list.csv`
+- `data/metadata/data_dictionary.csv`
+- `data/metadata/payment_token_decimals.csv`
+- `data/metadata/raw_validation_report.csv`
+- `data/metadata/asset_master_match.csv`
+- `data/metadata/asset_master_clean.csv`
+
+Source-collection and timing records are documented in:
+
+- `logs/data_snapshot_log.csv`
+- `logs/mint_burn_missing_token_log.txt`
+- `logs/reits_official_data_collection_log.txt`
+
+Selected thesis-table replication outputs are provided in:
+
+`results/thesis_tables/`
+
+---
+
+## 8. Important Interpretation Notes
+
+The RealT platform-based return measures, observed secondary-market capital returns, market-price-reflected composite-return proxies, and official REIT total returns do not have identical definitions.
+
+In particular:
+
+- RealT platform rental-yield measures do not reconstruct investor-level distribution timing.
+- Observed secondary-market capital returns reflect executed YAM and Swapcat transaction prices and exclude rental distributions.
+- The market-price-reflected composite-return measure is an exploratory proxy rather than an exact holding-period total return.
+- REIT benchmark returns are official total-return measures that include distributions.
+- Low secondary-market liquidity may affect observed RealToken prices and VWAP estimates.
+- The supplementary platform-price comparison is non-contemporaneous because the RealT platform `tokenPrice` snapshot and the observed secondary-market VWAP do not share the same measurement date.
+- Mint and burn events establish the occurrence and timing of token creation or destruction but do not establish the underlying economic cause.
+- Different RealToken contract addresses are not joined through inferred migration mappings without an authoritative migration record.
+
+Accordingly, the STO–REIT comparison is descriptive and exploratory and should not be interpreted as a comparison of identically constructed investment-return measures.
+
+---
+
+## 9. Version Note
+
+The final U.S. residential secondary-market classification contains **404 unique RealToken contract addresses**.
+
+GitHub Release v2.0.0 contains:
+
+- the unchanged raw YAM and Swapcat source archive used for recalculation; and
+- an earlier processed archive based on a preliminary 408-address classification, retained only for version history.
+
+GitHub Release v2.0.1 contains:
+
+- the corrected processed replication archive corresponding to the final 404-address classification.
+
+Researchers seeking to reproduce the final thesis results should use:
+
+- `secondary_market_raw_sources_v2.0.zip` from Release v2.0.0; and
+- the current `code/recalculate_yam_swapcat.py` and repository metadata,
+
+or use the corrected precomputed archive:
+
+- `secondary_market_processed_results_v2.0.1.zip` from Release v2.0.1.
