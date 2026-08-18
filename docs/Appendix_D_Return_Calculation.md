@@ -21,6 +21,8 @@ Platform-based rental-yield and capital-return proxies use the same matched asse
 
 For secondary-market capital-return calculations, assets are matched using the same normalized RealToken contract address across adjacent comparison periods. Different contract addresses are not joined through inferred migration mappings unless an authoritative migration mapping is available.
 
+The secondary-market analysis uses the final U.S. residential address-level classification described in Appendix B. The final classification universe contains 404 unique RealToken contract addresses before year-specific trading, transaction-value, year-end VWAP, and adjacent-period matching filters are applied.
+
 ## D.3 Year-End Observed VWAP
 
 For each RealToken asset, the primary year-end observed market price is calculated from valid USD-linked secondary-market transactions during the final 90 calendar days of each year.
@@ -61,7 +63,7 @@ Observed capital returns are summarized using:
 
 The trade-value-weighted result is used to reflect differences in observed transaction activity, while the equal-weighted mean and median are reported as complementary measures.
 
-For the 2024–2025 comparison, the full secondary-market common-asset sample contains 386 assets. The trade-value-weighted observed capital return for this sample is -15.13%.
+Under the final 404-address U.S. residential classification, the 2024–2025 secondary-market common-asset sample contains **382 assets**. The trade-value-weighted observed capital return for this sample is approximately **-15.15%**.
 
 This result should be distinguished from the rental-data-merged sample described below.
 
@@ -89,22 +91,33 @@ MCR_t = RY_t + CR_t
 where:
 
 - \(RY_t\) is the annual rental-yield proxy; and
-- \(CR_t\) is the observed secondary-market capital return for the same matched sample.
+- \(CR_t\) is the observed secondary-market capital-return component for the same matched sample.
 
-The rental-data-merged sample is smaller than the full secondary-market sample because valid rental information and valid adjacent-period VWAP observations must both be available.
+For this merged sample, the rental-yield proxy is calculated as total annual net rent in the ending year divided by the same sample's beginning-period total investment value. The capital-return component is weighted by the same beginning-period total-investment-value basis.
 
-For 2025:
+The rental-data-merged sample is smaller than the full secondary-market sample because the same asset must have RealT rental/investment observations in both adjacent years as well as valid adjacent-period secondary-market VWAP observations.
 
-- Full secondary-market common-asset sample: \(N=386\)
-- Trade-value-weighted capital return: -15.13%
-- Rental-data-merged sample: \(N=245\)
-- Rental-yield proxy: approximately 10.38%
-- Capital-return component: approximately -15.39%
-- Market-price-reflected composite-return proxy: -5.00%
+Under the final 404-address classification, the merged-sample results are:
 
-Therefore, -15.13% and -15.39% refer to different samples and should not be treated as conflicting estimates.
+| Ending year | Matched assets | Rental-yield proxy | Capital-return component | Composite-return proxy |
+|---|---:|---:|---:|---:|
+| 2022 | 17 | 7.91% | 5.98% | 13.89% |
+| 2023 | 56 | 9.25% | -2.50% | 6.75% |
+| 2024 | 287 | 10.75% | 10.17% | 20.93% |
+| 2025 | 243 | 10.48% | -15.80% | -5.32% |
 
-The reported -5.00% composite proxy is calculated from the unrounded rental-yield and capital-return components and then rounded to two decimal places. Because the displayed components are separately rounded, adding 10.38% and -15.39% produces -5.01%, creating a 0.01 percentage-point display difference.
+For 2025 in particular:
+
+- Full secondary-market common-asset sample: \(N=382\)
+- Trade-value-weighted capital return for the full secondary-market sample: approximately -15.15%
+- Rental-data-merged sample: \(N=243\)
+- Rental-yield proxy: approximately 10.48%
+- Capital-return component on the beginning-period investment-value basis: approximately -15.80%
+- Market-price-reflected composite-return proxy: approximately -5.32%
+
+Therefore, -15.15% and -15.80% refer to different samples and weighting bases and should not be treated as conflicting estimates.
+
+The reported composite proxy is calculated from the unrounded rental-yield and capital-return components and then rounded for presentation.
 
 This proxy does not reconstruct investor-level distribution dates, reinvestment, complete cash-flow histories, transaction costs, or taxes, and therefore is not an exact holding-period total return.
 
@@ -122,26 +135,28 @@ Therefore, comparisons with REIT returns are descriptive and do not establish di
 
 ## D.8 Supplementary Platform-Price-Level Comparison
 
-The supplementary platform-price comparison uses the RealT platform-displayed tokenPrice contained in the RealT tokenHistory research snapshot archived on April 6, 2026 (KST, UTC+9).
+The supplementary platform-price comparison uses the RealT platform-displayed `tokenPrice` contained in the RealT tokenHistory research snapshot archived on April 6, 2026 (KST, UTC+9).
 
-The secondary-market comparison price is based on the most recent 90-day transaction VWAP through the common 2026 source-coverage cutoff of July 6, 2026 20:28:20 UTC.
+The secondary-market comparison price is based on each asset's most recent 90-day transaction VWAP through the common 2026 source-coverage cutoff of July 6, 2026 20:28:20 UTC.
 
-The relative difference is calculated as:
+For each matched asset, the relative difference is calculated as:
 
 \[
-Relative\ Difference
+Relative\ Difference_i
 =
 \left(
-\frac{Observed\ VWAP}
-{Platform\ tokenPrice}
+\frac{Observed\ VWAP_i}
+{Platform\ tokenPrice_i}
 -1
 \right)
 \times 100
 \]
 
-For the 2026 supplementary comparison, the resulting relative difference is approximately -72.6%.
+The cross-asset summary is trade-value weighted using each asset's transaction value in the corresponding 2026 trailing 90-day window.
 
-The April 6 platform tokenPrice and the secondary-market VWAP through July 6 do not refer to the same date. The -72.6% figure is therefore a non-contemporaneous price-level comparison and must not be interpreted as:
+Under the final 404-address classification, **283 assets** have the required 2026 trailing 90-day observed price in the secondary-market sample. The resulting trade-value-weighted platform-price relative difference is approximately **-72.48%**.
+
+The April 6 platform `tokenPrice` and the secondary-market VWAP through July 6 do not refer to the same date. The -72.48% figure is therefore a non-contemporaneous price-level comparison and must not be interpreted as:
 
 - a contemporaneous pricing gap;
 - an investment return;
@@ -154,18 +169,18 @@ Historical same-date platform-price snapshots are not reconstructed for each sec
 
 A separate 2026 supplementary calculation compares observed secondary-market prices for common assets between the 2025 year-end 90-day period and the most recent 90-day period ending at the common 2026 cutoff.
 
-For the \(N=287\) common-asset sample:
+Under the final classification, the common-asset sample contains \(N=283\):
 
-- Equal-weighted return: -72.72%
-- Median return: -74.01%
-- Trade-value-weighted return: -71.22%
+- Equal-weighted return: **-72.78%**
+- Median return: **-74.01%**
+- Trade-value-weighted return: **-71.28%**
 
-All 287 matched assets show a decline under this comparison.
+All **283** matched assets show a decline under this comparison.
 
-The -71.22% result is conceptually different from the -72.6% platform-price-level comparison in Section D.8.
+The -71.28% result is conceptually different from the -72.48% platform-price-level comparison in Section D.8.
 
-- -72.6% compares the April 6, 2026 RealT platform tokenPrice with observed secondary-market prices through July 6, 2026.
-- -71.22% compares two observed secondary-market price windows for the same matched assets: the 2025 year-end 90-day period and the recent 2026 90-day period.
+- -72.48% compares the April 6, 2026 RealT platform `tokenPrice` with observed secondary-market prices through July 6, 2026.
+- -71.28% compares two observed secondary-market price windows for the same matched assets: the 2025 year-end 90-day period and the recent 2026 90-day period.
 
 Neither result is treated as a completed 2026 annual return.
 

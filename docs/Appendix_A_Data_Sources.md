@@ -9,6 +9,7 @@ This appendix documents the datasets used in the empirical analysis of RealT-bas
 | RealT tokenHistory asset-year data | Token address, asset information, rental yield, platform tokenPrice, investment amount | 2021–2026 | Rental-yield and supplementary platform-price analysis |
 | Swapcat trades | Secondary-market executions involving RealTokens | 2020–2026 | Market-price and liquidity analysis |
 | YAM OfferAccepted events | Secondary-market executions involving RealTokens | 2022–2026 | Market-price and liquidity analysis |
+| RealToken asset-classification metadata | Address matching, source classification flag, final U.S. residential classification | Integrated trade-source universe | Address-level sample construction |
 | RealToken Transfer events | Mint and burn events identified through zero-address transfers | 2021–2026 | Token-supply change analysis |
 | FTSE Nareit U.S. Real Estate Index Series - Residential | U.S. Residential, U.S. Dollars, Annual Total Return | 2022–2025 | Primary REIT benchmark |
 | FTSE EPRA Nareit Global Real Estate Index Series | Global, USD, Total Return | 2022–2025 | Supplementary REIT benchmark |
@@ -17,7 +18,7 @@ This appendix documents the datasets used in the empirical analysis of RealT-bas
 
 The main comparative analysis uses complete calendar years from 2022 through 2025.
 
-The year 2026 is excluded from the main annual-return comparison because it is incomplete and the STO and REIT observations do not share an identical cutoff date. The 2026 data are used only for supplementary partial-year analysis.
+The year 2026 is excluded from the main annual-return comparison because it is incomplete and does not represent a complete calendar-year observation comparable with the 2022–2025 annual REIT-return series. The 2026 STO data are used only for supplementary partial-year analysis.
 
 ## A.3 Source Snapshots and Coverage
 
@@ -35,18 +36,51 @@ Swapcat and YAM transaction records are verified using Gnosis Chain data.
 - Final observed Swapcat timestamp: July 6, 2026 20:28:20 UTC
 - Final observed YAM timestamp: August 3, 2026 20:09:20 UTC
 - Common 2026 source-coverage cutoff: July 6, 2026 20:28:20 UTC
+- YAM observations after the common cutoff excluded from the combined 2026 analysis: 1,502
 
-For the combined 2026 analysis, YAM observations after the common cutoff are excluded.
+For the combined 2026 analysis, both YAM and Swapcat are therefore restricted to the common source-coverage cutoff above.
 
-## A.4 Currency and Timing Conventions
+Large raw YAM and Swapcat transaction files are not stored directly in the main repository. They are distributed through GitHub Release v2.0.0 in:
+
+`secondary_market_raw_sources_v2.0.zip`
+
+Current processed outputs corresponding to the final sample-classification procedure are maintained in:
+
+`data/secondary_market/`
+
+## A.4 Asset Classification Coverage
+
+The integrated asset-matching source contains 783 unique normalized RealToken contract addresses.
+
+The final U.S. residential classification is constructed at the address level using the following logic:
+
+1. `source_true=TRUE` when at least one source row for the normalized address has `is_us_residential=TRUE`;
+2. the available asset name contains a U.S. state or District of Columbia code; and
+3. the address is not identified as an excluded instrument or foreign asset.
+
+Addresses with `source_true=FALSE` are not added to the U.S. residential sample solely because their names contain a U.S. state or District of Columbia code.
+
+This procedure produces a final U.S. residential classification universe of **404 unique RealToken contract addresses**.
+
+The relevant files are:
+
+- `data/metadata/asset_master_match.csv`
+- `data/metadata/asset_master_clean.csv`
+- `data/metadata/raw_validation_report.csv`
+
+The 404-address classification universe is distinct from year-specific transaction and return samples, which may be smaller because valid transactions, transaction-value thresholds, year-end 90-day VWAPs, and adjacent-period price observations are additionally required.
+
+## A.5 Currency and Timing Conventions
 
 - Monetary values are expressed in U.S. dollars where possible.
 - Blockchain timestamps are standardized to UTC.
 - Token contract addresses are normalized to lowercase.
 - REIT returns are annual total returns including distributions.
-- Secondary-market year-end prices are estimated using transaction-quantity-weighted VWAPs over the final 90 calendar days of each year.
+- Secondary-market year-end prices are estimated using transaction-quantity-weighted VWAPs over the final 90 calendar days of each period.
+- The primary secondary-market transaction filter uses directly identified USD-linked payment tokens and a minimum calculated trade value of USD 1.
+- A USD 5 minimum and a broader USD-like payment-token specification are used as robustness variants.
 
-## A.5 Repository Files
+## A.6 Repository Files
 
 - `data/realt/realt_asset_year_source.xlsx`
 - `data/secondary_market/`
@@ -54,3 +88,8 @@ For the combined 2026 analysis, YAM observations after the common cutoff are exc
 - `data/reits/`
 - `data/metadata/`
 - `logs/data_snapshot_log.csv`
+
+Additional source and variable documentation is provided in:
+
+- `data/metadata/source_list.csv`
+- `data/metadata/data_dictionary.csv`

@@ -27,7 +27,41 @@ The processing procedure applies the following standardization steps:
 8. include both RealToken-sold and RealToken-bought transaction directions after normalization; and
 9. remove duplicate records using transaction hash and log index where applicable.
 
-## C.3 Payment-Token Treatment
+## C.3 Asset Matching and Final U.S. Residential Classification
+
+The integrated trade universe is matched to asset metadata using normalized RealToken contract addresses.
+
+The source asset-matching file may contain multiple rows for the same normalized token address. For each address:
+
+1. `source_true` is set to `TRUE` if at least one source row has `is_us_residential=TRUE`;
+2. all available asset names for that address are considered;
+3. a U.S. state or District of Columbia code must be identifiable in the available asset name; and
+4. instruments or foreign assets matching the exclusion criteria are removed.
+
+Addresses with `source_true=FALSE` are not added to the U.S. residential sample solely because their names contain a U.S. state or District of Columbia code.
+
+Final inclusion therefore requires:
+
+`source_true = TRUE`
+
+**AND**
+
+a U.S. state or District of Columbia code match
+
+**AND**
+
+no exclusion criterion matched.
+
+This procedure produces a final address-level U.S. residential classification universe of **404 unique RealToken contract addresses**.
+
+The relevant metadata files are:
+
+- `data/metadata/asset_master_match.csv`
+- `data/metadata/asset_master_clean.csv`
+
+The 404-address classification universe is distinct from year-specific trading and return samples, which can be smaller after transaction-value, year-end VWAP, and adjacent-period matching requirements are applied.
+
+## C.4 Payment-Token Treatment
 
 The primary USD-denominated sample uses directly identifiable USD-linked payment tokens.
 
@@ -44,7 +78,11 @@ RealToken-to-RealToken swaps and transactions involving unidentified or non-dire
 
 A broader USD-like payment-token specification is examined separately as a robustness check.
 
-## C.4 Trade Filters
+The validated payment-token decimal metadata are documented in:
+
+`data/metadata/payment_token_decimals.csv`
+
+## C.5 Trade Filters
 
 The primary analysis applies a minimum transaction-value threshold of:
 
@@ -60,7 +98,7 @@ is used as a robustness check.
 
 Malformed, invalid-decimal, duplicate, or non-economic transaction records are excluded from the relevant analytical sample.
 
-## C.5 2026 Source-Coverage Alignment
+## C.6 2026 Source-Coverage Alignment
 
 The final observed transaction timestamps differ between the two secondary markets:
 
@@ -75,16 +113,20 @@ A total of 1,502 YAM observations occurring after this common cutoff are exclude
 
 The 2026 results are used only as supplementary partial-year evidence.
 
-## C.6 Output Files
+## C.7 Output Files
 
 The principal integration and return-analysis outputs include:
 
-- `platform_year_summary_us_residential.csv`
-- `asset_year_price_summary_us_residential.csv`
-- `common_asset_return_detail_us_residential.csv`
-- `common_asset_returns_us_residential.csv`
-- `common_asset_returns_robustness.csv`
+- `data/secondary_market/platform_year_summary_us_residential.csv`
+- `data/secondary_market/asset_year_price_summary_us_residential.csv`
+- `data/secondary_market/common_asset_return_detail_us_residential.csv`
+- `data/secondary_market/common_asset_returns_us_residential.csv`
+- `data/secondary_market/common_asset_returns_robustness.csv`
+- `data/secondary_market/annual_sample_diagnostics_us_residential.csv`
+- `data/secondary_market/annual_sample_diagnostics_all_variants.csv`
 
 The main integrated analysis is reproduced using:
 
 `code/recalculate_yam_swapcat.py`
+
+The current files in `data/secondary_market/` correspond to the final 404-address U.S. residential classification procedure.
