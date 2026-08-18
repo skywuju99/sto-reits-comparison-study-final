@@ -2,14 +2,37 @@ import csv, os, math, statistics, zipfile, json
 from collections import defaultdict, Counter
 from datetime import datetime, timezone, date, timedelta
 
-BASE='/mnt/data'
-OUT=os.path.join(BASE,'yam_swapcat_recalculated')
-os.makedirs(OUT,exist_ok=True)
+# Repository paths
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 
-YAM=os.path.join(BASE,'yam_offeraccepted_raw.csv')
-YAM_META=os.path.join(BASE,'yam_token_metadata.csv')
-SWAP=os.path.join(BASE,'swapcat_realtoken_trades.csv')
-MASTER=os.path.join(BASE,'asset_master_match.csv')
+OUT = os.path.join(REPO_ROOT, 'recalculated_output')
+os.makedirs(OUT, exist_ok=True)
+
+# Raw transaction inputs are not stored in this repository.
+# Place the two raw transaction files in data/raw_secondary_market/
+# before running this script.
+RAW_DIR = os.path.join(REPO_ROOT, 'data', 'raw_secondary_market')
+
+YAM = os.path.join(RAW_DIR, 'yam_offeraccepted_raw.csv')
+SWAP = os.path.join(RAW_DIR, 'swapcat_realtoken_trades.csv')
+
+YAM_META = os.path.join(
+    REPO_ROOT, 'data', 'metadata', 'yam_token_metadata.csv'
+)
+MASTER = os.path.join(
+    REPO_ROOT, 'data', 'metadata', 'asset_master_match.csv'
+)
+
+required_inputs = [YAM, SWAP, YAM_META, MASTER]
+missing_inputs = [p for p in required_inputs if not os.path.exists(p)]
+
+if missing_inputs:
+    raise FileNotFoundError(
+        "Required input file(s) not found:\n"
+        + "\n".join(f" - {p}" for p in missing_inputs)
+        + "\n\nSee the repository README for input-data requirements."
+    )
 
 # Direct USD-equivalent tokens used as the primary sample.
 DIRECT_USD={
