@@ -13,6 +13,6 @@ Swapcat direct USD eligible,15464
 Swapcat other payment excluded,22
 Asset master original rows,1175
 Asset master unique addresses,783
-US residential unique addresses,408
+US residential unique addresses,404
 YAM price_raw column nonzero rows,0
 YAM mapping used,offer_token_amount_raw=event price word; buyer_token_amount_raw=event offer amount word
