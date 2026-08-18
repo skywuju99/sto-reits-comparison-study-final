@@ -19,13 +19,15 @@ Thumbs.db
 ~$*
 
 # Large raw secondary-market files
-data/raw/secondary_market/*.csv
-data/raw/secondary_market/*.xlsx
-data/raw/secondary_market/*.zip
+# Raw YAM and Swapcat files are distributed through GitHub Release v2.0.0
+# and should be extracted here only for local recalculation.
+data/raw_secondary_market/*
+!data/raw_secondary_market/README.md
 
 # Locally regenerated outputs
-results/recalculated/
-results/yam_swapcat_recalculated_results.zip
+recalculated_output/
+yam_swapcat_recalculated_results.zip
 
-# Keep directory documentation if added later
-!data/raw/secondary_market/README.md
+# Downloaded release archives
+secondary_market_raw_sources_v2.0.zip
+secondary_market_processed_results_v2.0.zip
