@@ -31,6 +31,14 @@ Path:
 
 `data/realt/realt_asset_year_source.xlsx`
 
+Source:
+
+`https://api.realtoken.community/v1/tokenHistory`
+
+Snapshot:
+
+The RealT tokenHistory source data used in the thesis were retrieved and archived as a research snapshot on April 6, 2026 (KST, UTC+9).
+
 Main variables include:
 
 - RealToken contract address
@@ -41,6 +49,8 @@ Main variables include:
 - RealT platform-displayed tokenPrice
 - Asset type and observation information
 
+The platform-displayed tokenPrice used in the supplementary price-level comparison is taken from the same RealT research snapshot archived on April 6, 2026.
+
 RealT rental yields are platform-provided annual indicators and do not reconstruct the actual cash distributions received by individual investors.
 
 ### 2.2 YAM and Swapcat Secondary-Market Data
@@ -48,6 +58,15 @@ RealT rental yields are platform-provided annual indicators and do not reconstru
 Path:
 
 `data/secondary_market/`
+
+Contracts:
+
+- Swapcat: `0xB18713Ac02Fc2090c0447e539524a5c76f327a3b`
+- YAM: `0xc759aa7f9dd9720a1502c104dae4f9852bb17c14`
+
+Verification source:
+
+- Gnosis Chain RPC: `https://rpc.gnosischain.com`
 
 Main outputs include:
 
@@ -157,6 +176,16 @@ This measure is referred to as a **market-price-reflected composite-return proxy
 
 It is not an exact holding-period total return because actual investor-level distribution timing and complete cash-flow histories are not reconstructed.
 
+### 4.4 Supplementary Platform-Price Comparison
+
+The supplementary 2026 price-level comparison uses the RealT platform-displayed tokenPrice contained in the dataset collected on April 6, 2026.
+
+The observed secondary-market price is based on the most recent 90-day transaction VWAP through July 6, 2026.
+
+Because the platform price and the observed secondary-market price refer to different dates, the resulting relative difference should not be interpreted as a contemporaneous price gap, direct investment-performance difference, or measure of platform overvaluation.
+
+This analysis is treated only as a partial-year supplementary comparison.
+
 ---
 
 ## 5. Repository Structure
@@ -178,3 +207,45 @@ sto-reits-comparison-study-final/
 ├── results/
 ├── requirements.txt
 └── .gitignore
+```
+
+---
+
+## 6. Reproducibility
+
+### 6.1 Environment
+
+- Python 3.10 or later
+- Required packages are listed in `requirements.txt`
+
+### 6.2 Main Analysis Script
+
+The main YAM and Swapcat secondary-market analysis is reproduced using:
+
+```bash
+python code/recalculate_yam_swapcat.py
+```
+
+### 6.3 Analysis Procedure
+
+The script performs the following steps:
+
+1. Load YAM and Swapcat transaction data.
+2. Standardize RealToken contract addresses.
+3. Apply payment-token decimal specifications.
+4. Identify USD-linked payment transactions.
+5. Calculate transaction prices, quantities, and USD trading values.
+6. Match transactions to U.S. residential RealTokens.
+7. Apply transaction-value and exclusion criteria.
+8. Calculate year-end 90-day VWAPs.
+9. Match common assets across adjacent periods.
+10. Calculate equal-weighted, median, and trade-value-weighted capital returns.
+11. Generate robustness checks, sample diagnostics, and replication outputs.
+
+### 6.4 2026 Source-Coverage Cutoff
+
+The final observed Swapcat transaction timestamp is July 6, 2026 20:28:20 UTC.
+
+The final observed YAM transaction timestamp is August 3, 2026 20:09:20 UTC.
+
+For the combined 2026 analysis, both markets are restricted to the common source-coverage cutoff of July 6, 2026 20:28:20 UTC. YAM observations after this cutoff are excluded.
