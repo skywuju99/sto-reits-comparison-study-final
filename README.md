@@ -81,15 +81,17 @@ Main outputs include:
 - Minimum-trade-value and outlier robustness checks
 - Sample diagnostics and robustness results
 
-Large raw transaction-level source files are provided separately through GitHub Release v2.0.0.
+Large raw transaction-level source files and the final processed replication archive are provided through GitHub Release v2.0.0.
 
-The final processed replication archive corresponding to the **404-address U.S. residential classification** is provided through GitHub Release v2.0.1:
+The release includes:
 
-`secondary_market_processed_results_v2.0.1.zip`
+`secondary_market_raw_sources_v2.0.zip`
 
-The processed archive in Release v2.0.0 reflects the earlier preliminary 408-address classification and is retained only for version history.
+`secondary_market_processed_results_v2.0.zip`
 
-Current processed CSV outputs corresponding to the final 404-address classification are also maintained in:
+The processed archive corresponds to the final **404-address U.S. residential classification**.
+
+Current processed CSV outputs corresponding to the same final classification are also maintained in:
 
 `data/secondary_market/`
 
@@ -248,9 +250,9 @@ sto-reits-comparison-study-final/
 └── .gitignore
 ```
 
-The large raw YAM and Swapcat transaction files are not tracked directly in the main repository because of file-size limits. The unchanged raw source data are distributed separately through GitHub Release v2.0.0.
+The large raw YAM and Swapcat transaction files are not tracked directly in the main repository because of file-size limits.
 
-The final processed replication outputs corresponding to the **404-address U.S. residential classification** are distributed through GitHub Release v2.0.1. The processed archive in v2.0.0 reflects the earlier preliminary 408-address classification and is retained only for version history.
+GitHub Release v2.0.0 contains both the raw secondary-market source archive and the final processed replication archive corresponding to the **404-address U.S. residential classification**.
 
 ---
 
@@ -269,13 +271,12 @@ Download:
 
 `secondary_market_raw_sources_v2.0.zip`
 
-The release archive contains the raw YAM and Swapcat transaction data used in the study. These raw source data are unchanged by the subsequent U.S. residential classification correction.
+The release archive contains the raw YAM and Swapcat transaction data used in the study.
 
 Before running the analysis, create the following local directory:
 
 ```text
 data/raw_secondary_market/
-
 ```
 
 Place the following two files from the release archive in that directory:
@@ -325,13 +326,17 @@ and creates the replication archive:
 yam_swapcat_recalculated_results.zip
 ```
 
-For researchers who do not wish to rerun the raw-data processing, the final processed replication archive corresponding to the **404-address U.S. residential classification** is available in GitHub Release v2.0.1:
+For researchers who do not wish to rerun the raw-data processing, the final processed replication archive corresponding to the **404-address U.S. residential classification** is available in GitHub Release v2.0.0:
 
 ```text
-secondary_market_processed_results_v2.0.1.zip
+secondary_market_processed_results_v2.0.zip
 ```
 
-The processed archive in Release v2.0.0 corresponds to the preliminary 408-address classification and should not be used to reproduce the final thesis results.
+The raw source archive used for full recalculation is available in the same release:
+
+```text
+secondary_market_raw_sources_v2.0.zip
+```
 
 ### 6.3 Analysis Procedure
 
@@ -433,20 +438,14 @@ Accordingly, the STO–REIT comparison is descriptive and exploratory and should
 
 The final U.S. residential secondary-market classification contains **404 unique RealToken contract addresses**.
 
-GitHub Release v2.0.0 contains:
+GitHub Release v2.0.0 is the final replication release and contains:
 
-- the unchanged raw YAM and Swapcat source archive used for recalculation; and
-- an earlier processed archive based on a preliminary 408-address classification, retained only for version history.
+- `secondary_market_raw_sources_v2.0.zip` — raw YAM and Swapcat transaction-level source data; and
+- `secondary_market_processed_results_v2.0.zip` — final processed replication outputs corresponding to the 404-address U.S. residential classification.
 
-GitHub Release v2.0.1 contains:
+Researchers seeking to reproduce the final thesis results may either:
 
-- the corrected processed replication archive corresponding to the final 404-address classification.
+- use `secondary_market_raw_sources_v2.0.zip` together with the current `code/recalculate_yam_swapcat.py` and repository metadata; or
+- use the precomputed `secondary_market_processed_results_v2.0.zip`.
 
-Researchers seeking to reproduce the final thesis results should use:
-
-- `secondary_market_raw_sources_v2.0.zip` from Release v2.0.0; and
-- the current `code/recalculate_yam_swapcat.py` and repository metadata,
-
-or use the corrected precomputed archive:
-
-- `secondary_market_processed_results_v2.0.1.zip` from Release v2.0.1.
+Both archives are distributed through GitHub Release v2.0.0.
