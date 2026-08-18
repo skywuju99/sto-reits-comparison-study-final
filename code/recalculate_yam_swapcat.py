@@ -56,33 +56,107 @@ BROAD_USD=DIRECT_USD | {
  '0x3390742ac0dce14ea6fcbd5ae02e2303c5d62ad9', # REUSD 18d
 }
 
-# Load and deduplicate asset master. The supplied is_us_residential column contains
-# duplicate True/False conflicts, so classification is rebuilt from the available names.
+# Load and deduplicate asset master.
+# The source file can contain duplicate rows and conflicting True/False flags
+# for the same token address. A token is treated as a source US-residential
+# candidate if at least one source row is marked True.
+#
+# Final classification additionally requires a recognizable U.S. state code
+# in the asset name and excludes loans, factoring/profit-share instruments,
+# foreign assets, and ecosystem/governance tokens.
+
 import re
-asset_rows=defaultdict(list)
-with open(MASTER,encoding='utf-8-sig',newline='') as f:
+
+asset_rows = defaultdict(list)
+
+with open(MASTER, encoding='utf-8-sig', newline='') as f:
     for r in csv.DictReader(f):
         asset_rows[r['token_address'].lower()].append(r)
-US_STATE_CODES=set('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC'.split())
-EXCLUDE_ASSET_WORDS=('LOAN','FACTORING','PROFIT SHARE','RWA HOLDINGS','SUISSE','PANAMA','COLOMBIA','MEXICO','ECOSYSTEM','GOVERNANCE')
-state_pattern=re.compile(r'(?:,|\s)('+'|'.join(sorted(US_STATE_CODES))+r')(?:\s+\d{5}(?:-\d{4})?)?\s*$')
-def classify_us_residential(names):
-    joined=' | '.join(names).upper()
-    if any(word in joined for word in EXCLUDE_ASSET_WORDS):
-        return False, 'excluded_instrument_or_foreign'
-    for n in names:
-        if state_pattern.search(n.upper().strip()):
-            return True, 'us_state_in_name'
-    return False, 'no_us_state_match'
-asset_master={}
+
+US_STATE_CODES = set(
+    'AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS '
+    'MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV '
+    'WI WY DC'.split()
+)
+
+EXCLUDE_ASSET_WORDS = (
+    'LOAN',
+    'FACTORING',
+    'PROFIT SHARE',
+    'RWA HOLDINGS',
+    'SUISSE',
+    'PANAMA',
+    'COLOMBIA',
+    'MEXICO',
+    'ECOSYSTEM',
+    'GOVERNANCE',
+)
+
+state_pattern = re.compile(
+    r'(?:,|\s)('
+    + '|'.join(sorted(US_STATE_CODES))
+    + r')(?:\s+\d{5}(?:-\d{4})?)?\s*$'
+)
+
+asset_master = {}
+
 for addr, rows in asset_rows.items():
-    names=[r.get('trade_name','') for r in rows if r.get('trade_name')]
-    is_us, reason=classify_us_residential(names)
+    names = [
+        r.get('trade_name', '')
+        for r in rows
+        if r.get('trade_name')
+    ]
+
+    # Resolve duplicate/conflicting source flags:
+    # one or more True rows make the address a source candidate.
+    source_true = any(
+        str(r.get('is_us_residential', '')).strip().lower() == 'true'
+        for r in rows
+    )
+
+    joined_names = ' | '.join(names).upper()
+
+    excluded = any(
+        word in joined_names
+        for word in EXCLUDE_ASSET_WORDS
+    )
+
+    state_match = any(
+        state_pattern.search(n.upper().strip())
+        for n in names
+    )
+
+    if not source_true:
+        is_us = False
+        reason = 'source_flag_false'
+    elif excluded:
+        is_us = False
+        reason = 'excluded_instrument_or_foreign'
+    elif not state_match:
+        is_us = False
+        reason = 'no_us_state_match'
+    else:
+        is_us = True
+        reason = 'us_state_in_name'
+
     # Prefer the on-chain RealToken name over address-style labels.
-    name=next((n for n in names if n.lower().startswith('realtoken')), names[0] if names else addr)
-    asset_master[addr]={'name':name,'is_us_residential':is_us,'classification_reason':reason}
-asset_addrs=set(asset_master)
-us_res_addrs={a for a,v in asset_master.items() if v['is_us_residential']}
+    name = next(
+        (n for n in names if n.lower().startswith('realtoken')),
+        names[0] if names else addr
+    )
+
+    asset_master[addr] = {
+        'name': name,
+        'is_us_residential': is_us,
+        'classification_reason': reason,
+    }
+
+asset_addrs = set(asset_master)
+
+us_res_addrs = {
+    a for a, v in asset_master.items()
+    if v['is_us_residential']
+}
 
 # Metadata map.
 meta={}
