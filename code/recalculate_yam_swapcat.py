@@ -474,7 +474,7 @@ summary_json={
 with open(os.path.join(OUT,'summary.json'),'w',encoding='utf-8') as f: json.dump(summary_json,f,ensure_ascii=False,indent=2)
 
 # Zip results, excluding the very large normalized file? Include it because user asked for auditable data.
-zip_path=os.path.join(BASE,'yam_swapcat_recalculated_results.zip')
+zip_path=os.path.join(REPO_ROOT,'yam_swapcat_recalculated_results.zip')
 with zipfile.ZipFile(zip_path,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
     for fn in sorted(os.listdir(OUT)):
         z.write(os.path.join(OUT,fn),arcname=fn)
