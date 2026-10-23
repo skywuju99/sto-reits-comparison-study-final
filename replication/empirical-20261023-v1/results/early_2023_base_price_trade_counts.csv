@@ -1,0 +1,4 @@
+﻿analysis_year,base_price_year,window_days,n,trades,trades_median,single_trade_n
+2023,2022,30,103,371,2.0,37
+2023,2022,90,103,371,2.0,37
+2023,2022,180,103,3327,13.0,6

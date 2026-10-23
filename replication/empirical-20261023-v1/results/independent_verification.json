@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "All input file hashes match the packaged manifest.",
+    "2022: N=44; independently summed income=9.7911264241, price=3.9925521107, combined=13.7836785348",
+    "2023: N=105; independently summed income=9.5754486849, price=-1.2079692477, combined=8.3674794371",
+    "2024: N=347; independently summed income=10.5147202715, price=10.2035152042, combined=20.7182354756",
+    "2025: N=381; independently summed income=9.5036565607, price=-16.3030927022, combined=-6.7994361414",
+    "2021: activity, frequency, age and non-observation counts independently reproduced.",
+    "2022: activity, frequency, age and non-observation counts independently reproduced.",
+    "2023: activity, frequency, age and non-observation counts independently reproduced.",
+    "2024: activity, frequency, age and non-observation counts independently reproduced.",
+    "2025: activity, frequency, age and non-observation counts independently reproduced.",
+    "2026: activity, frequency, age and non-observation counts independently reproduced.",
+    "All fifteen fixed-sample window results independently re-summed."
+  ],
+  "passed": true,
+  "scope": "Arithmetic and archive reproducibility; not proof of realized cash flow, legal redemption or historical cross-chain rights."
+}

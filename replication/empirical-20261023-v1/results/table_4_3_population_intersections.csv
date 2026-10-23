@@ -1,0 +1,6 @@
+﻿year,platform_valid_all,classification_universe_all_dates,historically_observed_classified_n,platform_valid_and_historical_classified_n,platform_valid_outside_classified_n,year_traded_n,last90_traded_n,paired_prices_n,paired_prices_and_both_platform_valid_n,final_combined_n
+2021,208,404,173,164,44,148,139,,,
+2022,319,404,267,254,65,247,105,44.0,44.0,44.0
+2023,463,404,366,352,111,354,352,105.0,105.0,105.0
+2024,689,404,401,387,302,388,385,348.0,348.0,347.0
+2025,825,404,404,390,435,389,386,382.0,382.0,381.0

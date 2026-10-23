@@ -1,0 +1,9 @@
+{
+  "analysis_version": "empirical-20261023-v1",
+  "packaging_revision": "20261024",
+  "all_27_result_csvs_match_preserved_thesis_results": true,
+  "downloaded_existing_release_archive_matches_local_raw_files": true,
+  "raw_archive_sha256": "9c91153ae47fb3d8f9765aa1d677d17c3523abf0c10c7159b846ea4584b0a642",
+  "changes_to_numeric_algorithms": false,
+  "manuscript_table_mapping_updated": true
+}

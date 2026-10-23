@@ -1,0 +1,110 @@
+{
+  "price_n": [
+    44,
+    105,
+    348,
+    382,
+    283
+  ],
+  "fixed_window_n": [
+    32,
+    103,
+    310,
+    315,
+    154
+  ],
+  "platform_counts": [
+    208,
+    319,
+    463,
+    689,
+    825
+  ],
+  "normalized_primary_n": 223833,
+  "eligible_trades": 148771,
+  "cutoff": "2026-07-06 20:28:20+00:00",
+  "2025_frequency": {
+    "year": 2025,
+    "end_utc": "2025-12-31 23:59:59+00:00",
+    "historically_observed_addresses": 404,
+    "year_traded_n": 389,
+    "year_unobserved_n": 15,
+    "year_unobserved_pct": 3.7128712871287126,
+    "last90_traded_n": 386,
+    "last90_unobserved_n": 18,
+    "last90_unobserved_pct": 4.455445544554455,
+    "trades_median_traded": 78.0,
+    "trades_q25_traded": 55.0,
+    "trades_q75_traded": 139.0,
+    "trades_median_all_known": 75.0,
+    "single_trade_addresses": 0,
+    "never_observed_trade_n": 0,
+    "last_trade_age_median_ever": 8.0,
+    "last_trade_age_p75_ever": 19.0,
+    "last_trade_age_median_year_traded": 7.0,
+    "last_trade_age_over90_ever_n": 18
+  },
+  "2026_frequency": {
+    "year": 2026,
+    "end_utc": "2026-07-06 20:28:20+00:00",
+    "historically_observed_addresses": 404,
+    "year_traded_n": 388,
+    "year_unobserved_n": 16,
+    "year_unobserved_pct": 3.9603960396039604,
+    "last90_traded_n": 283,
+    "last90_unobserved_n": 121,
+    "last90_unobserved_pct": 29.950495049504948,
+    "trades_median_traded": 22.0,
+    "trades_q25_traded": 11.0,
+    "trades_q75_traded": 39.25,
+    "trades_median_all_known": 21.0,
+    "single_trade_addresses": 2,
+    "never_observed_trade_n": 0,
+    "last_trade_age_median_ever": 53.0,
+    "last_trade_age_p75_ever": 108.0,
+    "last_trade_age_median_year_traded": 50.5,
+    "last_trade_age_over90_ever_n": 121
+  },
+  "income_summary": [
+    {
+      "year": 2022,
+      "n": 44,
+      "zero_income_n": 0,
+      "carried_income_n": 41,
+      "currency_USD_n": 44,
+      "mint_or_burn_addresses_n": 0,
+      "record_age_days_median": 526.0,
+      "record_age_days_max": 656
+    },
+    {
+      "year": 2023,
+      "n": 105,
+      "zero_income_n": 3,
+      "carried_income_n": 45,
+      "currency_USD_n": 105,
+      "mint_or_burn_addresses_n": 12,
+      "record_age_days_median": 173.0,
+      "record_age_days_max": 1011
+    },
+    {
+      "year": 2024,
+      "n": 347,
+      "zero_income_n": 2,
+      "carried_income_n": 23,
+      "currency_USD_n": 347,
+      "mint_or_burn_addresses_n": 0,
+      "record_age_days_median": 119.0,
+      "record_age_days_max": 574
+    },
+    {
+      "year": 2025,
+      "n": 381,
+      "zero_income_n": 2,
+      "carried_income_n": 131,
+      "currency_USD_n": 381,
+      "mint_or_burn_addresses_n": 1,
+      "record_age_days_median": 14.0,
+      "record_age_days_max": 939
+    }
+  ]
+}

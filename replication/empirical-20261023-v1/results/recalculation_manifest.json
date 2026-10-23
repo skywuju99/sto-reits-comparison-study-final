@@ -1,0 +1,177 @@
+{
+  "scope": "Marloes excluded in all combined-analysis years; verified twelve S/D cases restored in 2023. Price-only population unchanged.",
+  "annual": [
+    {
+      "year": 2022,
+      "n": 44,
+      "income_pct": 9.791126424090566,
+      "capital_pct": 3.9925521107322908,
+      "combined_pct": 13.783678534822858,
+      "platform_income_pct": 10.375445517093645,
+      "weight_sum": 0.9999999999999999,
+      "investment_total": 9002496.89,
+      "reit_total_return_pct": -31.34
+    },
+    {
+      "year": 2023,
+      "n": 105,
+      "income_pct": 9.575448684852011,
+      "capital_pct": -1.2079692477177812,
+      "combined_pct": 8.367479437134232,
+      "platform_income_pct": 10.016036451829654,
+      "weight_sum": 1.0,
+      "investment_total": 32976122.5,
+      "reit_total_return_pct": 7.66
+    },
+    {
+      "year": 2024,
+      "n": 347,
+      "income_pct": 10.514720271460781,
+      "capital_pct": 10.203515204189198,
+      "combined_pct": 20.718235475649976,
+      "platform_income_pct": 10.743270226018403,
+      "weight_sum": 0.9999999999999999,
+      "investment_total": 86434771.30000001,
+      "reit_total_return_pct": 12.83
+    },
+    {
+      "year": 2025,
+      "n": 381,
+      "income_pct": 9.503656560721272,
+      "capital_pct": -16.303092702166843,
+      "combined_pct": -6.79943614144557,
+      "platform_income_pct": 10.689194189240924,
+      "weight_sum": 1.0000000000000002,
+      "investment_total": 90131526.88999999,
+      "reit_total_return_pct": -7.43
+    }
+  ],
+  "changes": [
+    {
+      "year": 2022,
+      "old_n": 44,
+      "new_n": 44,
+      "added_addresses": [],
+      "removed_addresses": [],
+      "old_combined_pct": 13.783678534822858,
+      "new_combined_pct": 13.783678534822858
+    },
+    {
+      "year": 2023,
+      "old_n": 93,
+      "new_n": 105,
+      "added_addresses": [
+        "0x034ecb6dc0608b73765f2965771a003d940ee8b2",
+        "0x19a6a39b746c4647a01a3bf80751155969ddb15a",
+        "0x219c820c2d25d8937601d8713235b556c4a37f62",
+        "0x304bee450c2d116696d8b442981e7a300dfdf1cb",
+        "0x4b293baa4703c5e7d480498bf3ccd8dc3d1297cd",
+        "0x4b9c173c81ea2b6804b99ac91846c62bdb74fe72",
+        "0x64d69276cc78adbb6d5fea95d3e6370b4844dc76",
+        "0x7909090541d646a262a3062639298772a2c79daa",
+        "0x7dfeee178fc1f929a88ad69e4e8d493600dd26d0",
+        "0xbb32de53a057f29280ad889a92fe99d69d470ef0",
+        "0xf549b95362e6062999bdfe6c61e75e4547b8116d",
+        "0xfc5073816fe9671859ef1e6936efd23bb7814274"
+      ],
+      "removed_addresses": [],
+      "old_combined_pct": 8.261677499258804,
+      "new_combined_pct": 8.367479437134232
+    },
+    {
+      "year": 2024,
+      "old_n": 348,
+      "new_n": 347,
+      "added_addresses": [],
+      "removed_addresses": [
+        "0x7524d382373c1a091789978a8b2c1dc707d2b213"
+      ],
+      "old_combined_pct": 20.42659578649209,
+      "new_combined_pct": 20.718235475649976
+    },
+    {
+      "year": 2025,
+      "old_n": 382,
+      "new_n": 381,
+      "added_addresses": [],
+      "removed_addresses": [
+        "0x7524d382373c1a091789978a8b2c1dc707d2b213"
+      ],
+      "old_combined_pct": -6.694425022178571,
+      "new_combined_pct": -6.79943614144557
+    }
+  ],
+  "price_only": [
+    {
+      "year": 2022,
+      "n": 44,
+      "weighted_price_change_pct": 0.9472641802157785
+    },
+    {
+      "year": 2023,
+      "n": 105,
+      "weighted_price_change_pct": 2.0704007832309386
+    },
+    {
+      "year": 2024,
+      "n": 348,
+      "weighted_price_change_pct": 10.10606583279486
+    },
+    {
+      "year": 2025,
+      "n": 382,
+      "weighted_price_change_pct": -15.150590367516326
+    }
+  ],
+  "sensitivity": {
+    "2025_without_Marloes": {
+      "n": 381,
+      "income_pct": 9.503656560721272,
+      "capital_pct": -16.303092702166843,
+      "combined_pct": -6.79943614144557,
+      "platform_income_pct": 10.689194189240924,
+      "weight_sum": 1.0000000000000002,
+      "investment_total": 90131526.88999999
+    },
+    "2025_without_Marloes_and_Jefferson": {
+      "n": 380,
+      "income_pct": 9.547617440722068,
+      "capital_pct": -16.42458747298123,
+      "combined_pct": -6.876970032259165,
+      "platform_income_pct": 10.738638987677827,
+      "weight_sum": 1.0,
+      "investment_total": 89716526.88999999
+    }
+  },
+  "checks": "Original four annual results reproduced before changes; S/D quantities rebuilt from cached raw logs; revised sums checked independently with Decimal.",
+  "source_hashes": {
+    "inputs\\tokenHistory.json": "1841a83e6c2109dca0bed363c7b4686388b6e729e0cd57b7cc581853f4fa7a0f",
+    "inputs\\token_metadata_20260410.json": "7808a665f43b6d8994e22d7c2a06518899e2cff1507cbf305360c9c51026c3f7",
+    "inputs\\mint_burn.csv": "0c05d9644c1cd716af9c2e767aff2e5a25bd987e3d35aec5fe01698b1e43ae5a",
+    "intermediate\\normalized_trades_primary.csv": "576d18ebd4e99d1ce5b86d1058467710377fe2bc6e2b45d5f35a96a683c94352",
+    "inputs\\sd_mapping_2023.csv": "66c945d4e7374ec2f9109c906f5f2b115d3403ca769ac1c95e0dfc9812f6f9bf",
+    "inputs\\regd_logs\\regd_v2_0x30a4e022287aa6bfe9ea96f5ad8482ff9af8c357_0.json": "70525d3ab62173c5b339031d0abf5b1fa6a6f92e822b43c82a75f9a6d5c310ba",
+    "inputs\\regd_logs\\regd_v2_0x30a4e022287aa6bfe9ea96f5ad8482ff9af8c357_1.json": "794190c2543876b95731d7c2a987e37769de3448650a9dfc5ee1690317e384c2",
+    "inputs\\regd_logs\\regd_v2_0x97cc36cd93c8a4933c5870768b49f073062477a1_0.json": "ab61ad6dde29630cc84785b99a7920d72fda21d7be1b6787db95a099663b58d8",
+    "inputs\\regd_logs\\regd_v2_0x97cc36cd93c8a4933c5870768b49f073062477a1_1.json": "c8b05f60d7fe0f7b1cc6b5d03f6ebb5659f9063db07a7bb9d13f08c5cb742689",
+    "inputs\\regd_logs\\regd_v2_0x82a6e0e7598447be0c173971394cc4fc71ce6ac3_0.json": "44257086878ff4cda9b9a7e745a99bd151449cd0374d096e333366fbe4d2ee40",
+    "inputs\\regd_logs\\regd_v2_0xf63b6b88ccc49825db9b2c6710a3b4513adb58c3_0.json": "eb91bd66d273cb6353896d966c4498e593965f0dc00f5d22ff72ea84a4abda1c",
+    "inputs\\regd_logs\\regd_v2_0xf63b6b88ccc49825db9b2c6710a3b4513adb58c3_1.json": "fec1e9ce4c60277d8a36e5e1421c67898578e867d63b724977071169bdd6fd91",
+    "inputs\\regd_logs\\regd_v2_0xc6a9ad5f687b832636e8a946be5f5f213dd563fa_0.json": "6b9f0ec747ac15ae9c9fd9ee4ab9554474379bbecf6aba198a94a946ed1bb1f1",
+    "inputs\\regd_logs\\regd_v2_0xc6a9ad5f687b832636e8a946be5f5f213dd563fa_1.json": "5158a1d811794e4fa552f304cc070619c12d88997133ed85f419cfef315dc57d",
+    "inputs\\regd_logs\\regd_v2_0x91cef0e64c0059afff516418304761c772ddfec8_0.json": "eaac066342e7e9ca8fbb0a8518c0799abb5054e51c44ca0261d45b99f9cda6d2",
+    "inputs\\regd_logs\\regd_v2_0x91cef0e64c0059afff516418304761c772ddfec8_1.json": "76cc939a3819305ba3235eace6121143d58439330fb9d9e6819bff28de617eff",
+    "inputs\\regd_logs\\regd_v2_0x61ee29983da5d006a56b549e1543b8196df159a5_0.json": "1f7ef2b22e5f61ed3841e2e108ce8ddace1e035281717bee37f126231ad46454",
+    "inputs\\regd_logs\\regd_v2_0x61ee29983da5d006a56b549e1543b8196df159a5_1.json": "fdcfee07b17ab024f46fcfb1a232c5f13adef21cc527f2825e68ea126b03e8f7",
+    "inputs\\regd_logs\\regd_v2_0x270c59b84c5b56564cb7c418fbf2df1d1efa7e04_0.json": "8b47b55ca7f58f6629a55ab901a3b27702647f886afe358049dbe8ab809d3877",
+    "inputs\\regd_logs\\regd_v2_0x270c59b84c5b56564cb7c418fbf2df1d1efa7e04_1.json": "ae4fa188a14dfe82779f7f44968b8d588c9e85ca6206658c53151ce1515b219a",
+    "inputs\\regd_logs\\regd_v2_0x70fd4cbc25b086693260f0307b29d88eea4d71b5_0.json": "0b46a70e1723fbc0c4e32abc91e4461947f26556e08286bbf285cddbb0d8c550",
+    "inputs\\regd_logs\\regd_v2_0x70fd4cbc25b086693260f0307b29d88eea4d71b5_1.json": "7974db59e52b81da3b3177a985f4317493e1c80af5d5126b3c21478a97d27fe5",
+    "inputs\\regd_logs\\regd_v2_0x795e43d6914c9c391de268837f437ecdcd77f5e3_0.json": "a7bd28588ce659759536170eb95b0bc497533476377741824253f178f7884a15",
+    "inputs\\regd_logs\\regd_v2_0x9eea197bf77fd70f485f25e606b731ce3c510b2c_0.json": "74287db450c7ba8822176da1ce8569cf73420cd638d4bfb2962d43792946ff76",
+    "inputs\\regd_logs\\regd_v2_0x9eea197bf77fd70f485f25e606b731ce3c510b2c_1.json": "63064d6751f368a640d0933c261a471c53c961a8a89e81992d0212a84b93cc73",
+    "inputs\\regd_logs\\regd_v2_0xf8c1ade28b78678449494114f18a6c1b785bbf76_0.json": "43d4aa5edd4051292dd262b5ce12eda171865ed4741f7a6c13534ab981a91b90",
+    "inputs\\regd_logs\\regd_v2_0xf8c1ade28b78678449494114f18a6c1b785bbf76_1.json": "447f9dc2ee83bd5aa57953694017e826507864d14402c7517a7d8a63f2109230"
+  },
+  "limitations": "These calculations do not establish actual paid annual rent, remove carried-forward income uncertainty, or complete all professor feedback. S/D cases count each underlying income record once; D-class prices are not merged into S-class prices."
+}

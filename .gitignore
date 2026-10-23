@@ -1,33 +1,46 @@
-# Python cache and local environments
 __pycache__/
 *.py[cod]
 .venv/
 venv/
-env/
-
-# Operating-system and editor files
 .DS_Store
 Thumbs.db
-.vscode/
-.idea/
-
-# Temporary and backup files
-*.tmp
-*.temp
-*.bak
-*~
 ~$*
-
-# Large raw secondary-market files
-# Raw YAM and Swapcat files are distributed through GitHub Release v2.0.0
-# and should be extracted here only for local recalculation.
-data/raw_secondary_market/*
-!data/raw_secondary_market/README.md
-
-# Locally regenerated outputs
+# Rebuilt, losslessly compressed source files and large intermediates
+replication/*/inputs/raw/*.csv
+replication/*/inputs/raw/*.gz
+replication/*/intermediate/
+replication/*/results/*.log
+# Historical runner output
 recalculated_output/
 yam_swapcat_recalculated_results.zip
 
-# Downloaded release archives
-secondary_market_raw_sources_v2.0.zip
-secondary_market_processed_results_v2.0.zip
+# Exact files restored from packed/ (see packed_files.json)
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0x270c59b84c5b56564cb7c418fbf2df1d1efa7e04_0.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0x270c59b84c5b56564cb7c418fbf2df1d1efa7e04_1.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0x30a4e022287aa6bfe9ea96f5ad8482ff9af8c357_0.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0x61ee29983da5d006a56b549e1543b8196df159a5_0.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0x70fd4cbc25b086693260f0307b29d88eea4d71b5_0.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0x795e43d6914c9c391de268837f437ecdcd77f5e3_0.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0x82a6e0e7598447be0c173971394cc4fc71ce6ac3_0.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0x91cef0e64c0059afff516418304761c772ddfec8_0.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0x97cc36cd93c8a4933c5870768b49f073062477a1_0.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0x97cc36cd93c8a4933c5870768b49f073062477a1_1.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0x9eea197bf77fd70f485f25e606b731ce3c510b2c_0.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0x9eea197bf77fd70f485f25e606b731ce3c510b2c_1.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0xc6a9ad5f687b832636e8a946be5f5f213dd563fa_0.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0xf63b6b88ccc49825db9b2c6710a3b4513adb58c3_0.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0xf8c1ade28b78678449494114f18a6c1b785bbf76_0.json
+/replication/empirical-20261023-v1/inputs/regd_logs/regd_v2_0xf8c1ade28b78678449494114f18a6c1b785bbf76_1.json
+/replication/empirical-20261023-v1/inputs/tokenHistory.json
+/replication/empirical-20261023-v1/inputs/token_metadata_20260410.json
+/replication/empirical-20261023-v1/results/address_supply_status_all_years.csv
+/replication/empirical-20261023-v1/results/annual_inclusion_exclusion_details.csv
+/replication/empirical-20261023-v1/results/asset_frequency_recency_details.csv
+/replication/empirical-20261023-v1/results/asset_window_prices.csv
+/replication/empirical-20261023-v1/results/combined_asset_details_2022_2025.csv
+/replication/empirical-20261023-v1/results/display_comparison_details.csv
+/replication/empirical-20261023-v1/results/fixed_sample_window_details.csv
+/replication/empirical-20261023-v1/results/historical_address_universe.csv
+/replication/empirical-20261023-v1/results/income_quantity_scope_details.csv
+/replication/empirical-20261023-v1/results/platform_year_end_states.csv
+/replication/empirical-20261023-v1/results/population_membership_details.csv
