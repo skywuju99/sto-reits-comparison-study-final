@@ -10,8 +10,8 @@ for filename in ('01_normalize.py','02_combine.py','03_diagnostics.py','04_valid
   runpy.run_path(str(ROOT/'code'/filename),run_name='__main__')
 outputs={str(p.relative_to(ROOT)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((ROOT/'results').iterdir()) if p.is_file() and p.suffix=='.csv'}
 sources={str(p.relative_to(ROOT)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((ROOT/'code').glob('*.py'))}
-run={'version':'empirical-20261023-v1','python':sys.version,'code_sha256':sources,'csv_output_sha256':outputs,'passed':True,'packaging_revision':'20261024'}
+runpy.run_path(str(ROOT/'verify_reproduction.py'),run_name='__main__')
+run={'version':'empirical-20261023-v1','python':sys.version,'code_sha256':sources,'csv_output_sha256':outputs,'passed':True,'packaging_revision':'20261027'}
 (ROOT/'run_manifest.json').write_text(json.dumps(run,ensure_ascii=False,indent=2),encoding='utf-8')
 print('Completed. Results and verification records are in results/.')
 
-runpy.run_path(str(ROOT/'verify_reproduction.py'),run_name='__main__')

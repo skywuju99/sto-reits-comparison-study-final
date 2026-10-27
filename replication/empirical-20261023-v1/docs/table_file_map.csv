@@ -1,14 +1,16 @@
 ﻿논문 위치,결과 파일,적용 기준,SHA256
-표 4-2,results/table_4_2_platform_counts.csv,부분 갱신 이력을 누적한 연말 플랫폼 유효표본,c7f2aba2a014ee5882ca63c85109723ab127f5d14f14dc045860d0afe5327656
-표 4-3,results/table_4_3_population_intersections.csv,집합별 개수 및 교집합; 하나의 탈락 흐름이 아님,0d6630c544faaa1aa81f1ef60236ee393175c7629c01d304b686eace347fded7
-표 4-4,results/table_4_4_trading_activity.csv,"미국 소재 선정 주소, 달러 연동 결제, 1달러 이상",454e9e038322b8635102451fbb256b82c7d91cdb61e202a09fc611411f18cd66
-표 4-6,results/table_4_5_price_returns.csv,90일 양 시점 가격 공통표본; 기말 거래대금 가중,57c17bff11f06c03106abcc29215f76d85562a6d3baab50fe522bfb94cf2781e
-표 4-7,results/연도별_수익률근사치_재계산.csv,"Marloes 제외, 2023 S/D 수량 반영; 기초 총투자금 가중",e9be466d41c5c52c2a33a5b703d3fe89d9eecd79ecfd4dc9bf73a54448741106
-표 4-8,results/table_4_7_fixed_sample_windows.csv,"30/90/180일 공통표본, 기말 90일 거래대금 가중 고정",b731c3859092741e868a6958895ef3ac1896f786e440160e184a74a0672c0e17
-표 4-9,results/table_4_8_display_comparison.csv,보존된 표시가격과 시장가격 비교; 동시점 괴리 아님,7745c6125e44226af5ff03a3529eadbb440fc21609ed7cb4bfdf52dfb0e4908f
-표 4-10,results/table_4_9_monthly_selected.csv,월별 전체 체결 VWAP; 고정구성 지수 아님,1db54ccf272266f0b2cea23a093027a966a24244e8a6216a7ae710822dba1b48
-표 4-5,results/trading_frequency_recency_summary.csv,연도 말까지 기록된 선정 주소 집합; 2026 부분연도,0259962485bdb26ade27f17db965c383095771b3609bc1901c07dc479a4eea82
-그림 4-1,results/monthly_price_activity.csv,"월별 관찰 거래가격; 월별 구성 변화, 2026년 7월은 부분월",aa0c585b3d0db23dc0b799f153a86b013d92f8580e357002192cc8ea8bc13e5c
+표 4-2 관련 자료,results/table_4_2_platform_counts.csv,부분 갱신 이력을 누적한 연말 플랫폼 유효표본,c7f2aba2a014ee5882ca63c85109723ab127f5d14f14dc045860d0afe5327656
+표 4-2,results/table_4_3_population_intersections.csv,집합별 개수 및 교집합; 하나의 탈락 흐름이 아님,0d6630c544faaa1aa81f1ef60236ee393175c7629c01d304b686eace347fded7
+표 4-3,results/table_4_4_trading_activity.csv,"미국 소재 선정 주소, 달러 연동 결제, 1달러 이상",454e9e038322b8635102451fbb256b82c7d91cdb61e202a09fc611411f18cd66
+표 4-5,results/table_4_5_price_returns.csv,90일 양 시점 가격 공통표본; 기말 거래대금 가중,57c17bff11f06c03106abcc29215f76d85562a6d3baab50fe522bfb94cf2781e
+표 4-6,results/연도별_수익률근사치_재계산.csv,"Marloes 제외, 2023 S/D 수량 반영; 기초 총투자금 가중",e9be466d41c5c52c2a33a5b703d3fe89d9eecd79ecfd4dc9bf73a54448741106
+표 4-7,results/table_4_7_fixed_sample_windows.csv,"30/90/180일 공통표본, 기말 90일 거래대금 가중 고정",b731c3859092741e868a6958895ef3ac1896f786e440160e184a74a0672c0e17
+표 4-8,results/table_4_8_display_comparison.csv,보존된 표시가격과 시장가격 비교; 동시점 괴리 아님,7745c6125e44226af5ff03a3529eadbb440fc21609ed7cb4bfdf52dfb0e4908f
+표 4-9,results/table_4_9_monthly_selected.csv,월별 전체 체결 VWAP; 고정구성 지수 아님,1db54ccf272266f0b2cea23a093027a966a24244e8a6216a7ae710822dba1b48
+표 4-4,results/trading_frequency_recency_summary.csv,연도 말까지 기록된 선정 주소 집합; 2026 부분연도,0259962485bdb26ade27f17db965c383095771b3609bc1901c07dc479a4eea82
+그림 4-1,results/trading_frequency_recency_summary.csv,최근 90일 거래 미관찰 비중; 2026 부분연도,0259962485bdb26ade27f17db965c383095771b3609bc1901c07dc479a4eea82
+그림 4-2,results/연도별_수익률근사치_재계산.csv,임대정보·가격변동 및 수익률 근사치; 기초 총투자금 가중,e9be466d41c5c52c2a33a5b703d3fe89d9eecd79ecfd4dc9bf73a54448741106
+그림 4-3,results/monthly_price_activity.csv,"월별 관찰 거래가격; 월별 구성 변화, 2026년 7월은 부분월",aa0c585b3d0db23dc0b799f153a86b013d92f8580e357002192cc8ea8bc13e5c
 연도별 포함·제외,results/annual_inclusion_exclusion_summary.csv,가격 공통표본에서 임대 결합으로 연결되는 사유,60d94c7b4703f4cc03d1801eb6513aebf6755583d43ec211b95fede67a795d3c
 임대정보·수량 근거,results/income_quantity_scope_details.csv,필드·기록일·통화 메타데이터·수량범위; 실제 분배금 아님,d5f1252f9ff5616dba1c1fdde954cad6ae4e52150a0cc147e9d7d7f051183f42
 발행·소각 점검,results/address_supply_status_all_years.csv,선정 주소 전체의 Gnosis 수량기록; 법적 청산/체인이동 입증과 구분,76a01dfe17889aea05e20fdb1fcac3bb633de0111ee4c2b30336034809be9e4e

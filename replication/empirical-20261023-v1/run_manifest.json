@@ -3,10 +3,10 @@
   "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
   "code_sha256": {
     "code/01_normalize.py": "f7d8e73f605c4211f3bf481f521abfc09ca3cb8facc362d512dbdc97099fa97c",
-    "code/02_combine.py": "6176c30442b5f2f85fc8c3270f4ef7597c753dad53d32697f5fdb913faf4194e",
-    "code/03_diagnostics.py": "5a6f3b3f968cebc58f608c6bc8aa7f1c0ad7c1aa543bb784f542aa1b345439d9",
-    "code/04_validate.py": "2d2e4dbd0336a487563d88e6913064268404cd0392b8b5f54d3539c81a454d61",
-    "code/05_report.py": "d34a329efcf65232153e2c40b60d68756a6edc4507091594101e5557e71817cc"
+    "code/02_combine.py": "6089aa66e522c9d8f84c343cdd6eaf34a7fd6c487d8ce761da5b441fa09a3d2e",
+    "code/03_diagnostics.py": "9ca7c67ce3817d1ae97366bc741c1ba169eb5dc559230717adc419337e7d7923",
+    "code/04_validate.py": "bcab9d4e6b43c1268078efcb589619f4bcaeeadb054a267aeafc662cdca07ce5",
+    "code/05_report.py": "6406a6f8a62afc1991a469790bdb4c5c9864526fc0b9b6ee4c9a14f5e7960a22"
   },
   "csv_output_sha256": {
     "results/2023_S_D_quantity_reconciliation.csv": "e6dea6aa2f25136d41b76ab6180abe6689c05879b7c27f1f22d3651450af5814",
@@ -38,5 +38,5 @@
     "results/연도별_수익률근사치_재계산.csv": "e9be466d41c5c52c2a33a5b703d3fe89d9eecd79ecfd4dc9bf73a54448741106"
   },
   "passed": true,
-  "packaging_revision": "20261024"
+  "packaging_revision": "20261027"
 }

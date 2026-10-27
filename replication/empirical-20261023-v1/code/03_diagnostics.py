@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'results';OUT.mkdir(exist_ok=True)
-def save(df,name): df.to_csv(OUT/name,index=False,encoding='utf-8-sig')
+def save(df,name): df.to_csv(OUT/name,index=False,encoding='utf-8-sig',lineterminator='\r\n')
 def frame(rows,name):
  df=pd.DataFrame(rows);save(df,name);return df
 def pct(n,d):return n/d*100 if d else None

@@ -8,7 +8,7 @@ import csv,json,hashlib
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'results'
 def read(p):return list(csv.DictReader(p.open(encoding='utf-8-sig')))
 checks=[]
-for r in json.loads((ROOT/'inputs_manifest.json').read_text()):
+for r in json.loads((ROOT/'inputs_manifest.json').read_text(encoding='utf-8')):
  p=ROOT/r['path'];assert hashlib.sha256(p.read_bytes()).hexdigest()==r['sha256']
 checks.append('All input file hashes match the packaged manifest.')
 groups=defaultdict(list)
@@ -53,16 +53,18 @@ for r in read(OUT/'table_4_7_fixed_sample_windows.csv'):
  assert abs(float(value)-float(r['fixed_weight_change_pct']))<1e-10
 checks.append('All fifteen fixed-sample window results independently re-summed.')
 tablemap=[
- ('표 4-2','table_4_2_platform_counts.csv','부분 갱신 이력을 누적한 연말 플랫폼 유효표본'),
- ('표 4-3','table_4_3_population_intersections.csv','집합별 개수 및 교집합; 하나의 탈락 흐름이 아님'),
- ('표 4-4','table_4_4_trading_activity.csv','미국 소재 선정 주소, 달러 연동 결제, 1달러 이상'),
- ('표 4-6','table_4_5_price_returns.csv','90일 양 시점 가격 공통표본; 기말 거래대금 가중'),
- ('표 4-7','연도별_수익률근사치_재계산.csv','Marloes 제외, 2023 S/D 수량 반영; 기초 총투자금 가중'),
- ('표 4-8','table_4_7_fixed_sample_windows.csv','30/90/180일 공통표본, 기말 90일 거래대금 가중 고정'),
- ('표 4-9','table_4_8_display_comparison.csv','보존된 표시가격과 시장가격 비교; 동시점 괴리 아님'),
- ('표 4-10','table_4_9_monthly_selected.csv','월별 전체 체결 VWAP; 고정구성 지수 아님'),
- ('표 4-5','trading_frequency_recency_summary.csv','연도 말까지 기록된 선정 주소 집합; 2026 부분연도'),
- ('그림 4-1','monthly_price_activity.csv','월별 관찰 거래가격; 월별 구성 변화, 2026년 7월은 부분월'),
+ ('표 4-2 관련 자료','table_4_2_platform_counts.csv','부분 갱신 이력을 누적한 연말 플랫폼 유효표본'),
+ ('표 4-2','table_4_3_population_intersections.csv','집합별 개수 및 교집합; 하나의 탈락 흐름이 아님'),
+ ('표 4-3','table_4_4_trading_activity.csv','미국 소재 선정 주소, 달러 연동 결제, 1달러 이상'),
+ ('표 4-5','table_4_5_price_returns.csv','90일 양 시점 가격 공통표본; 기말 거래대금 가중'),
+ ('표 4-6','연도별_수익률근사치_재계산.csv','Marloes 제외, 2023 S/D 수량 반영; 기초 총투자금 가중'),
+ ('표 4-7','table_4_7_fixed_sample_windows.csv','30/90/180일 공통표본, 기말 90일 거래대금 가중 고정'),
+ ('표 4-8','table_4_8_display_comparison.csv','보존된 표시가격과 시장가격 비교; 동시점 괴리 아님'),
+ ('표 4-9','table_4_9_monthly_selected.csv','월별 전체 체결 VWAP; 고정구성 지수 아님'),
+ ('표 4-4','trading_frequency_recency_summary.csv','연도 말까지 기록된 선정 주소 집합; 2026 부분연도'),
+ ('그림 4-1','trading_frequency_recency_summary.csv','최근 90일 거래 미관찰 비중; 2026 부분연도'),
+ ('그림 4-2','연도별_수익률근사치_재계산.csv','임대정보·가격변동 및 수익률 근사치; 기초 총투자금 가중'),
+ ('그림 4-3','monthly_price_activity.csv','월별 관찰 거래가격; 월별 구성 변화, 2026년 7월은 부분월'),
  ('연도별 포함·제외','annual_inclusion_exclusion_summary.csv','가격 공통표본에서 임대 결합으로 연결되는 사유'),
  ('임대정보·수량 근거','income_quantity_scope_details.csv','필드·기록일·통화 메타데이터·수량범위; 실제 분배금 아님'),
  ('발행·소각 점검','address_supply_status_all_years.csv','선정 주소 전체의 Gnosis 수량기록; 법적 청산/체인이동 입증과 구분')]

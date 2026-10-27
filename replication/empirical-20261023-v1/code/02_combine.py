@@ -62,7 +62,7 @@ for a, r in mapping.iterrows():
     ds, dedup = [], set()
     for page in pages:
         sources.append(page)
-        blob = json.loads(page.read_text())
+        blob = json.loads(page.read_text(encoding='utf-8'))
         for e in blob['items']:
             if e['topics'][0] != T:
                 continue
@@ -73,7 +73,7 @@ for a, r in mapping.iterrows():
             sign = 1 if e['topics'][1] == Z else -1 if e['topics'][2] == Z else 0
             if sign:
                 ds.append((e['block_timestamp'], Decimal(int(e['data'], 16)) / Decimal(10) ** 18 * sign))
-    assert any(json.loads(p.read_text())['next_page_params'] is None for p in pages)
+    assert any(json.loads(p.read_text(encoding='utf-8'))['next_page_params'] is None for p in pages)
     d0 = sum((n for t, n in ds if t < '2023-01-01'), Decimal(0))
     d1 = sum((n for t, n in ds if t < '2024-01-01'), Decimal(0))
     n0, n1 = supply(a, 2023) + d0, supply(a, 2024) + d1
@@ -182,13 +182,13 @@ assert [r['n'] for r in prices] == [44,105,348,382]
 assert [round(r['weighted_price_change_pct'],2) for r in prices] == [.95,2.07,10.11,-15.15]
 sensitivity = {'2025_without_Marloes':metrics(groups[2025]),
                '2025_without_Marloes_and_Jefferson':metrics(groups[2025].drop(JEF))}
-pd.concat(details,ignore_index=True).to_csv(OUT/'combined_asset_details_2022_2025.csv',index=False,encoding='utf-8-sig')
-sd.reset_index().to_csv(OUT/'2023_S_D_quantity_reconciliation.csv',index=False,encoding='utf-8-sig')
+pd.concat(details,ignore_index=True).to_csv(OUT/'combined_asset_details_2022_2025.csv',index=False,encoding='utf-8-sig',lineterminator='\r\n')
+sd.reset_index().to_csv(OUT/'2023_S_D_quantity_reconciliation.csv',index=False,encoding='utf-8-sig',lineterminator='\r\n')
 table=pd.DataFrame(annual)
 table[['year','n','income_pct','capital_pct','combined_pct','reit_total_return_pct']].rename(columns={
     'year':'연도','n':'결합표본 수','income_pct':'시장가격 기준 임대수익률 근사치(%)',
     'capital_pct':'가격변화율(%)','combined_pct':'시장가격 기준 수익률 근사치(%)',
-    'reit_total_return_pct':'미국 주거용 리츠 총수익률(%)'}).to_csv(OUT/'연도별_수익률근사치_재계산.csv',index=False,encoding='utf-8-sig')
+    'reit_total_return_pct':'미국 주거용 리츠 총수익률(%)'}).to_csv(OUT/'연도별_수익률근사치_재계산.csv',index=False,encoding='utf-8-sig',lineterminator='\r\n')
 report=dict(scope='Marloes excluded in all combined-analysis years; verified twelve S/D cases restored in 2023. Price-only population unchanged.',
             annual=annual,changes=changes,price_only=prices,sensitivity=sensitivity,
             checks='Original four annual results reproduced before changes; S/D quantities rebuilt from cached raw logs; revised sums checked independently with Decimal.',

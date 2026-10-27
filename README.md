@@ -1,6 +1,6 @@
 # 부동산 토큰·리츠 비교 연구 재현자료
 
-최신 논문의 RealT 자산정보와 YAM·Swapcat 거래 분석을 재현하는 저장소입니다. **현재 분석 버전은 `empirical-20261023-v1`**이며, 2026년 10월 24일 공개용 파일 배치와 최신 논문 표 번호를 정리했습니다. 국내 IPI 채점은 이 거래자료 계산과 별개입니다.
+최신 논문의 RealT 자산정보와 YAM·Swapcat 거래 분석을 재현하는 저장소입니다. **현재 분석 버전은 `empirical-20261023-v1`**이며, 2026년 10월 27일 통합 표와 그림 3개를 반영한 논문 번호 및 실행 검증 기록을 정리했습니다. 국내 IPI 채점은 이 거래자료 계산과 별개입니다.
 
 ## 실행
 
@@ -34,25 +34,27 @@ python run_all.py
 
 | 현재 논문 | 결과 파일 |
 |---|---|
-| 표 4-2 플랫폼 유효표본 | `table_4_2_platform_counts.csv` |
-| 표 4-3 집합 관계와 자료 결합 | `table_4_3_population_intersections.csv` |
-| 표 4-4 거래현황 | `table_4_4_trading_activity.csv` |
-| 표 4-5 거래빈도·최근 거래·미관찰 | `trading_frequency_recency_summary.csv` |
-| 표 4-6 가격변화율 | `table_4_5_price_returns.csv` |
-| 표 4-7 임대정보 결합·리츠 비교 | `연도별_수익률근사치_재계산.csv` |
-| 표 4-8 동일표본 관찰기간 비교 | `table_4_7_fixed_sample_windows.csv` |
-| 표 4-9 표시가격과 관찰가격 비교 | `table_4_8_display_comparison.csv` |
-| 표 4-10 월별 주요 시점 | `table_4_9_monthly_selected.csv` |
-| 그림 4-1 월별 관찰 거래가격 | `monthly_price_activity.csv` |
+| 표 4-2 관련 자료: 플랫폼 유효표본 | `table_4_2_platform_counts.csv` |
+| 표 4-2 집합 관계와 자료 결합 | `table_4_3_population_intersections.csv` |
+| 표 4-3 거래현황 | `table_4_4_trading_activity.csv` |
+| 표 4-4 거래빈도·최근 거래·미관찰 | `trading_frequency_recency_summary.csv` |
+| 표 4-5 가격변화율 | `table_4_5_price_returns.csv` |
+| 표 4-6 임대정보 결합·리츠 비교 | `연도별_수익률근사치_재계산.csv` |
+| 표 4-7 동일표본 관찰기간 비교 | `table_4_7_fixed_sample_windows.csv` |
+| 표 4-8 표시가격과 관찰가격 비교 | `table_4_8_display_comparison.csv` |
+| 표 4-9 월별 주요 시점 | `table_4_9_monthly_selected.csv` |
+| 그림 4-1 최근 90일 거래 미관찰 비중 | `trading_frequency_recency_summary.csv` |
+| 그림 4-2 연도별 시장가격 기준 수익률 근사치 | `연도별_수익률근사치_재계산.csv` |
+| 그림 4-3 월별 관찰 거래가격 | `monthly_price_activity.csv` |
 
 상세 CSV·JSON 중 큰 파일은 `packed/`에 무손실 압축 조각으로 보존합니다. 각 조각과 복원 파일의 해시를 확인하며, 계산 시에는 입력만 복원하고 결과는 새로 계산합니다. 계산 없이 보존된 상세 결과를 열려면 `python replication/empirical-20261023-v1/restore_files.py --include-results`를 실행하십시오.
 
-자료별 기준과 해시는 [`docs/table_file_map.csv`](replication/empirical-20261023-v1/docs/table_file_map.csv), 입력 해시는 [`inputs_manifest.json`](replication/empirical-20261023-v1/inputs_manifest.json)에 기록됩니다. 원고는 2026년 10월 23일 수정본의 표 번호에 대응합니다.
+자료별 기준과 해시는 [`docs/table_file_map.csv`](replication/empirical-20261023-v1/docs/table_file_map.csv), 입력 해시는 [`inputs_manifest.json`](replication/empirical-20261023-v1/inputs_manifest.json)에 기록됩니다. 표 4-2는 플랫폼 유효표본과 집합 관계를 통합한 현재 원고 기준입니다. 결과 파일의 기존 이름은 유지합니다.
 
 ## 분석 방법과 해석 범위
 
 - 관찰가격: 구간 내 체결금액 합계 ÷ 체결수량 합계(VWAP). 기본 관찰기간은 90일입니다.
-- 개별 가격변화율: 기말 VWAP ÷ 기초 VWAP − 1. 표 4-6은 기말 90일 거래대금 비중으로 가중합니다.
+- 개별 가격변화율: 기말 VWAP ÷ 기초 VWAP − 1. 표 4-5는 기말 90일 거래대금 비중으로 가중합니다.
 - 임대정보 환산: 연말 기록상 `netRentYear` ÷ 적용 토큰 수 ÷ 기초 VWAP. 가격변화율과 더한 뒤 기초 플랫폼 총투자금 비중으로 가중합니다.
 - 연말 상태: 부분 갱신 이력을 누적하고 갱신 없는 필드는 직전 기록값을 이월합니다. 갱신이 없다는 사실은 임대료 수취 지속의 증거가 아닙니다.
 - 2023년 확인된 12개 S형·D형 사례는 동일 자산의 합산 수량을 적용합니다. 자산의 임대정보를 이중 계산하거나 D형 가격을 S형 거래가격에 합치지 않습니다.
@@ -70,4 +72,14 @@ python run_all.py
 
 이전 공개 자료와 Release v2.0.0은 [archive/v2.0.0](archive/v2.0.0/) 및 기존 Git 이력에 보존합니다. 243개·−5.32%, 이후 382개·−6.69%, 30·60·90일 비교, 글로벌 리츠 보조지표 등은 과거 분석에 해당하며 현재 논문 결과와 혼용하지 않습니다. 최신 분석에는 글로벌 리츠 비교를 사용하지 않습니다.
 
-주요 변경: 연말 상태 이월, S형·D형 수량 대조, Marloes 제외, 연도별 재계산, 집합 관계표, 거래빈도·경과일·미관찰 비중, 30·90·180일 동일표본 비교, 최신 표 번호 대응 및 원자료 해시 검증·다운로드 경로.
+주요 변경: 연말 상태 이월, S형·D형 수량 대조, Marloes 제외, 연도별 재계산, 집합 관계표, 거래빈도·경과일·미관찰 비중, 30·90·180일 동일표본 비교, 최신 표 번호 대응 및 원자료 해시 검증·다운로드 경로. 2026-10-27에는 CSV 줄바꿈을 CRLF로 명시하고 새 작업 폴더 재실행 검증을 추가했습니다. 계산식·입력·27개 CSV의 기준 해시는 변경하지 않았습니다.
+
+## 별도 작업 폴더에서 재실행 검증
+
+```sh
+python replication/empirical-20261023-v1/verify_portable_execution.py
+```
+
+이 명령은 보존 결과와 중간 산출물을 복사하지 않은 새 임시 폴더에서 전체 계산을 실행하고, 27개 결과 CSV를 고정된 기준 해시와 대조합니다. 결과는 `results/portable_execution_verification.json`에 기록합니다. 이미 확보된 원시 입력은 복사하되 입력 해시를 다시 검증하며, 입력이 없으면 기존 릴리스에서 내려받습니다. 기록에는 실제 실행 운영체제와 Python·패키지 버전, 코드 해시, 비교 결과가 포함됩니다. 저장소의 이 기록은 기록된 환경에서의 실행 증거이며 모든 운영체제에서의 실행을 입증하지 않습니다.
+
+CSV 저장은 기존 기준 파일과 같은 UTF-8 BOM 및 CRLF 줄바꿈으로 고정했습니다. `.gitattributes`는 내려받은 파일의 바이트를 보존하고, 명시한 CSV 줄바꿈은 재생성 시 운영체제 기본값에 따른 해시 차이를 방지합니다. 다른 운영체제에서의 호환성은 해당 환경에서 위 명령을 실제로 실행하여 확인해야 합니다.

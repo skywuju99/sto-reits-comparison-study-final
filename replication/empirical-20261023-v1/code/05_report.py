@@ -18,7 +18,7 @@ for r in annual['annual']:
 lines+=['반올림 전 구성요소를 합산한다. 결합 가중치는 기초 플랫폼 총투자금 비중이다.',
  '2023년: 확인된 12개 S/D 사례를 포함하여 93개에서 105개로 변경했다. 동일 자산의 임대정보를 두 번 세지 않으며 D형 거래가격을 S형 가격에 합치지 않았다.',
  '2024·2025년: Marloes의 임대정보와 적용 수량 범위를 확정하지 못하여 임대정보 결합에서 제외했다. 각각 347개·381개이다. 해당 주소의 가격 거래기록은 가격 분석에 유지했다.',
- '표 4-6의 가격 분석 표본 44·105·348·382개와 거래대금 가중값 0.95·2.07·10.11·-15.15%는 유지된다.',
+ '표 4-5의 가격 분석 표본 44·105·348·382개와 거래대금 가중값 0.95·2.07·10.11·-15.15%는 유지된다.',
  '리츠 값은 원고에서 확인한 공식 지수 값을 비교 열로 유지한 것이다. 이 실행은 Nareit 원문을 다시 수집하는 절차를 포함하지 않는다.','',
  '2. 표본 집합의 관계',
  '연도 | 플랫폼 유효표본(전체) | 해당 연도 말까지 기록 확인된 분류주소 | 연중 거래 | 마지막90일 거래 | 양시점 가격 | 임대 결합']
@@ -66,5 +66,5 @@ lines+=['2025년 381개 중 131개는 이전 연도 임대정보를 이월했다
 (ROOT/'계산결과_요약과논문반영사항.txt').write_text('\n'.join(lines),encoding='utf-8-sig')
 # Korean-labelled compact tables for manuscript transfer, without rounding source data.
 k=d[['year','historically_observed_addresses','year_traded_n','trades_median_traded','last90_unobserved_n','last90_unobserved_pct','last_trade_age_median_ever']].rename(columns={'year':'연도','historically_observed_addresses':'시점까지 기록된 분류주소 수','year_traded_n':'기간중 거래주소 수','trades_median_traded':'거래주소당 거래건수 중위값','last90_unobserved_n':'마지막90일 거래 미관찰 주소 수','last90_unobserved_pct':'마지막90일 미관찰 비중(%)','last_trade_age_median_ever':'과거 거래주소의 최근 거래 후 경과일 중위값(일)'})
-k.to_csv(R/'거래빈도_경과일_미관찰비중.csv',index=False,encoding='utf-8-sig')
+k.to_csv(R/'거래빈도_경과일_미관찰비중.csv',index=False,encoding='utf-8-sig',lineterminator='\r\n')
 print('Summary and Korean tables prepared.')
